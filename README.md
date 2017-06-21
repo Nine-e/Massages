@@ -1,4 +1,4 @@
-# xzj.github.com
+﻿# xzjw.github.com
 2017 web short semester
 要求如下：
 1. 设计页面，实现页面的PC端、Mobile和Ipad的自适应 
