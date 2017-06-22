@@ -2,10 +2,12 @@
 @font-face{
 	font-family: Montserrat;
 	src:url(../lib/Montserrat-Bold.otf);
+	src:url(../lib/Montserrat-Black.otf);
+	src:url(../lib/Montserrat-Light.otf);
 }
 /**
  * 
- * @authors Your Name (you@example.org)
+ * @authors Nine-e (you@example.org)
  * @date    2017-06-22 16:21:43
  * @version $Id$
  */
@@ -19,12 +21,23 @@
 	width: 400px;
 	height: 60px;
 	margin: auto;
+	padding: 0 50px;
 	font-size: 20px;
 	font-weight: 700;
 	color: #ccc;
 	border-top: 2px solid #ecfdf4;
 	border-bottom: 2px solid #ecfdf4;
-	justify-content: center;
+	justify-content:space-around;
 	align-items: center;
 }
- 
+.continue-button {
+	width: 200px;
+	height: 40px;
+	margin: auto;
+	margin-top: 300px;
+	line-height: 40px;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	background-color: #64d2a3;
+}
