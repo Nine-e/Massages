@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@font-face{
+	font-family: Montserrat;
+	src:url(../lib/Montserrat-Bold.otf);
+}
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-06-22 16:21:43
+ * @version $Id$
+ */
+.cnt {
+	text-align: center;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin-top: 50px;
+}
+.cnt-num {
+	display: flex;
+	width: 400px;
+	height: 60px;
+	margin: auto;
+	font-size: 20px;
+	font-weight: 700;
+	color: #ccc;
+	border-top: 2px solid #ecfdf4;
+	border-bottom: 2px solid #ecfdf4;
+	justify-content: center;
+	align-items: center;
+}
+ 
