@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet"  href="../lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link href="../css/signin.css" rel="stylesheet">
+
+    <title>sign in</title>
+</head>
+<body>
+<div class="signin"></div>
+</body>
+
+<script id="betTmpl" type="text/x-jsrender">
+		<section id="bet">
+			<div class="bet">
+				<p class="bet-title">{{:title}}</p>
+				<div class="email">
+					<div class="bet-word">{{:address}}</div>
+					<input class="emailin" contentEditable="true"></input>
+				</div>
+				<div class="password">
+					<div class="bet-word">{{:pwd}}</div>
+					<input  class="passwordin" type="password" contentEditable="true"></input>
+				</div>
+				<a class="facebook"  href="https://www.facebook.com" target="_blank">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+					<p class="face">{{:facebook}}</p>
+				</a>
+				<a class="forgot" href="forgotpwd.html">
+					<p>{{:forgot}}</p>
+				</a>
+				<div class="signipbtn">
+					<p>{{:signin}}</p>
+				</div>
+			</div>
+		</section>
+	</script>
+<script type="text/javascript" src = "../lib/jquery/jquery-3.2.1.js"></script>
+<script type="text/javascript" src = "../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/jsrender/jsrender.js"></script>
+<script type="text/javascript" src = "../js/signin.js"></script>
+</html>

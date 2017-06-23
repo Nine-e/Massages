@@ -1,0 +1,97 @@
+.signup {
+    width: 100%;
+}
+#bet, #betTmpl {
+    width: 100%;
+}
+#bet {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.bet {
+    width: 20%;
+    display: flex;
+    margin: auto ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.email{
+    width: 100%;
+    margin-top: 20px;
+}
+.bet-word {
+    font-size: 13px;
+    color: rgb(153, 153, 153);
+    font-family: chbold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.bet-title {
+    font-size: 30px;
+    margin-top: 20px;
+    color: rgb(153, 153, 153);
+    font-weight: lighter;
+    font-family: chlight;
+}
+.emailin{
+    height: 35px;
+    width: 100%;
+    border: 1px solid rgb(229, 229, 229);
+    margin-top: 2px;
+    font-size: 15px;
+}
+.resetbtn {
+    width: 100%;
+    height: 35px;
+    margin-top: 30px;
+    display: flex;
+    background: rgb(100,210,163);
+    color: #fff;
+    font-weight: bold;
+    justify-content: center;
+    line-height: 35px;
+    font-family: chbold;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: chbold;
+    src: url(../lib/Montserrat-Bold.otf);
+}
+@font-face {
+    font-family: chlight;
+    src: url(../lib/Montserrat-Light.otf);
+}
+
+/*mobile*/
+@media screen and (max-width: 750px) {
+    /*橫屏*/
+    @media screen and (orientation: landscape)
+    {
+        .bet {
+            width: 50%;
+        }
+    }
+    /*竖屏*/
+    @media screen and (orientation: portrait)
+    {
+        .bet {
+            width: 80%;
+        }
+    }
+}
+
+/*ipad*/
+@media screen and (max-width: 969px) and (min-width: 751px) {
+    .bet {
+        width: 50%;
+    }
+}
+
+/*pc*/
+@media screen and (min-width: 970px) {
+    .bet {
+        width: 20%;
+    }
+}
