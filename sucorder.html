@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/sucorder.css">
-<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
 </head>
 <body>
     <div class="sucorder"></div>
@@ -19,33 +19,10 @@
 	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="lib/jsrender/jsrender.js"></script>
 	
-	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
 	<script type="text/javascript" src="js/sucorder.js"></script>
 </body>
 </html>
-
-<script type="text/x-jsrender" id="menuTmpl">
-    <div class="massagesHide"></div>
-        <div class="menu">
-            <div class="menu-container">
-                <div class="menu-title">
-                    <div class="title-center">
-                        <span>MENU</span>
-                        <span class="title-green">Mobile massages</span>
-                        <i id="hideMenu" class="fa fa-times-circle-o"></i>
-                    </div>
-                </div>
-                <div class="menu-bar">Home</div>
-                <div class="menu-bar">Booking</div>
-                <div class="menu-bar">Therapists</div>
-                <div class="menu-bar">Styles</div>
-                <div class="menu-bar">Massages description</div>
-                <div class="menu-bar">FAQ</div>
-                <div class="menu-bar">Contact us</div>
-                <div class="menu-bar no-border">Login</div>
-            </div>
-        </div>
-</script>
 
 <script type="text/x-jsrender" id="cntTmpl">
 	<div class="cnt">
@@ -57,37 +34,66 @@
 	</div>
 </script>
 
-<script type="text/x-jsrender" id="headTmpl">
-	<div class="head">
-        <div class="head-title">
-    		<span>Mobile</span>
-    		<span>massages</span>
+<script type="text/x-jsrender" id="menuTmpl">
+    <div class="massagesHide"></div>
+    <div class="menu">
+        <div class="menu-container">
+            <div class="menu-title">
+                <div class="title-center">
+                    <span>MENU</span>
+                    <span class="title-green">
+                        <span class="title-lighter">Mobile</span>
+                        <span class="title-bold">massages</span>
+                    </span>
+                    <i id="hideMenu" class="fa fa-times-circle-o"></i>
+                </div>
+            </div>
+            <div class="menu-bar"><a href="#">Home</a></div>
+            <div class="menu-bar"><a href="#">Booking</a></div>
+            <div class="menu-bar"><a href="#">Therapists</a></div>
+            <div class="menu-bar"><a href="#">Styles</a></div>
+            <div class="menu-bar"><a href="#">Massages description</a></div>
+            <div class="menu-bar"><a href="#">FAQ</a></div>
+            <div class="menu-bar"><a href="#">Contact us</a></div>
+            <div class="menu-bar no-border"><a href="#">Login</a></div>
         </div>
-    	<div class="head-menu normal">
-    	    <div class="normal-scale">
-    	    	<span><a href="#">{{:home}}</a></span>
-				<span><a href="#">{{:booking}}</a></span>
-				<span><a href="#">{{:therapist}}</a></span>
-				<span><a href="#">{{:style}}</a></span>
-				<span><a href="#">{{:pricing}}</a></span>
-				<span><a href="#">{{:faq}}</a></span>
-				<span><a href="#">{{:contactUs}}</a></span>
-				<span class="sign-in"><a  href="#">{{:signIn}}</a></span>
-    	    </div>
-    	</div>
-    	<div class="head-menu dropdown">
-			<i id="showMenu" class="fa fa-bars"></i>
-		</div>
-	</div>
+    </div>
+</script>
+
+<script type="text/x-jsrender" id="headTmpl">
+    <div class="head">
+        <div class="head-title">
+            <span class="title-lighter">Mobile</span>
+            <span class="title-bold">massages</span>
+        </div>
+        <div class="head-menu normal">
+            <div class="normal-scale">
+                <span><a href="#">{{:home}}</a></span>
+                <span><a href="#">{{:booking}}</a></span>
+                <span><a href="#">{{:therapist}}</a></span>
+                <span><a href="#">{{:style}}</a></span>
+                <span><a href="#">{{:pricing}}</a></span>
+                <span><a href="#">{{:faq}}</a></span>
+                <span><a href="#">{{:contactUs}}</a></span>
+                <span class="sign-in"><a  href="#">{{:signIn}}</a></span>
+            </div>
+        </div>
+        <div class="head-menu dropdown">
+            <i id="showMenu" class="fa fa-bars"></i>
+        </div>
+    </div>
 </script>
 
 <script type="text/x-jsrender" id="footTmpl">
     <div class="foot-container">
         <div class="foot-message">
-        	<p>{{:name}}</p><br>
-        	<p>{{:copyright}}</p>
-        	<p>{{:team}}</p>
-        	<p>{{:policy}}</p>
+            <p class="message-title">
+                <span class="title-lighter">Mobile</span>
+                <span class="title-bold">massages</span>
+            </p><br>
+            <p class="title-bold">{{:copyright}}</p>
+            <p class="title-bold">{{:team}}</p>
+            <p class="title-bold">{{:policy}}</p>
         </div>
     </div>
 </script>

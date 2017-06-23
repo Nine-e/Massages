@@ -8,7 +8,9 @@
 $(initPage);
 
 function initPage(){
-	$.getJSON("index.json",function(data){
+
+	$.getJSON("../json/common.json",function(data){
+
 		menuData = data.menu;
 		var menuHtml = $.templates("#menuTmpl").render(menuData)
 		$(".sucorder").append(menuHtml);
@@ -16,6 +18,9 @@ function initPage(){
 		headData = data.head;
 		var headHtml = $.templates("#headTmpl").render(headData)
 		$(".sucorder").append(headHtml);
+
+        showMenu();
+        hideMenu();
 
 	}); 
 
@@ -26,16 +31,13 @@ function initPage(){
 
 	});
 
-	$.getJSON("index.json",function(data){
+	$.getJSON("../json/common.json",function(data){
 
 		footData = data.foot;
 		var footHtml = $.templates("#footTmpl").render(footData)
 		$(".sucorder").append(footHtml);
 
-        showMenu();
-        hideMenu();
-
-	}); 
+	});
 
 
 }
