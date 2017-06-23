@@ -1,8 +1,12 @@
-$(initPage);
+/*$(initPage);
 
 function initPage(){
 
 	$.getJSON("index.json",function(data){
+
+		menuData = data.menu;
+		var menuHtml = $.templates("#menuTmpl").render(menuData)
+		$(".massages").append(menuHtml);
 
 		headData = data.head;
 		var headHtml = $.templates("#headTmpl").render(headData)
@@ -17,7 +21,7 @@ function initPage(){
 
 	}); 
 }
-
+*/
 function showMenu(){
     $('#showMenu').click(function() {
 	    $(".menu").show();
