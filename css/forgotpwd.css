@@ -79,6 +79,9 @@
         .bet {
             width: 80%;
         }
+        .bet-title {
+            font-size: 26px;
+        }
     }
 }
 
@@ -86,6 +89,9 @@
 @media screen and (max-width: 969px) and (min-width: 751px) {
     .bet {
         width: 50%;
+    }
+    .bet-title {
+        font-size: 42px;
     }
 }
 
