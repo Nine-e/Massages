@@ -1,5 +1,6 @@
-.signup {
+.signin {
     width: 100%;
+    height: 100%;
 }
 #bet, #betTmpl {
     width: 100%;
@@ -12,7 +13,7 @@
     justify-content: center;
     align-items: center;
 }
-.firstname, .lastname, .email, .mobile, .password, .facebook {
+.email, .forgot, .password, .facebook {
     width: 100%;
     margin-top: 15px;
 }
@@ -28,12 +29,21 @@
     font-weight: lighter;
     font-family: chlight;
 }
-.firstnin, .lastnin, .emailin, .mobilein, .passwordin {
+.emailin, .passwordin {
     height: 35px;
     width: 100%;
     border: 1px solid rgb(229, 229, 229);
     margin-top: 2px;
     font-size: 15px;
+}
+.forgot {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    color: rgb(153, 153, 153);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 .facebook {
     width: 100%;
@@ -55,10 +65,10 @@
     margin-right: 5px;
     font-size: 17px;
 }
-.signupbtn {
+.signipbtn {
     width: 100%;
     height: 35px;
-    margin-top: 35px;
+    margin-top: 14px;
     display: flex;
     background: rgb(100,210,163);
     color: #fff;
@@ -68,20 +78,7 @@
     font-family: chbold;
     cursor: pointer;
 }
-.smaword1, .smaword2 {
-    width: 100%;
-    display: flex;
-    font-family: chlight;
-    font-size: 10px;
-    color: rgb(153, 153, 153);
-    margin-bottom: 0;
-    justify-content: center;
-    align-items: center;
-}
-.smaword1 {
-    margin-top: 8px;
-}
-a:link, a:hover, a:visited, a:active{
+.facebook:link, .facebook:hover, .facebook:visited, .facebook:active{
     color: #fff;
     text-decoration: none;
 }
