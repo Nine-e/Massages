@@ -3,40 +3,42 @@
 	font-family: Montserrat;
 	src:url(../lib/Montserrat-Light.otf);
 }
-/**
- * 
- * @authors Nine-e (you@example.org)
- * @date    2017-06-22 16:21:43
- * @version $Id$
- */
 .cnt {
-	text-align: center;
-	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
+	font-family: Montserrat;
 	margin-top: 50px;
 }
 .cnt-num {
-		display: flex;
-		width: 400px;
-		height: 60px;
-		margin: auto;
-		padding: 0 30px;
-		font-size: 20px;
-		font-weight: 700;
-		color: #ccc;
-		border-top: 2px solid #ecfdf4;
-		border-bottom: 2px solid #ecfdf4;
-		justify-content:space-around;
-		align-items: center;
+	display: flex;
+	width: 400px;
+	height: 60px;
+	margin: auto;
+	padding: 0 30px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #ccc;
+	border-top: 2px solid #ecfdf4;
+	border-bottom: 2px solid #ecfdf4;
+	justify-content:space-around;
+	align-items: center;
 }
 @media(max-width:420px){
 	.cnt-num {
 		width: 100%;
-}
+    }
 }
 @media(min-width:420px){
-.cnt-num {
-	width: 400px;
+	.cnt-num {
+		width: 400px;
+	}
 }
+.cnt-title {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-size: 30px;
+    color: rgb(153, 153, 153);
+    font-weight: lighter;
+    font-family: chlight;
 }
 .continue-button {
 	width: 200px;

@@ -10,7 +10,7 @@ var num=1;
 
 function initPage(){
 
-	$.getJSON("index.json",function(data){
+	$.getJSON("../json/common.json",function(data){
 
 		menuData = data.menu;
 		var menuHtml = $.templates("#menuTmpl").render(menuData)
@@ -33,7 +33,7 @@ function initPage(){
 		Continue();
 		Back();
 	});
-	$.getJSON("index.json",function(data){
+	$.getJSON("../json/common.json",function(data){
 
 		footData = data.foot;
 		var footHtml = $.templates("#footTmpl").render(footData)
