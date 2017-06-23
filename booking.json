@@ -1,5 +1,12 @@
 {
 	"cnt":{
 		"agreeing":"By clicking Continue above, you are agreeing to our Terms of Service agreement."
+	},
+	"third":{
+		"title1":"Create your account or sign in",
+		"title2":"to your existing account to continue",
+		"choose1":"I'm a new customer",
+		"choose2":"I have an account",
+		"choose3":"Sign Up with Facebook"
 	}
 }
