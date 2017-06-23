@@ -1,0 +1,15 @@
+{
+  "bet": {
+    "title": "Sign up",
+    "firstn": "First Name",
+    "lastn": "Last name",
+    "address": "Email address",
+    "mobile": "mobile",
+    "pwd": "Choose a password",
+    "facebook": "Sign up with Facebook",
+    "signup": "SIGN UP",
+    "smaword1": "By signing up, I agree to Mobile Massages'",
+    "smaword2": "Terms of Service and Privacy Policy"
+  }
+
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet"  href="../lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link href="../css/signup.css" rel="stylesheet">
+
+    <title></title>
+</head>
+<body>
+<div class="signup"></div>
+</body>
+
+<script id="betTmpl" type="text/x-jsrender">
+		<section id="bet">
+			<div class="bet">
+				<p class="bet-title">{{:title}}</p>
+				<div class="firstname">
+					<div class="bet-word">{{:firstn}}</div>
+					<div class="firstnin" contentEditable="true"></div>
+				</div>
+				<div class="lastname">
+					<div class="bet-word">{{:lastn}}</div>
+					<div class="lastnin" contentEditable="true"></div>
+				</div>
+				<div class="email">
+					<div class="bet-word">{{:address}}</div>
+					<div class="emailin" contentEditable="true"></div>
+				</div>
+				<div class="mobile">
+					<div class="bet-word">{{:mobile}}</div>
+					<div class="mobilein" contentEditable="true"></div>
+				</div>
+				<div class="password">
+					<div class="bet-word">{{:pwd}}</div>
+					<div class="passwordin" contentEditable="true"></div>
+				</div>
+				<a class="facebook"  href="https://www.facebook.com" target="_blank">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+					<p class="face">{{:facebook}}</p>
+				</a>
+				<div class="signupbtn">
+					<p>{{:signup}}</p>
+				</div>
+				<div class="smaword1">{{:smaword1}}</div>
+				<div class="smaword2">{{:smaword2}}</div>
+			</div>
+		</section>
+	</script>
+<script type="text/javascript" src = "../lib/jquery/jquery-3.2.1.js"></script>
+<script type="text/javascript" src = "../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/jsrender/jsrender.js"></script>
+<script type="text/javascript" src = "../js/signup.js"></script>
+</html>
