@@ -9,6 +9,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/booking.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
     <div class="booking"></div>
@@ -16,6 +17,7 @@
 	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="lib/jsrender/jsrender.js"></script>
 	<script type="text/javascript" src="js/booking.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
 
@@ -37,4 +39,62 @@
 			</div>
 		</div>
 	</div>
+</script>
+
+<script type="text/x-jsrender" id="menuTmpl">
+    <div class="massagesHide"></div>
+        <div class="menu">
+            <div class="menu-container">
+                <div class="menu-title">
+                    <div class="title-center">
+                        <span>MENU</span>
+                        <span class="title-green">Mobile massages</span>
+                        <i id="hideMenu" class="fa fa-times-circle-o"></i>
+                    </div>
+                </div>
+                <div class="menu-bar">Home</div>
+                <div class="menu-bar">Booking</div>
+                <div class="menu-bar">Therapists</div>
+                <div class="menu-bar">Styles</div>
+                <div class="menu-bar">Massages description</div>
+                <div class="menu-bar">FAQ</div>
+                <div class="menu-bar">Contact us</div>
+                <div class="menu-bar no-border">Login</div>
+            </div>
+        </div>
+</script>
+
+<script type="text/x-jsrender" id="headTmpl">
+	<div class="head">
+        <div class="head-title">
+    		<span>Mobile</span>
+    		<span>massages</span>
+        </div>
+    	<div class="head-menu normal">
+    	    <div class="normal-scale">
+    	    	<span><a href="#">{{:home}}</a></span>
+				<span><a href="#">{{:booking}}</a></span>
+				<span><a href="#">{{:therapist}}</a></span>
+				<span><a href="#">{{:style}}</a></span>
+				<span><a href="#">{{:pricing}}</a></span>
+				<span><a href="#">{{:faq}}</a></span>
+				<span><a href="#">{{:contactUs}}</a></span>
+				<span class="sign-in"><a  href="#">{{:signIn}}</a></span>
+    	    </div>
+    	</div>
+    	<div class="head-menu dropdown">
+			<i id="showMenu" class="fa fa-bars"></i>
+		</div>
+	</div>
+</script>
+
+<script type="text/x-jsrender" id="footTmpl">
+    <div class="foot-container">
+        <div class="foot-message">
+        	<p>{{:name}}</p><br>
+        	<p>{{:copyright}}</p>
+        	<p>{{:team}}</p>
+        	<p>{{:policy}}</p>
+        </div>
+    </div>
 </script>

@@ -9,6 +9,21 @@ $(initPage);
 var num=1;
 
 function initPage(){
+
+	$.getJSON("index.json",function(data){
+
+		menuData = data.menu;
+		var menuHtml = $.templates("#menuTmpl").render(menuData)
+		$(".booking").append(menuHtml);
+
+		headData = data.head;
+		var headHtml = $.templates("#headTmpl").render(headData)
+		$(".booking").append(headHtml);
+
+        showMenu();
+        hideMenu();
+
+	}); 
 	$.getJSON("booking.json",function(data){
 		cntData = data.cnt;
 		var cntHtml = $.templates("#cntTmpl").render(cntData)
@@ -18,6 +33,13 @@ function initPage(){
 		Continue();
 		Back();
 	});
+	$.getJSON("index.json",function(data){
+
+		footData = data.foot;
+		var footHtml = $.templates("#footTmpl").render(footData)
+		$(".booking").append(footHtml);
+
+	}); 
 	
 }
 function Continue(){
