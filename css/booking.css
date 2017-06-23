@@ -1,8 +1,6 @@
 @charset "UTF-8";
 @font-face{
 	font-family: Montserrat;
-	src:url(../lib/Montserrat-Bold.otf);
-	src:url(../lib/Montserrat-Black.otf);
 	src:url(../lib/Montserrat-Light.otf);
 }
 /**
@@ -17,18 +15,28 @@
 	margin-top: 50px;
 }
 .cnt-num {
-	display: flex;
+		display: flex;
+		width: 400px;
+		height: 60px;
+		margin: auto;
+		padding: 0 30px;
+		font-size: 20px;
+		font-weight: 700;
+		color: #ccc;
+		border-top: 2px solid #ecfdf4;
+		border-bottom: 2px solid #ecfdf4;
+		justify-content:space-around;
+		align-items: center;
+}
+@media(max-width:420px){
+	.cnt-num {
+		width: 100%;
+}
+}
+@media(min-width:420px){
+.cnt-num {
 	width: 400px;
-	height: 60px;
-	margin: auto;
-	padding: 0 50px;
-	font-size: 20px;
-	font-weight: 700;
-	color: #ccc;
-	border-top: 2px solid #ecfdf4;
-	border-bottom: 2px solid #ecfdf4;
-	justify-content:space-around;
-	align-items: center;
+}
 }
 .continue-button {
 	width: 200px;
@@ -40,4 +48,34 @@
 	font-weight: 600;
 	color: #fff;
 	background-color: #64d2a3;
+}
+.agreeing-text{
+	width: 300px;
+	margin: auto;
+	margin-top: 20px;
+	font-size: 10px;
+	font-weight: 500;
+	color: #bbb;
+}
+.back-button {
+	display: flex;
+	width: 50px;
+	margin: auto;
+	align-items: center;
+	cursor: default;
+}
+.back-button-icon,
+.back-button-icon:visited {
+	font-size: 30px;
+	color: #bbb;
+}
+.back-button-text,
+.back-button-text:visited {
+	font-size: 15px;
+	font-weight: 900;
+	color: #999;
+}
+.back-button-icon:hover,
+.back-button-text:hover {
+	text-decoration: none;
 }
