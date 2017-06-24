@@ -46,7 +46,8 @@ function initPage(){
 		var fifthHtml = $.templates("#fifthTmpl").render(fifthData)
 		$(".cnt-cnt").append(fifthHtml);
 
-
+        chooseDate();
+        chooseTime();
 		ctrlNum();
 		Continue();
 		Back();
