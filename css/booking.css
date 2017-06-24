@@ -83,6 +83,7 @@
 .back-button-icon:hover,
 .back-button-text:hover {
 	text-decoration: none;
+	color: #999；
 }
 .third-title{
  	font-family: Montserrat-Light;
@@ -153,7 +154,69 @@
  }
  .forgot p{
  	color: #777;
- } 
+ }
+
+ .fourth-title,.fifth-title{
+ 	font-family: Montserrat-Light;
+ 	font-size: 30px;
+ 	color: #adadad;
+ 	margin: 20px 0;
+ }
+ .address1, .address2,.instructions,.procode  {
+    width: 100%;
+    margin-top: 15px;
+}
+ .address1in, .address2in, .provincein, .codein, .instructionsin {
+    height: 35px;
+    width: 100%;
+    border: 1px solid rgb(229, 229, 229);
+    margin-top: 2px;
+    font-size: 15px;
+}
+.instructionsin{
+	height: 115px;
+}
+.province, .code {
+	display: inline-block;
+	width: 40%;
+	margin-top: 15px;
+}
+.province {
+	float: left;
+}
+.code {
+	float: right;
+}
+.fifth-name,.fifth-num,.fifth-date-code,.fifth-billing,.fifth-gift-apply,.fifth-summary  {
+    width: 100%;
+    margin-top: 15px;
+}
+.fifth-date, .fifth-code ,.fifth-gift,.fifth-apply{
+	display: inline-block;
+	width: 45%;
+	margin-top: 15px;
+}
+.fifth-date,.fifth-gift{
+	float: left;
+}
+.fifth-code,.fifth-apply{
+	float: right;
+}
+.fifth-apply {
+	margin-top: 34px;
+	height: 35px;
+	background-color: #64d2a3;
+	color: #fff;
+	line-height: 35px;
+	font-family: chbold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.fifth-namein,.fifth-numin,.fifth-datein,.fifth-codein,.fifth-billingin,.fifth-giftin,.fifth-summaryin  {
+    height: 35px;
+    width: 100%;
+    border: 1px solid rgb(229, 229, 229);
+    margin-top: 2px;
+    font-size: 15px;
+}
 
 .first-title{
 	font-family: Montserrat-Light;
@@ -169,7 +232,7 @@
     padding-left: 2%;
     font-family: Montserrat-Light;
     font-size: 12px;
-    color: rgb(204,204,204); 
+    color: rgb(204,204,204);
 }
 
 ul, ol, li {

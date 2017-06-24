@@ -16,5 +16,26 @@
 		"choose1":"I'm a new customer",
 		"choose2":"I have an account",
 		"choose3":"Sign Up with Facebook"
+	},
+	"fourth":{
+		"title":"Location",
+		"address1":"Street address",
+		"address2":"Street address 2",
+		"province":"State/Province",
+		"code":"Zip/Post code",
+		"instructions":"Parking instructions"
+
+	},
+	"fifth":{
+		"title":"Check out",
+		"name":"Name on card",
+		"number":"Credit card number",
+		"date":"Expiration date",
+		"code":"Security code",
+		"billing":"Billing Zip/Postal code",
+		"gift":"Gift/Promo code",
+		"summary":"Order Summary",
+		"apply":"APPLY"
+
 	}
 }
