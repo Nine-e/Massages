@@ -189,15 +189,19 @@
 <script type="text/x-jsrender" id="firstTmpl">
     <div class="first">
         <div class="first-title">
-            {{:title}}
+            <p>{{:title}}</p>
         </div>
-        <div class="first-date">
-            <div class="choose-word">{{:chooseDate}}</div>
-            <input value="Today" type="text"></input>
-        </div>
-        <div class="first-time">
-            <div class="choose-word">{{:chooseTime}}</div>
-            <input value="5:00 PM" type="text"></input>
-        </div>
+        <section id="betOne">
+            <div class="bet">
+                <div class="firstname">
+                    <div class="bet-word">{{:choose1}}</div>
+                    <input class="firstnin" contentEditable="true" value="Today"></input>
+                </div>
+                <div class="lastname">
+                    <div class="bet-word">{{:choose2}}</div>
+                    <input class="lastnin" contentEditable="true" value="5:00 PM"></input>
+                </div>
+            </div>
+        </section>
     </div>
 </script>
