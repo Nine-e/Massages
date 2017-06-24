@@ -1,6 +1,6 @@
 .signin {
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
 }
 #bet, #betTmpl {
     width: 100%;
@@ -99,12 +99,18 @@
         .bet {
             width: 50%;
         }
+        .foot-container {
+            margin-top: 40px;
+        }
     }
     /*竖屏*/
     @media screen and (orientation: portrait)
     {
         .bet {
             width: 80%;
+        }
+        .foot-container {
+            /*margin-top: -200px;*/
         }
     }
 }

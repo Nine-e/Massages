@@ -7,8 +7,8 @@
 	},
 	"first":{
         "title":"Book my massage",
-        "chooseDate":"Choose a date",
-        "chooseTime":"Time"
+        "choose1":"Choose a date",
+        "choose2":"Time"
 	},
 	"third":{
 		"title1":"Create your account or sign in",
