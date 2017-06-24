@@ -14,8 +14,10 @@
 
 <link rel="stylesheet" type="text/css" href="css/signup.css">
 <link rel="stylesheet" type="text/css" href="css/signin.css">
+<link rel="stylesheet" type="text/css" href="css/calendar.css">
+<link rel="stylesheet" type="text/css" href="css/timepicki.css">
 
-<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
 
 </head>
 <body>
@@ -24,7 +26,9 @@
 	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="lib/jsrender/jsrender.js"></script>
 	<script type="text/javascript" src="js/booking.js"></script>
-	<script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>
+    <script type="text/javascript" src="js/timepicki.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>
 
@@ -195,11 +199,12 @@
             <div class="bet">
                 <div class="firstname">
                     <div class="bet-word">{{:choose1}}</div>
-                    <input class="firstnin" contentEditable="true" value="Today"></input>
+                    <input id="dt" class="firstnin" contentEditable="true" value="Today"></input>
+                    <div id="dd"></div>
                 </div>
                 <div class="lastname">
                     <div class="bet-word">{{:choose2}}</div>
-                    <input class="lastnin" contentEditable="true" value="5:00 PM"></input>
+                    <input id="di" class="lastnin" contentEditable="true" value="5:00 PM"></input>
                 </div>
             </div>
         </section>

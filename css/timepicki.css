@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@font-face{
+    font-family: "Lato";
+    src:url(../lib/Lato/Lato-Regular.ttf);
+}
+.ti_tx, .mi_tx, .mer_tx {
+	width: 100%;
+	margin: 10px 0;
+	text-align: center;
+}
+.time, .mins, .meridian, .time-mins{
+	width: 40px;
+	float: left;
+	font-size: 28px;
+	color: rgb(102,102,102);
+	font-family: "Lato";
+	font-weight: 500;
+}
+.time-mins {
+	float: left;
+	background: url(../img/time-mins.png) no-repeat;
+	margin-top: 35px;
+	padding: 20px;
+	margin-right: -10px;
+}
+.mins {
+	margin-right: 30px;
+}
+.prev, .next {
+	cursor: pointer;
+	padding: 18px;
+	width: 28%;
+	margin: auto;
+	background: url(../img/arrow.png) no-repeat;
+	border-radius: 5px;
+}
+.next {
+	background-position: 50% 200%;
+}
+.prev {
+	background-position: 50% -100%;
+}
+.time_pick {
+	position:relative;
+}
+.timepicker_wrap {
+	padding: 0 10px;
+	border-radius: 3px;
+	z-index: 2;
+	display:none;
+	width:210px;
+	height: 120px;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+	background:#ffffff;
+	float:left;
+	/*position:absolute;*/
+	top:0;
+	left: 0;
+}
