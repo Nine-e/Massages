@@ -34,6 +34,10 @@ function initPage(){
 		var firstHtml = $.templates("#firstTmpl").render(firstData)
 		$(".cnt-cnt").append(firstHtml);
 
+		secondData = data.second;
+		var secondHtml = $.templates("#secondTmpl").render(secondData)
+		$(".cnt-cnt").append(secondHtml);
+
 		thirdData = data.third;
 		var thirdHtml = $.templates("#thirdTmpl").render(thirdData)
 		$(".cnt-cnt").append(thirdHtml);
@@ -108,6 +112,7 @@ function ctrlNum(){
 			$(".agreeing-text").hide();
 			$(".back-button").hide();
 			$(".first").show();
+			$(".second").hide();
 			$(".third").hide();
 			$(".fourth").hide();
 			$(".fifth").hide();
@@ -120,6 +125,7 @@ function ctrlNum(){
 			$(".agreeing-text").show();
 			$(".back-button").show();
 			$(".first").hide();
+			$(".second").show();
 			$(".third").hide();
 			$(".fourth").hide();
 			$(".fifth").hide();
@@ -130,6 +136,7 @@ function ctrlNum(){
 			$(".cnt-num-third").siblings().css("color","#ccc");
 			$(".cnt-num-third").css("color","#696969");
 			$(".first").hide();
+			$(".second").hide();
 			$(".third").show();
 			$(".fourth").hide();
 			$(".fifth").hide();
@@ -140,6 +147,7 @@ function ctrlNum(){
 			$(".cnt-num-fourth").siblings().css("color","#ccc");
 			$(".cnt-num-fourth").css("color","#696969");
 			$(".first").hide();
+			$(".second").hide();
 			$(".third").hide();
 			$(".fourth").show();
 			$(".fifth").hide();
@@ -150,6 +158,7 @@ function ctrlNum(){
 			$(".cnt-num-fourth").siblings().css("color","#ccc");
 			$(".cnt-num-fourth").css("color","#696969");
 			$(".first").hide();
+			$(".second").hide();
 			$(".third").hide();
 			$(".fourth").hide();
 			$(".fifth").show();
