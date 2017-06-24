@@ -50,7 +50,9 @@ function initPage(){
 		ctrlNum();
 		Continue();
 		Back();
+		ctrlRadio();
 	});
+
 
 	$.getJSON("../json/signup.json", function(data) {
         betOneData = data.bet;
@@ -72,9 +74,9 @@ function initPage(){
 		var footHtml = $.templates("#footTmpl").render(footData)
 		$(".booking").append(footHtml);
 
-		ctrlRadio();
-
 	}); 
+
+	/*ctrlRadio();*/
 	
 }
 function Continue(){
@@ -132,6 +134,7 @@ function ctrlNum(){
 			$(".third").show();
 			$(".fourth").hide();
 			$(".fifth").hide();
+			$("#betTwo").hide();
 		}
 	if(num == 4){
 			$(".cnt-num-fourth").siblings().css("font-size","20px");
@@ -157,13 +160,17 @@ function ctrlNum(){
 }
 
 function ctrlRadio(){
+	$(".third-choose-customer").css("background-color","rgb(217,251,234)");
 	$("#customer").on("click",function(event){
-		$("#betOne").show();
+		$(".third-choose-customer").css("background-color","rgb(217,251,234)");
+		$(".third-choose-account").css("background-color","#fff");
+		$("#betOneOne").show();
 		$("#betTwo").hide();
 	});
 	$("#account").on("click",function(event){
-		$("#bettwo").show();
-		$("#betOne").hide();
+		$(".third-choose-customer").css("background-color","#fff");
+		$(".third-choose-account").css("background-color","rgb(217,251,234)");
+		$("#betOneOne").hide();
+		$("#betTwo").show();
 	});
-		
-}
+}		

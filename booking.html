@@ -120,17 +120,17 @@
             <p>{{:title2}}</p>
         </div>
         <div class="third-choose">
-        <form>
+        <!-- <form>
         <input type="radio" name="customer" id="customer" value="customer">  {{:choose1}}
         <br>
-        <input type="radio" name="account" id="account" value="account">  {{:choose2}}
-            <!--<div class="third-choose-customer">
-                <input type="radio" name="customer" value="customer">  {{:choose1}}
+        <input type="radio" name="account" id="account" value="account">  {{:choose2}} -->
+            <div class="third-choose-customer">
+                <input type="radio" name="choose" id="customer" value="customer" checked="checked">  {{:choose1}}
             </div>
             <div class="third-choose-account">
-                <input type="radio" name="account">  {{:choose2}}
-            </div> -->
-        </form>
+                <input type="radio" id="account" name="choose">  {{:choose2}}
+            </div> 
+        <!-- </form> -->
             <div class="third-choose-facebook">
                 <p>
                 <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -142,7 +142,7 @@
 </script>
 
 <script id="betOneTmpl" type="text/x-jsrender">
-        <section id="betOne">
+        <section id="betOneOne">
             <div class="bet">
                 <div class="firstname">
                     <div class="bet-word">{{:firstn}}</div>
