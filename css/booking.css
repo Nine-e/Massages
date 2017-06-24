@@ -3,44 +3,42 @@
 	font-family: Montserrat;
 	src:url(../lib/Montserrat-Light.otf);
 }
-@font-face{
-	font-family: Montserrat-Light;
-	src:url(../lib/Montserrat-ExtraLight.otf);
-}
-/**
- * 
- * @authors Nine-e (you@example.org)
- * @date    2017-06-22 16:21:43
- * @version $Id$
- */
 .cnt {
-	text-align: center;
-	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
+	font-family: Montserrat;
 	margin-top: 50px;
 }
 .cnt-num {
-		display: flex;
-		width: 400px;
-		height: 60px;
-		margin: auto;
-		padding: 0 30px;
-		font-size: 20px;
-		font-weight: 700;
-		color: #ccc;
-		border-top: 2px solid #ecfdf4;
-		border-bottom: 2px solid #ecfdf4;
-		justify-content:space-around;
-		align-items: center;
+	display: flex;
+	width: 400px;
+	height: 60px;
+	margin: auto;
+	padding: 0 30px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #ccc;
+	border-top: 2px solid #ecfdf4;
+	border-bottom: 2px solid #ecfdf4;
+	justify-content:space-around;
+	align-items: center;
 }
 @media(max-width:420px){
 	.cnt-num {
 		width: 100%;
-}
+    }
 }
 @media(min-width:420px){
-.cnt-num {
-	width: 400px;
+	.cnt-num {
+		width: 400px;
+	}
 }
+.cnt-title {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-size: 30px;
+    color: rgb(153, 153, 153);
+    font-weight: lighter;
+    font-family: chlight;
 }
 .continue-button {
 	width: 200px;
@@ -81,74 +79,4 @@
 .back-button-icon:hover,
 .back-button-text:hover {
 	text-decoration: none;
-}
-.third-title{
-	font-family: Montserrat-Light;
-	font-size: 30px;
-	color: #adadad;
-	margin: 20px 0;
-}
-.third-title p {
-	margin: 0;
-}
-/*mobile*/
-@media screen and (max-width: 750px) {
-    /*橫屏*/
-    @media screen and (orientation: landscape)
-    {
-        .third-choose div {
-            width: 40%;
-        }
-    }
-    /*竖屏*/
-    @media screen and (orientation: portrait)
-    {
-        .third-choose div {
-            width: 80%;
-        }
-    }
-}
-
-/*ipad*/
-@media screen and (max-width: 969px) and (min-width: 751px) {
-    .third-choose div {
-        width: 40%;
-    }
-}
-
-/*pc*/
-@media screen and (min-width: 970px) {
-    .third-choose div {
-        width: 20%;
-    }
-}
-.third-choose-customer ,
-.third-choose-account {
-	margin: auto;
-	height: 30px;
-	margin-top: 10px;
-	padding-left: 20px;
-	/*background-color: pink;*/
-	text-align: left;
-	line-height: 30px;
-}
-.third-choose-customer input,
-.third-choose-account input{
-	margin-right: 10px;
-}
-.third-choose-facebook{
-	margin: auto;
-	height: 30px;
-	margin-top: 10px;
-	border-radius: 7px;
-	background-color: #3c5996;
-	color: #fff;
-	text-align: center;
-	line-height: 30px;
-}
-.bet-word{
-	float: left;
-}
-.forgot p{
-	color: #777;
 }

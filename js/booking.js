@@ -10,7 +10,7 @@ var num=1;
 
 function initPage(){
 
-	$.getJSON("index.json",function(data){
+	$.getJSON("../json/common.json",function(data){
 
 		menuData = data.menu;
 		var menuHtml = $.templates("#menuTmpl").render(menuData)
@@ -39,6 +39,7 @@ function initPage(){
 		Continue();
 		Back();
 	});
+<<<<<<< HEAD
 
 	$.getJSON("../json/signup.json", function(data) {
         betOneData = data.bet;
@@ -53,6 +54,9 @@ function initPage(){
     });
 
 	$.getJSON("index.json",function(data){
+=======
+	$.getJSON("../json/common.json",function(data){
+>>>>>>> 8a6c08c71687a7fc292927da67303c944389fa57
 
 		footData = data.foot;
 		var footHtml = $.templates("#footTmpl").render(footData)

@@ -1,5 +1,13 @@
+@charset "UTF-8";
+@font-face{
+    font-family: "Lato";
+    src:url(../lib/Lato/Lato-Regular.ttf);
+}
+@font-face{
+    font-family: "LatoLight";
+    src:url(../lib/Lato/Lato-Light.ttf);
+}
 html,body {
-    font-family: "tahoma","sans-serif";
     height:100%;
     width:100%;
     margin: 0;
@@ -35,8 +43,11 @@ a {
     	margin-right: -10%;
     }
     .foot-message {
-    	font-size: 10px;
+    	font-size: 9px;
     	transform: scale(0.6);
+    }
+    .message-title {
+        font-size: 16px;
     }
     /*pages 竖屏*/
     @media screen and (orientation:portrait) {
@@ -48,8 +59,8 @@ a {
             padding-left: 3%;
         }
         .menu-bar {
-            height: 6%;
-            line-height: 80%;
+            height: 11%;
+            line-height: 300%;
         }
         .title-green {
             margin-left: 3%;
@@ -107,6 +118,9 @@ a {
     .foot-message {
     	font-size: 8px;
     }
+    .message-title {
+        font-size: 16px;
+    }
 }
 /** desktop **/
 @media screen and (min-width: 970px) {
@@ -121,13 +135,13 @@ a {
     .normal { 
     	width: 43%;
     	margin-left: 37%;
-    	font-size: 15px;
+    	font-size: 13px;
     }
     .normal span {
     	margin-right: 2%;
     }
     .sign-in {
-    	margin-left: 7%;
+    	margin-left: 6%;
     }
     .foot-container {
     	height: 320px;
@@ -135,19 +149,33 @@ a {
     .foot-message {
     	font-size: 12px;
     }
+    .message-title {
+        font-size: 18px;
+    }
 }
 .head {
 	display: flex;
 	flex-wrap: nowrap;
+    font-family: "Lato";
 }
 .head-title {
     color: rgb(102,209,163);
     text-align: center;
 }
+.title-lighter {
+    font-family: "LatoLight";
+    font-weight: 100;
+}
+.title-bold {
+    font-weight: 900;
+}
 .head-menu,.head-menu a{
 	color: rgb(153,153,153);
 }
-.sign-in {
+.head-menu a:hover {
+    font-weight: 900;
+}
+.sign-in a{
 	color: rgb(102,209,163);
 	margin-right: 0;
 }
@@ -162,6 +190,7 @@ a {
     height:100%;
     transform: translate(0,-2px);
     color: rgb(153,153,153);
+    font-family: "Lato";
     background-color: #ffffff;
 }
 .menu-container {
@@ -199,8 +228,15 @@ a {
     padding-left: 6%;
     border-bottom: 1px solid rgb(235,235,235);
 }
+.menu-bar:hover {
+    background-color: #cccccc;
+}
+.menu-bar a {
+    color: rgb(153,153,153);
+}
 .foot-container {
 	display: flex;
+    font-family: "Lato";
 	background-color: rgb(40,171,139);
 }
 .foot-message {

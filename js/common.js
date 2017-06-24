@@ -1,8 +1,8 @@
-/*$(initPage);
+$(initPage);
 
 function initPage(){
 
-	$.getJSON("index.json",function(data){
+	$.getJSON("../json/common.json",function(data){
 
 		menuData = data.menu;
 		var menuHtml = $.templates("#menuTmpl").render(menuData)
@@ -21,7 +21,7 @@ function initPage(){
 
 	}); 
 }
-*/
+
 function showMenu(){
     $('#showMenu').click(function() {
 	    $(".menu").show();

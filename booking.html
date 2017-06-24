@@ -9,10 +9,15 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/booking.css">
+<<<<<<< HEAD
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <link rel="stylesheet" type="text/css" href="css/signup.css">
 <link rel="stylesheet" type="text/css" href="css/signin.css">
+=======
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+>>>>>>> 8a6c08c71687a7fc292927da67303c944389fa57
 </head>
 <body>
     <div class="booking"></div>
@@ -20,7 +25,7 @@
 	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="lib/jsrender/jsrender.js"></script>
 	<script type="text/javascript" src="js/booking.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
 </body>
 </html>
 
@@ -32,16 +37,40 @@
 			<span class="cnt-num-third">3</span>
 			<span class="cnt-num-fourth">4</span>
 		</div>
+<<<<<<< HEAD
         <div class="cnt-cnt"></div>
 		<div class="cnt-message">
+=======
+		<div class="cnt-first">
+		    <div class="cnt-title">
+		    	{{:title}}
+		    </div>
+		    <div class="cnt-date">
+				<div class="choose-word">{{:chooseDate}}</div>
+				<input value="Today" type="date"></input>
+			</div>
+			<div class="cnt-time">
+				<div class="choose-word">{{:chooseTime}}</div>
+				<input class="passwordin" type="password" contentEditable="true"></input>
+			</div>
+		    <div class="cnt-message">
+				<div class="continue-button">CONTINUE</div>
+				<div class="agreeing-text">{{:agreeing}}</div>
+			</div>
+		</div>
+		<!--<div class="cnt-second">
+			
+		</div>-->
+		<!--<div class="cnt-message">
+>>>>>>> 8a6c08c71687a7fc292927da67303c944389fa57
 			<div class="continue-button">CONTINUE</div>
 			<div class="agreeing-text">{{:agreeing}}</div>
 			<div class="back-button">
-				<!-- <i class="glyphicon glyphicon-chevron-left"></i> -->
+				<i class="glyphicon glyphicon-chevron-left"></i>
 				<a class="back-button-icon"> < </a>
 				<a class="back-button-text"> Back </a>
 			</div>
-		</div>
+		</div>-->
 	</div>
 </script>
 
@@ -52,7 +81,10 @@
                 <div class="menu-title">
                     <div class="title-center">
                         <span>MENU</span>
-                        <span class="title-green">Mobile massages</span>
+                        <span class="title-green">
+                            <span class="title-lighter">Mobile</span>
+                            <span class="title-bold">massages</span>
+                        </span>
                         <i id="hideMenu" class="fa fa-times-circle-o"></i>
                     </div>
                 </div>
@@ -71,8 +103,8 @@
 <script type="text/x-jsrender" id="headTmpl">
 	<div class="head">
         <div class="head-title">
-    		<span>Mobile</span>
-    		<span>massages</span>
+    		<span class="title-lighter">Mobile</span>
+    		<span class="title-bold">massages</span>
         </div>
     	<div class="head-menu normal">
     	    <div class="normal-scale">
@@ -95,10 +127,13 @@
 <script type="text/x-jsrender" id="footTmpl">
     <div class="foot-container">
         <div class="foot-message">
-        	<p>{{:name}}</p><br>
-        	<p>{{:copyright}}</p>
-        	<p>{{:team}}</p>
-        	<p>{{:policy}}</p>
+        	<p class="message-title">
+                <span class="title-lighter">Mobile</span>
+                <span class="title-bold">massages</span>
+            </p><br>
+        	<p class="title-bold">{{:copyright}}</p>
+        	<p class="title-bold">{{:team}}</p>
+        	<p class="title-bold">{{:policy}}</p>
         </div>
     </div>
 </script>
