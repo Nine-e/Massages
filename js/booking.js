@@ -29,6 +29,10 @@ function initPage(){
 		cntData = data.cnt;
 		var cntHtml = $.templates("#cntTmpl").render(cntData)
 		$(".booking").append(cntHtml);
+        
+        firstData = data.first;
+		var firstHtml = $.templates("#firstTmpl").render(firstData)
+		$(".cnt-cnt").append(firstHtml);
 
 		thirdData = data.third;
 		var thirdHtml = $.templates("#thirdTmpl").render(thirdData)
@@ -92,6 +96,7 @@ function ctrlNum(){
 			$(".cnt-num-first").css("color","#696969");
 			$(".agreeing-text").hide();
 			$(".back-button").hide();
+			$(".first").show();
 			$(".third").hide();
 		}
 	if(num == 2){
@@ -101,6 +106,7 @@ function ctrlNum(){
 			$(".cnt-num-second").css("color","#696969");
 			$(".agreeing-text").show();
 			$(".back-button").show();
+			$(".first").hide();
 			$(".third").hide();
 		}
 	if(num == 3){
@@ -108,6 +114,7 @@ function ctrlNum(){
 			$(".cnt-num-third").css("font-size","30px");
 			$(".cnt-num-third").siblings().css("color","#ccc");
 			$(".cnt-num-third").css("color","#696969");
+			$(".first").hide();
 			$(".third").show();
 		}
 	if(num == 4){
@@ -115,6 +122,7 @@ function ctrlNum(){
 			$(".cnt-num-fourth").css("font-size","30px");
 			$(".cnt-num-fourth").siblings().css("color","#ccc");
 			$(".cnt-num-fourth").css("color","#696969");
+			$(".first").hide();
 			$(".third").hide();
 		}
     

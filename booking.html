@@ -38,36 +38,14 @@
 		</div>
         <div class="cnt-cnt"></div>
 		<div class="cnt-message">
-		<div class="cnt-first">
-		    <div class="cnt-title">
-		    	{{:title}}
-		    </div>
-		    <div class="cnt-date">
-				<div class="choose-word">{{:chooseDate}}</div>
-				<input value="Today" type="date"></input>
-			</div>
-			<div class="cnt-time">
-				<div class="choose-word">{{:chooseTime}}</div>
-				<input class="passwordin" type="password" contentEditable="true"></input>
-			</div>
-		    <div class="cnt-message">
-				<div class="continue-button">CONTINUE</div>
-				<div class="agreeing-text">{{:agreeing}}</div>
-			</div>
-		</div>
-		<!--<div class="cnt-second">
-			
-		</div>-->
-		<!--<div class="cnt-message">
->>>>>>> 8a6c08c71687a7fc292927da67303c944389fa57
 			<div class="continue-button">CONTINUE</div>
 			<div class="agreeing-text">{{:agreeing}}</div>
 			<div class="back-button">
-				<i class="glyphicon glyphicon-chevron-left"></i>
+				<!--<i class="glyphicon glyphicon-chevron-left"></i>-->
 				<a class="back-button-icon"> < </a>
 				<a class="back-button-text"> Back </a>
 			</div>
-		</div>-->
+		</div>
 	</div>
 </script>
 
@@ -159,7 +137,6 @@
                 {{:choose3}}
                 </p>
             </div>
-            -------------------------------------------
         </div>
     </div>
 </script>
@@ -207,4 +184,20 @@
                 </a>
             </div>
         </section>
+</script>
+
+<script type="text/x-jsrender" id="firstTmpl">
+    <div class="first">
+        <div class="first-title">
+            {{:title}}
+        </div>
+        <div class="first-date">
+            <div class="choose-word">{{:chooseDate}}</div>
+            <input value="Today" type="text"></input>
+        </div>
+        <div class="first-time">
+            <div class="choose-word">{{:chooseTime}}</div>
+            <input value="5:00 PM" type="text"></input>
+        </div>
+    </div>
 </script>
