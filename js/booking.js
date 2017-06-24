@@ -34,6 +34,10 @@ function initPage(){
 		var firstHtml = $.templates("#firstTmpl").render(firstData)
 		$(".cnt-cnt").append(firstHtml);
 
+		secondData = data.second;
+		var secondHtml = $.templates("#secondTmpl").render(secondData)
+		$(".cnt-cnt").append(secondHtml);
+
 		thirdData = data.third;
 		var thirdHtml = $.templates("#thirdTmpl").render(thirdData)
 		$(".cnt-cnt").append(thirdHtml);
@@ -46,7 +50,8 @@ function initPage(){
 		var fifthHtml = $.templates("#fifthTmpl").render(fifthData)
 		$(".cnt-cnt").append(fifthHtml);
 
-
+        chooseDate();
+        chooseTime();
 		ctrlNum();
 		Continue();
 		Back();
@@ -75,8 +80,6 @@ function initPage(){
 		$(".booking").append(footHtml);
 
 	}); 
-
-	/*ctrlRadio();*/
 	
 }
 function Continue(){
@@ -109,6 +112,7 @@ function ctrlNum(){
 			$(".agreeing-text").hide();
 			$(".back-button").hide();
 			$(".first").show();
+			$(".second").hide();
 			$(".third").hide();
 			$(".fourth").hide();
 			$(".fifth").hide();
@@ -121,6 +125,7 @@ function ctrlNum(){
 			$(".agreeing-text").show();
 			$(".back-button").show();
 			$(".first").hide();
+			$(".second").show();
 			$(".third").hide();
 			$(".fourth").hide();
 			$(".fifth").hide();
@@ -131,6 +136,7 @@ function ctrlNum(){
 			$(".cnt-num-third").siblings().css("color","#ccc");
 			$(".cnt-num-third").css("color","#696969");
 			$(".first").hide();
+			$(".second").hide();
 			$(".third").show();
 			$(".fourth").hide();
 			$(".fifth").hide();
@@ -142,6 +148,7 @@ function ctrlNum(){
 			$(".cnt-num-fourth").siblings().css("color","#ccc");
 			$(".cnt-num-fourth").css("color","#696969");
 			$(".first").hide();
+			$(".second").hide();
 			$(".third").hide();
 			$(".fourth").show();
 			$(".fifth").hide();
@@ -152,6 +159,7 @@ function ctrlNum(){
 			$(".cnt-num-fourth").siblings().css("color","#ccc");
 			$(".cnt-num-fourth").css("color","#696969");
 			$(".first").hide();
+			$(".second").hide();
 			$(".third").hide();
 			$(".fourth").hide();
 			$(".fifth").show();
@@ -173,4 +181,27 @@ function ctrlRadio(){
 		$("#betOneOne").hide();
 		$("#betTwo").show();
 	});
-}		
+		
+}
+
+function chooseDate(){
+	$('#dd').calendar({
+        trigger: '#dt',
+        zIndex: 999,
+		format: 'yyyy-mm-dd',
+        onSelected: function (view, date, data) {
+            console.log('event: onSelected')
+        },
+        onClose: function (view, date, data) {
+            console.log('event: onClose')
+            console.log('view:' + view)
+            console.log('date:' + date)
+            console.log('data:' + (data || 'None'));
+        }
+    });
+}
+
+function chooseTime(){
+	$("#di").timepicki();
+}
+}

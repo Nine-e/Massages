@@ -10,6 +10,12 @@
         "choose1":"Choose a date",
         "choose2":"Time"
 	},
+	"second":{
+		"title":"Customize my massage",
+		"choose1":"Choose a session",
+        "choose2":"Massage length",
+        "choose3":"Massage type"
+	},
 	"third":{
 		"title1":"Create your account or sign in",
 		"title2":"to your existing account to continue",
