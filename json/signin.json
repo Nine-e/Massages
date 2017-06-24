@@ -1,4 +1,14 @@
 {
+  "head":{
+    "home":"Home",
+    "booking":"Booking",
+    "therapist":"Therapist",
+    "style":"Style",
+    "pricing":"Pricing",
+    "faq":"FAQ",
+    "contactUs":"Contact Us",
+    "signIn":"Sign In"
+  },
   "bet": {
     "title": "Login",
     "address": "Email address",
@@ -6,6 +16,10 @@
     "facebook": "Sign in with Facebook",
     "forgot": "Forgot Password?",
     "signin": "SIGN IN"
+  },
+  "foot":{
+    "copyright":"©2017MOBILE MASSAGES",
+    "team":"TEAMS & CONDITIONS",
+    "policy":"PRIVACY POLICY"
   }
-
 }
