@@ -39,7 +39,6 @@ function initPage(){
 		Continue();
 		Back();
 	});
-<<<<<<< HEAD
 
 	$.getJSON("../json/signup.json", function(data) {
         betOneData = data.bet;
@@ -53,11 +52,8 @@ function initPage(){
         $(".third").append(betTwoHtml);
     });
 
-	$.getJSON("index.json",function(data){
-=======
-	$.getJSON("../json/common.json",function(data){
->>>>>>> 8a6c08c71687a7fc292927da67303c944389fa57
 
+	$.getJSON("../json/common.json",function(data){
 		footData = data.foot;
 		var footHtml = $.templates("#footTmpl").render(footData)
 		$(".booking").append(footHtml);
