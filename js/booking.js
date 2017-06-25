@@ -25,7 +25,7 @@ function initPage(){
         
 
 	}); 
-	$.getJSON("booking.json",function(data){
+	$.getJSON("../json/booking.json",function(data){
 		cntData = data.cnt;
 		var cntHtml = $.templates("#cntTmpl").render(cntData)
 		$(".booking").append(cntHtml);
@@ -49,7 +49,8 @@ function initPage(){
 		fifthData = data.fifth;
 		var fifthHtml = $.templates("#fifthTmpl").render(fifthData)
 		$(".cnt-cnt").append(fifthHtml);
-
+        
+        chooseTherapist();
         chooseDate();
         chooseTime();
 		ctrlNum();
@@ -70,8 +71,6 @@ function initPage(){
         var betTwoHtml = $.templates("#betTwoTmpl").render(betTwoData);
         $(".third").append(betTwoHtml);
     });
-
-
 
 
 	$.getJSON("../json/common.json",function(data){
@@ -204,4 +203,15 @@ function chooseDate(){
 function chooseTime(){
 	$("#di").timepicki();
 }
+
+function chooseTherapist(){
+
+	$(".imgForEach").click(function(event) {
+		$(this).find(".imgBorder").css("display","block");
+		$(this).siblings().find(".imgBorder").css("display","none");
+		var index = $(this).val();
+        console.log(index);
+		$(".messageBox").show();
+	});
+
 }
