@@ -24,7 +24,7 @@ function initPage(){
 
 	}); 
 
-	$.getJSON("sucorder.json",function(data){
+	$.getJSON("../json/sucorder.json",function(data){
 		cntData = data.cnt;
 		var cntHtml = $.templates("#cntTmpl").render(cntData)
 		$(".sucorder").append(cntHtml);
