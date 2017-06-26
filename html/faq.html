@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet"  href="../lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/faq.css" rel="stylesheet">
+
+    <title>FAQ</title>
+</head>
+<body onload="load()">
+    <div class="commonhead"></div>
+    <div class="FAQ"></div>
+    <div class="commonfoot"></div>
+</body>
+
+<script type="text/javascript" src = "../lib/jquery/jquery-3.2.1.js"></script>
+<script type="text/javascript" src = "../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/jsrender/jsrender.js"></script>
+<script type="text/javascript" src = "../js/commonhead.js"></script>
+<script type="text/javascript" src = "../js/commonfoot.js"></script>
+<script type="text/javascript" src = "../js/faq.js"></script>
+</html>
+<script type="text/x-jsrender" id="menuTmpl">
+    <div class="massagesHide"></div>
+    <div class="menu">
+        <div class="menu-container">
+            <div class="menu-title">
+                <div class="title-center">
+                    <span>MENU</span>
+                    <span class="title-green">
+                        <span class="title-lighter">Mobile</span>
+                        <span class="title-bold">massages</span>
+                    </span>
+                    <i id="hideMenu" class="fa fa-times-circle-o"></i>
+                </div>
+            </div>
+            <div class="menu-bar"><a href="#">Home</a></div>
+            <div class="menu-bar"><a href="#">Booking</a></div>
+            <div class="menu-bar"><a href="#">Therapists</a></div>
+            <div class="menu-bar"><a href="#">Styles</a></div>
+            <div class="menu-bar"><a href="#">Massages description</a></div>
+            <div class="menu-bar"><a href="#">FAQ</a></div>
+            <div class="menu-bar"><a href="#">Contact us</a></div>
+            <div class="menu-bar no-border"><a href="#">Login</a></div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-jsrender" id="headTmpl">
+    <div class="head">
+        <div class="head-title">
+            <span class="title-lighter">Mobile</span>
+            <span class="title-bold">massages</span>
+        </div>
+        <div class="head-menu normal">
+            <div class="normal-scale">
+                <span><a href="#">{{:home}}</a></span>
+                <span><a href="#">{{:booking}}</a></span>
+                <span><a href="#">{{:therapist}}</a></span>
+                <span><a href="#">{{:style}}</a></span>
+                <span><a href="#">{{:pricing}}</a></span>
+                <span><a href="#">{{:faq}}</a></span>
+                <span><a href="#">{{:contactUs}}</a></span>
+                <span class="sign-in"><a  href="#">{{:signIn}}</a></span>
+            </div>
+        </div>
+        <div class="head-menu dropdown">
+            <i id="showMenu" class="fa fa-bars"></i>
+        </div>
+    </div>
+</script>
+
+<script id="faqTmpl" type="text/x-jsrender">
+    <section id="faq">
+        <div class="faq">
+            <p class="faq-title">{{:line1}}</p>
+            <p class="faq-title">{{:line2}}</p>
+            <p class="pages-title">{{:line3}}</p>
+            <div class="faqContainer">
+                <div class="faqForEach">
+                    <p class="question">{{:question1}}</p>
+                    <p class="answer">{{:answer1}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question">{{:question2}}</p>
+                    <p class="answer">{{:answer2}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question">{{:question3}}</p>
+                    <p class="answer">{{:answer3}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question">{{:question4}}</p>
+                    <p class="answer">{{:answer4}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question">{{:question5}}</p>
+                    <p class="answer">{{:answer5}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question">{{:question6}}</p>
+                    <p class="answer">{{:answer6}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question">{{:question7}}</p>
+                    <p class="answer">{{:answer7}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question">{{:question8}}</p>
+                    <p class="answer">{{:answer8}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question">{{:question9}}</p>
+                    <p class="answer wide">{{:answer9Line1}}</p>
+                    <p class="answer narrow">{{:answer9Line2}}</p>
+                    <p class="answer narrow">{{:answer9Line3}}</p>
+                    <p class="answer narrow">{{:answer9Line4}}</p>
+                    <p class="answer narrow">{{:answer9Line5}}</p>
+                    <p class="answer narrow">{{:answer9Line6}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question">{{:question10}}</p>
+                    <p class="answer">{{:answer10}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question">{{:question11}}</p>
+                    <p class="answer">{{:answer11}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question">{{:question12}}</p>
+                    <p class="answer">{{:answer12}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question">{{:question13}}</p>
+                    <p class="answer">{{:answer13}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</script>
+
+<script type="text/x-jsrender" id="footTmpl">
+    <div class="foot-container">
+        <div class="foot-message">
+        	<p class="message-title">
+                <span class="title-lighter">Mobile</span>
+                <span class="title-bold">massages</span>
+            </p><br>
+        	<p class="title-bold">{{:copyright}}</p>
+        	<p class="title-bold">{{:team}}</p>
+        	<p class="title-bold">{{:policy}}</p>
+        </div>
+    </div>
+</script>

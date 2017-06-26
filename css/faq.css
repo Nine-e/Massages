@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@font-face {
+    font-family: chbold;
+    src: url(../lib/Montserrat-Bold.otf);
+}
+@font-face {
+    font-family: chlight;
+    src: url(../lib/Montserrat-Light.otf);
+}
+@font-face{
+    font-family: "LatoLight";
+    src:url(../lib/Lato/Lato-Light.ttf);
+}
+.FAQ {
+    width: 100%;
+    /*height: 100%;*/
+}
+#faq, #faqTmpl {
+    width: 100%;
+}
+.faq {
+    width: 20%;
+    display: flex;
+    margin: 20px auto 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.faq-title {
+    margin-top: -50px;
+    font-size: 35px;
+    color: rgb(102,209,165);
+    font-weight: lighter;
+    font-family: chlight;
+}
+.pages-title {
+    display: none;
+    font-size: 20px;
+    color: rgb(154,154,154);
+    font-weight: lighter;
+    font-family: LatoLight;
+}
+.faqContainer {
+    margin-top: 10%;
+    width: 100%;
+    margin-bottom: 10%;
+}
+.faqForEach {
+    margin-bottom: 2%;
+}
+.question {
+    color: rgb(102,209,165);
+    font-family: LatoLight;
+    font-weight: 900;
+}
+.answer {
+    font-size: 1.0vw;
+    color: rgb(101,101,101);
+    text-align: justify;
+    font-family: LatoLight;
+    font-weight: 700;
+}
+.wide {
+    margin-bottom: 25px;
+}
+.narrow {
+    margin-top: -10px;
+}
+/*mobile*/
+@media screen and (max-width: 750px) {
+    /*橫屏*/
+    @media screen and (orientation: landscape)
+    {
+        .faq {
+            width: 80%;
+        }
+        .faq-title {
+            margin-top: -15px;
+        }
+        .question {
+            font-size: 13px;
+        }
+        /*.answer {
+            font-size: 4vw;
+            line-height: 12px;
+        }*/
+    }
+    /*竖屏*/
+    @media screen and (orientation: portrait)
+    {
+        .faq {
+            width: 100%;
+        }
+        .faq-title {
+            display: none;
+        }
+        .pages-title {
+            display: block;
+        }
+        .faqContainer {
+            margin-top: 10%;
+            width: 80%;
+        }
+        .answer {
+            font-size: 2vw;
+            color: rgb(51,51,51);
+            line-height: 3vw;
+            font-weight: 900;
+        }
+    }
+}
+
+/*ipad*/
+@media screen and (max-width: 969px) and (min-width: 751px) {
+    .faq {
+        width: 70%;
+    }
+    .faq-title {
+        margin-top: -10px;
+    }
+    .question {
+        font-size: 16px;
+    }
+}
+
+/*pc*/
+@media screen and (min-width: 970px) {
+    .faq {
+        width: 60%;
+    }
+    .faq-title {
+        margin-top: -5px;
+    }
+    .question {
+        font-size: 20px;
+    }
+    .answer {
+        font-size: 1.2vw;
+        line-height: 16px;
+    }
+}
