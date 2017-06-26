@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>partofzyx</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../css/price.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+</head>
+<body>
+	<div class="commonhead"></div>
+	<div class="price">
+		<h1 class="price-title">PRICING</h1>
+	</div>
+	<div class="buy-button">BOOK NOW</div>
+	<div class="commonfoot"></div>
+	<script id="price-inf" type="text/x-jsrender">
+		<section>
+		    {{for data}}
+			<h2 class="doctor">{{:title}}</h2>
+			{{for item}}
+			<div class="item-box">
+				<div class="item">{{:time}}
+				<p class="price-cnt">{{:price}}</p>
+				</div>
+			</div>
+			{{/for}}
+			{{/for}}
+		</section>
+	</script>
+	<script type="text/x-jsrender" id="menuTmpl">
+	    <div class="massagesHide"></div>
+	    <div class="menu">
+	        <div class="menu-container">
+	            <div class="menu-title">
+	                <div class="title-center">
+	                    <span>MENU</span>
+	                    <span class="title-green">
+	                        <span class="title-lighter">Mobile</span>
+	                        <span class="title-bold">massages</span>
+	                    </span>
+	                    <i id="hideMenu" class="fa fa-times-circle-o"></i>
+	                </div>
+	            </div>
+	            <div class="menu-bar"><a href="#">Home</a></div>
+	            <div class="menu-bar"><a href="#">Booking</a></div>
+	            <div class="menu-bar"><a href="#">Therapists</a></div>
+	            <div class="menu-bar"><a href="#">Styles</a></div>
+	            <div class="menu-bar"><a href="#">Massages description</a></div>
+	            <div class="menu-bar"><a href="#">FAQ</a></div>
+	            <div class="menu-bar"><a href="#">Contact us</a></div>
+	            <div class="menu-bar no-border"><a href="#">Login</a></div>
+	        </div>
+	    </div>
+	</script>
+
+	<script type="text/x-jsrender" id="headTmpl">
+		<div class="head">
+	        <div class="head-title">
+	    		<span class="title-lighter">Mobile</span>
+	    		<span class="title-bold">massages</span>
+	        </div>
+	    	<div class="head-menu normal">
+	    	    <div class="normal-scale">
+	    	    	<span><a href="#">{{:home}}</a></span>
+					<span><a href="#">{{:booking}}</a></span>
+					<span><a href="#">{{:therapist}}</a></span>
+					<span><a href="#">{{:style}}</a></span>
+					<span><a href="#">{{:pricing}}</a></span>
+					<span><a href="#">{{:faq}}</a></span>
+					<span><a href="#">{{:contactUs}}</a></span>
+					<span class="sign-in"><a  href="#">{{:signIn}}</a></span>
+	    	    </div>
+	    	</div>
+	    	<div class="head-menu dropdown">
+				<i id="showMenu" class="fa fa-bars"></i>
+			</div>
+		</div>
+	</script>
+
+	<script type="text/x-jsrender" id="footTmpl">
+	    <div class="foot-container">
+	        <div class="foot-message">
+	        	<p class="message-title">
+	                <span class="title-lighter">Mobile</span>
+	                <span class="title-bold">massages</span>
+	            </p><br>
+	        	<p class="title-bold">{{:copyright}}</p>
+	        	<p class="title-bold">{{:team}}</p>
+	        	<p class="title-bold">{{:policy}}</p>
+	        </div>
+	    </div>
+	</script>
+	<script type="text/javascript" src="../lib/jquery/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="../lib/jsrender/jsrender.js"></script>
+	<script type="text/javascript" src="../js/commonhead.js"></script>
+	<script type="text/javascript" src="../js/commonfoot.js"></script>
+	<script type="text/javascript" src="../js/price.js"></script>
+</body>
+</html>

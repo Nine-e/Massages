@@ -89,6 +89,11 @@ function Continue(){
 		/*console.log(num);*/
 		ctrlNum();
 });
+	$(".book-button").click(function(){
+		num++;
+		/*console.log(num);*/
+		ctrlNum();
+});
 }
 
 function Back(){
@@ -117,6 +122,9 @@ function ctrlNum(){
 			$(".third").hide();
 			$(".fourth").hide();
 			$(".fifth").hide();
+			$(".continue-button").show();
+			$(".agreeing-text").show();
+			$(".book-button").hide();
 			}
 	if(num == 2){
 			$(".cnt-num-second").siblings().css("font-size","20px");
@@ -130,6 +138,9 @@ function ctrlNum(){
 			$(".third").hide();
 			$(".fourth").hide();
 			$(".fifth").hide();
+			$(".continue-button").show();
+			$(".agreeing-text").show();
+			$(".book-button").hide();
 		}
 	if(num == 3){
 			$(".cnt-num-third").siblings().css("font-size","20px");
@@ -141,8 +152,11 @@ function ctrlNum(){
 			$(".third").show();
 			$(".fourth").hide();
 			$(".fifth").hide();
-			console.log("choose");
-			console.log(choose);
+			$(".continue-button").show();
+			$(".agreeing-text").show();
+			$(".book-button").hide();
+			/*console.log("choose");
+			console.log(choose);*/
 			if(choose==1) {
 				$("#betOneOne").show();
 				$("#betTwo").hide();
@@ -162,6 +176,10 @@ function ctrlNum(){
 			$(".third").hide();
 			$(".fourth").show();
 			$(".fifth").hide();
+			$(".continue-button").hide();
+			$(".agreeing-text").hide();
+			
+			$(".book-button").show();
 		}
 	if(num == 5){
 			$(".cnt-num-fourth").siblings().css("font-size","20px");
@@ -173,6 +191,12 @@ function ctrlNum(){
 			$(".third").hide();
 			$(".fourth").hide();
 			$(".fifth").show();
+			$(".continue-button").hide();
+			$(".agreeing-text").hide();
+			$(".book-button").show();
+		}
+		if(num == 6) {
+			location.href = "../html/sucorder.html";
 		}
     
 }
@@ -226,9 +250,17 @@ function chooseTherapist(){
 	$(".imgForEach").click(function(event) {
 		$(this).find(".imgBorder").css("display","block");
 		$(this).siblings().find(".imgBorder").css("display","none");
-		var index = $(this).val();
-        console.log(index);
-		$(".messageBox").show();
+		var index = $(this).find("input").val();
+
+		$.getJSON("../json/booking.json",function(data){
+
+			messageData = data.message;
+			var messageHtml = $.templates("#messageTmpl").render(messageData[index-1]);
+			$(".messageBox").empty();
+			$(".imgContainer").append(messageHtml); 
+            $(".messageBox").show();
+	    }); 
+
 	});
 
 }

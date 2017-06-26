@@ -43,11 +43,12 @@
         <div class="cnt-cnt"></div>
 		<div class="cnt-message">
 			<div class="continue-button">CONTINUE</div>
+            <div class="book-button">BOOK MY MASSAGE</div>
 			<div class="agreeing-text">{{:agreeing}}</div>
 			<div class="back-button">
 				<!--<i class="glyphicon glyphicon-chevron-left"></i>-->
-				<a class="back-button-icon"> < </a>
-				<a class="back-button-text"> Back </a>
+				<p class="back-button-icon"> < </p>
+				<p class="back-button-text"> Back </p>
 			</div>
 		</div>
 	</div>
@@ -141,6 +142,11 @@
                 {{:choose3}}
                 </p>
             </div>
+        </div>
+        <div class="third-line">
+            <div class="third-line-left"></div>
+            <p class="third-line-middle">or</p>
+            <div class="third-line-right"></div>
         </div>
     </div>
 </script>
@@ -278,8 +284,17 @@
                 <div class="fifth-apply">{{:apply}}</div>
                 </div>
                 <div class="fifth-summary">
-                    <div class="bet-word">{{:summary}}</div>
-                    <input class="fifth-summaryin" contentEditable="true"></input>
+                    <div class="bet-word">{{:summary}}</div><br>
+                    <div class="fifth-summaryin" contentEditable="false">
+                        <div class="fifth-summaryin-item">{{:item1}}</div>
+                        <div class="fifth-summaryin-item">{{:item2}}</div>
+                        <div class="fifth-summaryin-item">{{:item3}}</div>
+                        <div class="fifth-summaryin-item">{{:item4}}</div>
+                        <div class="fifth-summaryin-total">
+                            <p class="fifth-summaryin-total-text">{{:total}}</p>
+                            <p class="fifth-summaryin-total-money">{{:money}}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             </section>
@@ -338,16 +353,22 @@
         {{/for}}
         <div class="imgContainer">
             {{for imgContainer}}
-            <div class="imgForEach" value="{{:index}}">
+            <div class="imgForEach">
                 <div class="imgBorder"></div>
                 <img src="{{:img}}">
                 <p>{{:name}}</p>
+                <input type="text" value="{{:index}}">
             </div>
             {{/for}}
         </div>
+    </div>
+</script>
+
+<script type="text/x-jsrender" id="messageTmpl">
+    <div class="message">
         <div class="messageBox">
             <p class="message-title">{{:title}}</p>
             <p class="message-content">{{:content}}</p>
         </div>
-    </div>
+    </div> 
 </script>

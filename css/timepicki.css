@@ -3,6 +3,18 @@
     font-family: "Lato";
     src:url(../lib/Lato/Lato-Regular.ttf);
 }
+.timepicker_wrap {
+	display:none;
+	position:absolute;
+	z-index: 2;
+	padding: 0 10px;
+	margin: 355px auto 0;
+	width:210px;
+	height: 120px;
+	border-radius: 3px;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+	background:#ffffff;
+}
 .ti_tx, .mi_tx, .mer_tx {
 	width: 100%;
 	margin: 10px 0;
@@ -39,21 +51,4 @@
 }
 .prev {
 	background-position: 50% -100%;
-}
-.time_pick {
-	position:relative;
-}
-.timepicker_wrap {
-	padding: 0 10px;
-	border-radius: 3px;
-	z-index: 2;
-	display:none;
-	width:210px;
-	height: 120px;
-	box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
-	background:#ffffff;
-	float:left;
-	/*position:absolute;*/
-	top:0;
-	left: 0;
 }
