@@ -31,7 +31,7 @@
     color: rgb(153, 153, 153);
     /*font-weight: bold;*/
     /*font-family: chlight;*/
-    font-family: "Lato", "sans-serif";
+    font-family: "Lato";
 }
 .bet-titlesmall {
     color: rgb(110,210,165);
@@ -39,66 +39,62 @@
 }
 
 .therapistbtn {
-    width: 20%;
     height: 35px;
-    margin-top: 150px;
+    margin-top: 100px;
+    margin-bottom:100px;
     display: flex;
     background: rgb(100,210,163);
     color: #fff;
     font-weight: bold;
     justify-content: center;
+    align-items:center;
     line-height: 35px;
     font-family: "Lato";
     cursor: pointer;
 }
+.therapistbtn>p {
+    margin:0;
+}
 .therapister {
-    width: 90vw;
     display: flex;
     margin: auto;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .element {
-    /*width: 34vw;*/
-    /*height: 12vw;*/
-    width: 478px;
-    height: 182px;
-    margin: auto;
-    /*margin-top: 20px;*/
+    /*margin: auto;*/
+    margin-top: 20px;
     display: flex;
+    /*border: 1px solid #000;*/
 }
 .headimg {
-    width: 148px;
-    height: 180px;
+    width: 33%;
+    height: 100%;
     border: 1px solid rgb(160, 160, 160);
 }
 .element-message {
-    /*width: 66.7%;*/
     margin-left: 8px;
-
+    width:66.67%;
+    /*border: 1px solid #000;*/
 }
 .name {
-    font-size: 15px;
     margin-top: -5px;
     color: rgb(110,210,165);
     font-weight: bold;
-    /*line-height: 20px;*/
 }
 .message {
-    /*width: 100%;*/
-    margin-top: 0;
-    font-size: 10px;
+    width: 100%;
+    /*border:1px solid #000;*/
     margin-top: 4px;
-    /*display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;*/
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
+    -ms-hyphens: auto;
     hyphens: auto;
+    word-wrap: break-word;
     text-align: justify;
     font-family: "Lato";
-
+    font-size: 0.6rem;
 }
 input {
     display: none;
@@ -109,33 +105,82 @@ input {
 @media screen and (max-width: 750px) {
     /*橫屏*/
     @media screen and (orientation: landscape) {
-
+        .therapister {
+            width: 100vw;
+        }
+        .element {
+            width: 50vw;
+            height:20vw;
+            margin-top:20px;
+            transform: scale(0.8, 0.8);
+            line-height:60%
+        }
+        .message {
+            font-weight: bold;
+            font-size:0.2em;
+            letter-spacing: 85%;
+            /*margin-top:-3px;*/
+        }
+        .therapistbtn {
+            width: 33.33%;
+            font-size:75%;
+        }
+        .bet-title1 {
+            margin-top:0;
+            font-size:19px;
+        }
+        .name {
+            font-size:11px;
+        }
     }
     /*竖屏*/
     @media screen and (orientation: portrait) {
-        /*.therapister {
-             width: 90vw;
-         }
-         .element {
-             width: 90vw；
-             height: 1vw;
-         }
-         .name {
-             font-size: 1.1em;
-         }
-         .message {
-             font-size: 0.5em;
-         }*/
+        .therapister {
+            width: 100vw;
+        }
+        .element {
+            width: 100vw;
+            height:40vw;
+            margin-top:20px;
+            transform: scale(0.95, 0.95);
+            line-height:70%
+        }
+        .message {
+            font-weight: bold;
+            font-size:0.2em;
+            letter-spacing: 85%;
+            /*margin-top:-3px;*/
+        }
+        .therapistbtn {
+            width: 80%;
+            font-size:75%;
+        }
+        .bet-title1 {
+            margin-top:0;
+            font-size:19px;
+        }
     }
 }
 
 /*ipad*/
 @media screen and (max-width: 1024px) and (min-width: 751px) {
     .therapister {
-        width: 100vw;
+        width: 95vw;
     }
     .element {
-        transform: scale(0.6,0.6);
+        width: 46vw;
+        height:19vw;
+        margin-top:40px;
+        transform: scale(0.8, 0.8);
+    }
+    .message {
+        font-weight: bold;
+        font-size:0.5rem;
+        margin-top:-3px;
+    }
+    .therapistbtn {
+        width: 25%;
+        font-size:75%;
     }
 }
 
@@ -145,9 +190,17 @@ input {
         width: 75vw;
     }
     .element {
-        /*width: 34vw;*/
-        /*height: 12vw;*/
-        transform: scale(0.9,0.9);
+        width: 34vw;
+        height:14vw;
+    }
+    .message {
+        /*width:30vw;*/
+        font-weight: bold;
+    }
+    .therapistbtn {
+        width: 20%;
+        height:50px;
+        font-size: 18px;
     }
 }
 /*transform: scale(0.1,0.1);*/
