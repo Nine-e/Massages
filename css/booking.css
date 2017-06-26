@@ -344,6 +344,9 @@ ul, ol, li {
     color: rgb(100,210,163);
     font-size: 16px;
 }
+.imgForEach input {
+	display: none;
+}
 .messageBox {
 	display: none;
 	width: 444px;

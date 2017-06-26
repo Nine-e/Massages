@@ -43,7 +43,7 @@
             startWeek: 0,
 
             // 星期格式
-            weekArray: ['日', '一', '二', '三', '四', '五', '六'],
+            weekArray: ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'],
 
             // 设置选择范围
             // 格式：[开始日期, 结束日期]
@@ -120,8 +120,8 @@
             '<div class="calendar-views">',
             '<div class="view view-date">',
             '<div class="calendar-hd">',
-            '<a href="javascript:;" data-calendar-display-date class="calendar-display">',
-            '{yyyy}/<span class="m">{mm}</span>',
+            '<a data-calendar-display-date class="calendar-display">',
+            '{yyyy}<span class="m">{mm}</span>',
             '</a>',
             '<div class="calendar-arrow">',
             '<span class="prev" title="上一月" data-calendar-arrow-date>{prev}</span>',
@@ -133,19 +133,8 @@
             '<ul class="date-items"></ul>',
             '</div>',
             '</div>',
-            '<div class="view view-month">',
-            '<div class="calendar-hd">',
-            '<a href="javascript:;" data-calendar-display-month class="calendar-display">{yyyy}</a>',
-            '<div class="calendar-arrow">',
-            '<span class="prev" title="上一年" data-calendar-arrow-month>{prev}</span>',
-            '<span class="next" title="下一年" data-calendar-arrow-month>{next}</span>',
             '</div>',
-            '</div>',
-            '<ol class="calendar-ct month-items">{month}</ol>',
-            '</div>',
-            '</div>',
-            '</div>',
-            '<div class="calendar-label"><p>HelloWorld</p><i></i></div>'
+            '</div>'
         ],
         OS = Object.prototype.toString;
 

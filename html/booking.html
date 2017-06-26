@@ -338,16 +338,22 @@
         {{/for}}
         <div class="imgContainer">
             {{for imgContainer}}
-            <div class="imgForEach" value="{{:index}}">
+            <div class="imgForEach">
                 <div class="imgBorder"></div>
                 <img src="{{:img}}">
                 <p>{{:name}}</p>
+                <input type="text" value="{{:index}}">
             </div>
             {{/for}}
         </div>
+    </div>
+</script>
+
+<script type="text/x-jsrender" id="messageTmpl">
+    <div class="message">
         <div class="messageBox">
             <p class="message-title">{{:title}}</p>
             <p class="message-content">{{:content}}</p>
         </div>
-    </div>
+    </div> 
 </script>

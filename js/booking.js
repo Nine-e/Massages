@@ -209,9 +209,17 @@ function chooseTherapist(){
 	$(".imgForEach").click(function(event) {
 		$(this).find(".imgBorder").css("display","block");
 		$(this).siblings().find(".imgBorder").css("display","none");
-		var index = $(this).val();
-        console.log(index);
-		$(".messageBox").show();
+		var index = $(this).find("input").val();
+
+		$.getJSON("../json/booking.json",function(data){
+
+			messageData = data.message;
+			var messageHtml = $.templates("#messageTmpl").render(messageData[index-1]);
+			$(".messageBox").empty();
+			$(".imgContainer").append(messageHtml); 
+            $(".messageBox").show();
+	    }); 
+
 	});
 
 }
