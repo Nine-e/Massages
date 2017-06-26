@@ -7,6 +7,7 @@
 $(initPage);
 
 var num=1;
+var choose=1;
 
 function initPage(){
 
@@ -56,7 +57,7 @@ function initPage(){
 		ctrlNum();
 		Continue();
 		Back();
-		ctrlRadio();
+		
 	});
 
 
@@ -77,6 +78,7 @@ function initPage(){
 		footData = data.foot;
 		var footHtml = $.templates("#footTmpl").render(footData)
 		$(".booking").append(footHtml);
+		ctrlRadio();
 
 	}); 
 	
@@ -84,7 +86,12 @@ function initPage(){
 function Continue(){
 	$(".continue-button").click(function(){
 		num++;
-		console.log(num);
+		/*console.log(num);*/
+		ctrlNum();
+});
+	$(".book-button").click(function(){
+		num++;
+		/*console.log(num);*/
 		ctrlNum();
 });
 }
@@ -95,7 +102,7 @@ function Back(){
 			num=1;
 		else
 			num--;
-		console.log(num);
+		/*console.log(num);*/
 		ctrlNum();
 
 	});
@@ -115,6 +122,9 @@ function ctrlNum(){
 			$(".third").hide();
 			$(".fourth").hide();
 			$(".fifth").hide();
+			$(".continue-button").show();
+			$(".agreeing-text").show();
+			$(".book-button").hide();
 			}
 	if(num == 2){
 			$(".cnt-num-second").siblings().css("font-size","20px");
@@ -128,6 +138,9 @@ function ctrlNum(){
 			$(".third").hide();
 			$(".fourth").hide();
 			$(".fifth").hide();
+			$(".continue-button").show();
+			$(".agreeing-text").show();
+			$(".book-button").hide();
 		}
 	if(num == 3){
 			$(".cnt-num-third").siblings().css("font-size","20px");
@@ -139,7 +152,19 @@ function ctrlNum(){
 			$(".third").show();
 			$(".fourth").hide();
 			$(".fifth").hide();
-			$("#betTwo").hide();
+			$(".continue-button").show();
+			$(".agreeing-text").show();
+			$(".book-button").hide();
+			/*console.log("choose");
+			console.log(choose);*/
+			if(choose==1) {
+				$("#betOneOne").show();
+				$("#betTwo").hide();
+			}
+			if(choose==2) {
+				$("#betOneOne").hide();
+				$("#betTwo").show();
+			}
 		}
 	if(num == 4){
 			$(".cnt-num-fourth").siblings().css("font-size","20px");
@@ -151,6 +176,10 @@ function ctrlNum(){
 			$(".third").hide();
 			$(".fourth").show();
 			$(".fifth").hide();
+			$(".continue-button").hide();
+			$(".agreeing-text").hide();
+			
+			$(".book-button").show();
 		}
 	if(num == 5){
 			$(".cnt-num-fourth").siblings().css("font-size","20px");
@@ -162,6 +191,12 @@ function ctrlNum(){
 			$(".third").hide();
 			$(".fourth").hide();
 			$(".fifth").show();
+			$(".continue-button").hide();
+			$(".agreeing-text").hide();
+			$(".book-button").show();
+		}
+		if(num == 6) {
+			location.href = "../html/sucorder.html";
 		}
     
 }
@@ -169,17 +204,23 @@ function ctrlNum(){
 function ctrlRadio(){
 	$(".third-choose-customer").css("background-color","rgb(217,251,234)");
 	$("#customer").on("click",function(event){
+		choose=1;
 		$(".third-choose-customer").css("background-color","rgb(217,251,234)");
 		$(".third-choose-account").css("background-color","#fff");
 		$("#betOneOne").show();
 		$("#betTwo").hide();
 	});
+	console.log("choose");
+	console.log(choose);
 	$("#account").on("click",function(event){
+		choose=2;
 		$(".third-choose-customer").css("background-color","#fff");
 		$(".third-choose-account").css("background-color","rgb(217,251,234)");
 		$("#betOneOne").hide();
 		$("#betTwo").show();
 	});
+	console.log("choose");
+	console.log(choose);
 		
 }
 

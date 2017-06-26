@@ -243,7 +243,13 @@
 		"billing":"Billing Zip/Postal code",
 		"gift":"Gift/Promo code",
 		"summary":"Order Summary",
-		"apply":"APPLY"
+		"apply":"APPLY",
+        "item1":"05/29/2017  5:15 PM",
+        "item2":"Single Session",
+        "item3":"Swedish/60min/Either Therapist",
+        "item4":"Xytftd street,20066",
+        "total":"Total",
+        "money":"99"
 
 	}
 }
