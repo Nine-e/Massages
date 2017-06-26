@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet"  href="../lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/therapists.css" rel="stylesheet">
+
+    <title>therapists description</title>
+</head>
+<body>
+<div class="commonhead"></div>
+<div class="therapists"></div>
+<div class="commonfoot"></div>
+</body>
+
+<script type="text/javascript" src = "../lib/jquery/jquery-3.2.1.js"></script>
+<script type="text/javascript" src = "../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/jsrender/jsrender.js"></script>
+<script type="text/javascript" src = "../js/commonhead.js"></script>
+<script type="text/javascript" src = "../js/commonfoot.js"></script>
+<script type="text/javascript" src = "../js/therapists.js"></script>
+</html>
+<script type="text/x-jsrender" id="menuTmpl">
+    <div class="massagesHide"></div>
+    <div class="menu">
+        <div class="menu-container">
+            <div class="menu-title">
+                <div class="title-center">
+                    <span>MENU</span>
+                    <span class="title-green">
+                        <span class="title-lighter">Mobile</span>
+                        <span class="title-bold">massages</span>
+                    </span>
+                    <i id="hideMenu" class="fa fa-times-circle-o"></i>
+                </div>
+            </div>
+            <div class="menu-bar"><a href="#">Home</a></div>
+            <div class="menu-bar"><a href="#">Booking</a></div>
+            <div class="menu-bar"><a href="#">Therapists</a></div>
+            <div class="menu-bar"><a href="#">Styles</a></div>
+            <div class="menu-bar"><a href="#">Massages description</a></div>
+            <div class="menu-bar"><a href="#">FAQ</a></div>
+            <div class="menu-bar"><a href="#">Contact us</a></div>
+            <div class="menu-bar no-border"><a href="#">Login</a></div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-jsrender" id="headTmpl">
+	<div class="head">
+        <div class="head-title">
+    		<span class="title-lighter">Mobile</span>
+    		<span class="title-bold">massages</span>
+        </div>
+    	<div class="head-menu normal">
+    	    <div class="normal-scale">
+    	    	<span><a href="#">{{:home}}</a></span>
+				<span><a href="#">{{:booking}}</a></span>
+				<span><a href="#">{{:therapist}}</a></span>
+				<span><a href="#">{{:style}}</a></span>
+				<span><a href="#">{{:pricing}}</a></span>
+				<span><a href="#">{{:faq}}</a></span>
+				<span><a href="#">{{:contactUs}}</a></span>
+				<span class="sign-in"><a  href="#">{{:signIn}}</a></span>
+    	    </div>
+    	</div>
+    	<div class="head-menu dropdown">
+			<i id="showMenu" class="fa fa-bars"></i>
+		</div>
+	</div>
+</script>
+
+<script id="betTmpl" type="text/x-jsrender">
+	<section id="bet">
+		<div class="bet-title">
+			<p class="bet-title1">{{:title}}</p>
+			<p class="bet-titlesmall">{{:word1}}</p>
+			<p class="bet-titlesmall">{{:word2}}
+		</div>
+		<div class="therapister">
+
+                {{for imgContainer}}
+                <div class="element">
+                    <img src="{{:img}}" class="headimg">
+                    <div class="element-message">
+                        <div class="name">{{:name}}</div>
+                        <p class="message">{{:message}}</p>
+                    </div>
+                    <input type="text" value="{{:index}}">
+                </div>
+                {{/for}}
+
+		</div>
+		<div class="therapistbtn">
+			<p>{{:therapist}}</p>
+		</div>
+	</section>
+</script>
+
+<script type="text/x-jsrender" id="footTmpl">
+    <div class="foot-container">
+        <div class="foot-message">
+        	<p class="message-title">
+                <span class="title-lighter">Mobile</span>
+                <span class="title-bold">massages</span>
+            </p><br>
+        	<p class="title-bold">{{:copyright}}</p>
+        	<p class="title-bold">{{:team}}</p>
+        	<p class="title-bold">{{:policy}}</p>
+        </div>
+    </div>
+</script>

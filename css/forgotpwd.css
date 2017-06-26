@@ -17,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "Lato";
 }
 .email{
     width: 100%;
@@ -25,14 +26,12 @@
 .bet-word {
     font-size: 13px;
     color: rgb(153, 153, 153);
-    font-family: chbold,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .bet-title {
     font-size: 26px;
     margin-top: 20px;
     color: rgb(153, 153, 153);
     font-weight: lighter;
-    font-family: chlight;
 }
 .emailin{
     height: 35px;
@@ -51,18 +50,10 @@
     font-weight: bold;
     justify-content: center;
     line-height: 35px;
-    font-family: chbold;
+    font-family: "Lato";
     cursor: pointer;
 }
 
-@font-face {
-    font-family: chbold;
-    src: url(../lib/Montserrat-Bold.otf);
-}
-@font-face {
-    font-family: chlight;
-    src: url(../lib/Montserrat-Light.otf);
-}
 
 /*mobile*/
 @media screen and (max-width: 750px) {
