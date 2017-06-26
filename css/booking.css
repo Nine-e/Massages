@@ -30,6 +30,14 @@
 	justify-content:space-around;
 	align-items: center;
 }
+.mybet {
+    width: 20%;
+    display: flex;
+    margin: 30px auto 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 @media(max-width:420px){
 	.cnt-num {
 		width: 100%;
@@ -110,6 +118,9 @@
      /*橫屏*/
      @media screen and (orientation: landscape)
      {
+     	.mybet {
+            width: 40%;
+        }
         .third-line,
         .third-choose div {
             width: 40%;
@@ -118,6 +129,12 @@
     /*竖屏*/
      @media screen and (orientation: portrait)
      {
+     	.third-title {
+     		font-size: 20px;
+     	}
+     	 .mybet {
+            width: 80%;
+        }
          .third-line,
          .third-choose div {
              width: 80%;
@@ -127,6 +144,9 @@
  
  /*ipad*/
  @media screen and (max-width: 969px) and (min-width: 751px) {
+ 	 .mybet {
+            width: 40%;
+        }
      .third-line,
      .third-choose div {
         width: 40%;
@@ -135,10 +155,17 @@
  
  /*pc*/
  @media screen and (min-width: 970px) {
+ 	 .mybet {
+            width: 20%;
+        }
      .third-line,
      .third-choose div {
          width: 20%;
      }
+ }
+ .third-choose {
+ 	text-align: center;
+ 	width: 100%;
  }
  .third-choose-customer ,
  .third-choose-account {
