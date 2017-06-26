@@ -17,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "Lato";
 }
 .bet-title {
     display: flex;
@@ -47,7 +48,7 @@
     font-weight: bold;
     justify-content: center;
     line-height: 35px;
-    font-family: chbold;
+    font-family: "Lato";
     cursor: pointer;
 }
 .therapister {
@@ -96,17 +97,13 @@
     -webkit-hyphens: auto;
     hyphens: auto;
     text-align: justify;
+    font-family: "Lato";
 
 }
+input {
+    display: none;
+}
 
-@font-face {
-    font-family: chbold;
-    src: url(../lib/Montserrat-Bold.otf);
-}
-@font-face {
-    font-family: chlight;
-    src: url(../lib/Montserrat-Light.otf);
-}
 
 /*mobile*/
 @media screen and (max-width: 750px) {

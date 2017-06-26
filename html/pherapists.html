@@ -82,34 +82,17 @@
 			<p class="bet-titlesmall">{{:word2}}
 		</div>
 		<div class="therapister">
-			<div class="element">
-				<img src="../img/people1.png" class="headimg">
-				<div class="element-message">
-					<div class="name">{{:people1}}</div>
-					<p class="message">{{:message1}}</p>
-				</div>
-			</div>
-			<div class="element">
-				<img src="../img/people2.png" class="headimg">
-				<div class="element-message">
-					<div class="name">{{:people2}}</div>
-					<p class="message">{{:message2}}</p>
-				</div>
-			</div>
-			<div class="element">
-				<img src="../img/people3.png" class="headimg">
-				<div class="element-message">
-					<div class="name">{{:people3}}</div>
-					<p class="message">{{:message3}}</p>
-				</div>
-			</div>
-			<div class="element">
-				<img src="../img/people1.png" class="headimg">
-				<div class="element-message">
-					<div class="name">{{:people3}}</div>
-					<p class="message">{{:message3}}</p>
-				</div>
-			</div>
+
+                {{for imgContainer}}
+                <div class="element">
+                    <img src="{{:img}}" class="headimg">
+                    <div class="element-message">
+                        <div class="name">{{:name}}</div>
+                        <p class="message">{{:message}}</p>
+                    </div>
+                    <input type="text" value="{{:index}}">
+                </div>
+                {{/for}}
 
 		</div>
 		<div class="therapistbtn">
