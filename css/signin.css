@@ -27,7 +27,7 @@
     font-size: 30px;
     color: rgb(153, 153, 153);
     font-weight: lighter;
-    font-family: chlight;
+    font-family: "Lato";
 }
 .emailin, .passwordin {
     height: 35px;
@@ -55,7 +55,7 @@
     color: #fff;
     align-items: center;
     justify-content: center;
-    font-family: chlight;
+    font-family: "Lato";
     cursor: pointer;
 }
 .face {
@@ -75,20 +75,12 @@
     font-weight: bold;
     justify-content: center;
     line-height: 35px;
-    font-family: chbold;
+    font-family: "Lato";
     cursor: pointer;
 }
 .facebook:link, .facebook:hover, .facebook:visited, .facebook:active{
     color: #fff;
     text-decoration: none;
-}
-@font-face {
-    font-family: chbold;
-    src: url(../lib/Montserrat-Bold.otf);
-}
-@font-face {
-    font-family: chlight;
-    src: url(../lib/Montserrat-Light.otf);
 }
 
 /*mobile*/

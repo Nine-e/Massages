@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang ="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -7,14 +7,14 @@
     <link rel="stylesheet"  href="../lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
     <link href="../css/common.css" rel="stylesheet">
-    <link href="../css/signin.css" rel="stylesheet">
+    <link href="../css/therapists.css" rel="stylesheet">
 
-    <title>sign in</title>
+    <title>therapists description</title>
 </head>
 <body onload="load()">
-    <div class="commonhead"></div>
-    <div class="signin"></div>
-    <div class="commonfoot"></div>
+<div class="commonhead"></div>
+<div class="therapists"></div>
+<div class="commonfoot"></div>
 </body>
 
 <script type="text/javascript" src = "../lib/jquery/jquery-3.2.1.js"></script>
@@ -22,7 +22,7 @@
 <script src="../lib/jsrender/jsrender.js"></script>
 <script type="text/javascript" src = "../js/commonhead.js"></script>
 <script type="text/javascript" src = "../js/commonfoot.js"></script>
-<script type="text/javascript" src = "../js/signin.js"></script>
+<script type="text/javascript" src = "../js/therapists.js"></script>
 </html>
 <script type="text/x-jsrender" id="menuTmpl">
     <div class="massagesHide"></div>
@@ -76,26 +76,25 @@
 
 <script id="betTmpl" type="text/x-jsrender">
 	<section id="bet">
-		<div class="bet">
-			<p class="bet-title">{{:title}}</p>
-			<div class="email">
-				<div class="bet-word">{{:address}}</div>
-				<input class="emailin" contentEditable="true"></input>
-			</div>
-			<div class="password">
-				<div class="bet-word">{{:pwd}}</div>
-				<input  class="passwordin" type="password" contentEditable="true"></input>
-			</div>
-			<a class="facebook"  href="https://www.facebook.com" target="_blank">
-				<i class="fa fa-facebook" aria-hidden="true"></i>
-				<p class="face">{{:facebook}}</p>
-			</a>
-			<a class="forgot" href="forgotpwd.html">
-				<p>{{:forgot}}</p>
-			</a>
-			<div class="signipbtn">
-				<p>{{:signin}}</p>
-			</div>
+		<div class="bet-title">
+			<p class="bet-title1">{{:title}}</p>
+			<p class="bet-titlesmall">{{:word1}}</p>
+			<p class="bet-titlesmall">{{:word2}}
+		</div>
+		<div class="therapister">
+            {{for imgContainer}}
+            <div class="element">
+                <img src="{{:img}}" class="headimg">
+                <div class="element-message">
+                    <div class="name">{{:name}}</div>
+                    <p class="message">{{:message}}</p>
+                </div>
+                <input type="text" value="{{:index}}">
+            </div>
+            {{/for}}
+		</div>
+		<div class="therapistbtn">
+			<p>{{:therapist}}</p>
 		</div>
 	</section>
 </script>
