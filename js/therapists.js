@@ -26,3 +26,6 @@ function load()
         }
     });
 }
+jQuery(function ($) {
+    $('message').hyphenate('en-us');
+});
