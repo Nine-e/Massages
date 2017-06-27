@@ -16,6 +16,17 @@
 	font-family: Montserrat;
 	margin-top: 50px;
 }
+.bet{
+	z-index:-99999;
+}
+.lastname,
+.firstname {
+	z-index:99999;
+	height: 5vh;
+}
+.lastname {
+	z-index:1000;
+}
 .cnt-num {
 	display: flex;
 	width: 400px;

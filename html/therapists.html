@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang ="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,7 +11,7 @@
 
     <title>therapists description</title>
 </head>
-<body>
+<body onload="load()">
 <div class="commonhead"></div>
 <div class="therapists"></div>
 <div class="commonfoot"></div>
@@ -82,18 +82,16 @@
 			<p class="bet-titlesmall">{{:word2}}
 		</div>
 		<div class="therapister">
-
-                {{for imgContainer}}
-                <div class="element">
-                    <img src="{{:img}}" class="headimg">
-                    <div class="element-message">
-                        <div class="name">{{:name}}</div>
-                        <p class="message">{{:message}}</p>
-                    </div>
-                    <input type="text" value="{{:index}}">
+            {{for imgContainer}}
+            <div class="element">
+                <img src="{{:img}}" class="headimg">
+                <div class="element-message">
+                    <div class="name">{{:name}}</div>
+                    <p class="message">{{:message}}</p>
                 </div>
-                {{/for}}
-
+                <input type="text" value="{{:index}}">
+            </div>
+            {{/for}}
 		</div>
 		<div class="therapistbtn">
 			<p>{{:therapist}}</p>

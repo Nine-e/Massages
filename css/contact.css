@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@font-face{
+ 	font-family: Montserrat-Light;
+ 	src:url(../lib/Montserrat-ExtraLight.otf);
+ }
+ @font-face{
+	font-family: Montserrat;
+	src:url(../lib/Montserrat-Light.otf);
+}
+@font-face{
+    font-family: "Lato";
+    src:url(../lib/Lato/Lato-Regular.ttf);
+}
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-06-26 21:21:18
+ * @version $Id$
+ */
+.cnt {
+	margin-top: 60px;
+	text-align: center;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.cnt-title {
+	font-size: 30px;
+	color: #64d2a3;
+}
+.cnt-text {
+	margin-top:30px;
+	font-family: Montserrat-Light;
+	font-size: 18px;
+	color: #696969;
+	font-weight: 600;
+}
+.cnt-text p {
+	margin: 0;
+}
+.cnt-phone {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+.cnt-phone-phone {
+	display: inline;
+	font-size: 15px;
+	font-weight: 900;
+}
+.cnt-phone-num {
+	font-family: Montserrat-Light;
+	display: inline;
+	font-size: 15px;
+}
+/*mobile*/
+ @media screen and (max-width: 750px) {
+     /*橫屏*/
+     @media screen and (orientation: landscape)
+     {
+     	.mybet {
+            width: 40%;
+        }
+    }
+    /*竖屏*/
+     @media screen and (orientation: portrait)
+     {
+     	 .mybet {
+            width: 80%;
+        }
+     }
+ }
+ 
+ /*ipad*/
+ @media screen and (max-width: 969px) and (min-width: 751px) {
+ 	 .mybet {
+            width: 40%;
+        }
+     
+ }
+ 
+ /*pc*/
+ @media screen and (min-width: 970px) {
+ 	 .mybet {
+            width: 30%;
+        }
+     
+ }
+ .mybet {
+ 	margin: auto;
+ }
+ .mybet input {
+ 	display: block;
+ 	width: 100%;
+ 	margin-top: 10px;
+ }
+ .emailin, .namein {
+    height: 35px;
+    border: 1px solid rgb(229, 229, 229);
+    margin-top: 2px;
+    font-size: 15px;
+}
+.mybet textarea {
+ 	display: block;
+ 	width: 100%;
+ 	margin-top: 10px;
+ }
+.messagein {
+	height: 210px;
+	width: 100%;
+    border: 1px solid rgb(229, 229, 229);
+    margin-top: 2px;
+    font-size: 15px;
+    line-height: 35px;
+}
+.send-button {
+	width: 200px;
+	height: 40px;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	line-height: 40px;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	background-color: #64d2a3;
+}
+::-webkit-input-placeholder { font-style:italic;color:rgb(229, 229, 229);}
