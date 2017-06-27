@@ -64,6 +64,9 @@
         .bet {
             width: 50%;
         }
+        .resetbtn {
+            margin-bottom: 40px;
+        }
     }
     /*竖屏*/
     @media screen and (orientation: portrait)
