@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@font-face {
+    font-family: chbold;
+    src: url(../lib/Montserrat-Bold.otf);
+}
+@font-face {
+    font-family: chlight;
+    src: url(../lib/Montserrat-Light.otf);
+}
+@font-face{
+    font-family: "LatoLight";
+    src:url(../lib/Lato/Lato-Light.ttf);
+}
+.index {
+    width: 100%;
+    /*height: 100%;*/
+}
+#home, #homeTmpl {
+    width: 100%;
+}
+.home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home img {
+    width: 100%;
+}
+.ipad {
+    display: none;
+}
+.pages {
+    display: none;
+}
+/*mobile*/
+@media screen and (max-width: 750px) {
+    /*橫屏*/
+    @media screen and (orientation: landscape)
+    {
+        .desktop_landscape {
+            display: block;
+        }
+        .ipad {
+            display: none;
+        }
+        .pages {
+            display: none;
+        }
+    }
+    /*竖屏*/
+    @media screen and (orientation: portrait)
+    {
+        .desktop_landscape {
+            display: none;
+        }
+        .ipad {
+            display: none;
+        }
+        .pages {
+            display: block;
+        }
+
+    }
+}
+
+/*ipad*/
+@media screen and (max-width: 969px) and (min-width: 751px) {
+    .desktop_landscape {
+        display: none;
+    }
+    .ipad {
+        display: block;
+    }
+    .pages {
+        display: none;
+    }
+}
+
+/*pc*/
+@media screen and (min-width: 970px) {
+    .desktop_landscape {
+        display: block;
+    }
+    .ipad {
+        display: none;
+    }
+    .pages {
+        display: none;
+    }
+    .home img {
+        width: 100%;
+        height: 500px;
+    }
+}

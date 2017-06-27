@@ -3,12 +3,14 @@
     font-family: "Lato";
     src:url(../lib/Lato/Lato-Regular.ttf);
 }
+.lastname,
+.time_pick {
+	height: 5vh;
+}
 .timepicker_wrap {
 	display:none;
-	position:absolute;
-	z-index: 2;
+	z-index: 99999;
 	padding: 0 10px;
-	margin: 355px auto 0;
 	width:210px;
 	height: 120px;
 	border-radius: 3px;
@@ -37,6 +39,9 @@
 }
 .mins {
 	margin-right: 30px;
+}
+.cnt-message {
+	z-index:-1;
 }
 .prev, .next {
 	cursor: pointer;
