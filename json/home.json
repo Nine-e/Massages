@@ -1,0 +1,22 @@
+{
+  "head":{
+    "home":"Home",
+    "booking":"Booking",
+    "therapist":"Therapist",
+    "style":"Style",
+    "pricing":"Pricing",
+    "faq":"FAQ",
+    "contactUs":"Contact Us",
+    "signIn":"Sign In"
+  },
+  "home":{
+    "img1":"../img/desktop_landscape.png",
+    "img2":"../img/ipad.png",
+    "img3":"../img/pages.png"
+  },
+  "foot":{
+    "copyright":"©2017MOBILE MASSAGES",
+    "team":"TEAMS & CONDITIONS",
+    "policy":"PRIVACY POLICY"
+  }
+}
