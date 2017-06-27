@@ -3,9 +3,8 @@
     font-family: "Lato";
     src:url(../lib/Lato/Lato-Regular.ttf);
 }
-.lastname,
-.time_pick {
-	height: 5vh;
+.timetype{
+height: 5vh;
 }
 .timepicker_wrap {
 	display:none;
