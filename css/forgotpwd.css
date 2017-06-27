@@ -25,6 +25,7 @@
 }
 .bet-word {
     font-size: 13px;
+    font-weight: bold;
     color: rgb(153, 153, 153);
 }
 .bet-title {
@@ -62,6 +63,9 @@
     {
         .bet {
             width: 50%;
+        }
+        .resetbtn {
+            margin-bottom: 40px;
         }
     }
     /*竖屏*/
