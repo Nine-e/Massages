@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>zyx</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="dist/flatpickr.min.css">
+	<style>
+		#where {
+			width:400px;
+			height: 400px;
+		}
+		.today {
+			background-color: rgb(100,210,163);
+			border-color: rgb(100,210,163);
+			color:white;
+		}
+		.today:hover {
+			background-color: rgb(100,210,163);
+		}
+	</style>
+</head>
+<body>
+<div id="where">
+<input id="cla" class="flatpickr" data-date-format="Y-m-d" data-min-date="today">
+</div>
+</body>
+<script type="text/javascript" src="dist/jquery-3.2.1.js">
+</script>
+<script type="text/javascript" src="src/flatpickr.js">
+</script>
+<script> 
+    Flatpickr.l10n.firstDayOfWeek = 1;
+	document.getElementById("cla").flatpickr();
+	var x=($('.today').index('.flatpickr-day')+1)%7;
+	x=x+$('.flatpickr-day1').length;
+	x=x%7;
+	x--;
+	if(x<0)
+	{
+		x=6;
+	}
+	$('.flatpickr-weekday').eq(x).css('border-bottom','2px solid rgb(100,210,163)')
+</script>
+</html>
