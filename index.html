@@ -75,7 +75,7 @@
 </script>
 
 
-<script id="homeTmpl" type="text/x-jsrender">
+<script type="text/x-jsrender" id="homeTmpl">
     <section id="home">
         <div class="home">
             <img src="{{:img1}}" class="desktop_landscape">
@@ -83,6 +83,97 @@
             <img src="{{:img3}}" class="pages">
         </div>
     </section>
+</script>
+
+<script  type="text/x-jsrender" id="faqTmpl">
+    <section id="faq">
+        <div class="faq">
+            <p class="faq-title">{{:line1}}</p>
+            <p class="faq-title">{{:line2}}</p>
+            <p class="pages-title">{{:line3}}</p>
+            <div class="faqContainer">
+                <div class="faqForEach">
+                   <!--  <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question1}}</p>
+                    <p class="answer">{{:answer1}}</p>
+                </div>
+                <div class="faqForEach">
+                   <!--  <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i>-->{{:question2}}</p> 
+                    <p class="answer">{{:answer2}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i>-->{{:question3}}</p>
+                    <p class="answer">{{:answer3}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question4}}</p>
+                    <p class="answer">{{:answer4}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question5}}</p>
+                    <p class="answer">{{:answer5}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question6}}</p>
+                    <p class="answer">{{:answer6}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question7}}</p>
+                    <p class="answer">{{:answer7}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question8}}</p>
+                    <p class="answer">{{:answer8}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question9}}</p>
+                    <p class="answer wide">{{:answer9Line1}}</p>
+                    <p class="answer narrow">{{:answer9Line2}}</p>
+                    <p class="answer narrow">{{:answer9Line3}}</p>
+                    <p class="answer narrow">{{:answer9Line4}}</p>
+                    <p class="answer narrow">{{:answer9Line5}}</p>
+                    <p class="answer narrow">{{:answer9Line6}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question10}}</p>
+                    <p class="answer">{{:answer10}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question11}}</p>
+                    <p class="answer">{{:answer11}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question12}}</p>
+                    <p class="answer">{{:answer12}}</p>
+                </div>
+                <div class="faqForEach">
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question13}}</p>
+                    <p class="answer">{{:answer13}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</script>
+
+<script type="text/x-jsrender" id="contactTmpl">
+<div class="contact">
+        <div class="contact-title">{{:title}}</div>
+        <div class="contact-text">
+            <p>{{:text1}}</p>
+            <p>{{:text2}}</p>
+        </div>
+        <div class="contact-phone">
+            <p class="contact-phone-phone">{{:phone}}</p>
+            <p class="contact-phone-num">{{:num}}</p>
+        </div>
+        <div class="mybet">
+        <input class="contact-namein" contentEditable="true" placeholder="Your Name"></input>
+        <input class="contact-emailin" contentEditable="true" placeholder="Your Email"></input>
+        <textarea class="contact-messagein" type="text" contentEditable="true" placeholder="Your Message"></textarea>
+        </div>
+        <div class="contact-send-button">{{:send}}</div>
+</div>
 </script>
 <script type="text/x-jsrender" id="footTmpl">
     <div class="foot-container">

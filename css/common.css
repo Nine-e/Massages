@@ -64,6 +64,9 @@ a {
         .title-green {
             margin-left: 3%;
         }
+        .message-title .title-lighter {
+            margin-left: 10px; 
+        }
 	}
     /*lanscape 横屏*/
 	@media screen and (orientation:landscape) {
@@ -83,6 +86,9 @@ a {
         }
         .title-green {
             margin-left: 25%;
+        }
+        .message-title .title-lighter {
+            margin-left: 10px; 
         }
 	}
 }
@@ -120,6 +126,9 @@ a {
     .message-title {
         font-size: 16px;
     }
+    .message-title .title-lighter {
+        margin-left: 10px; 
+    }
 }
 /** desktop **/
 @media screen and (min-width: 970px) {
@@ -151,6 +160,9 @@ a {
     .message-title {
         font-size: 18px;
     }
+    .message-title .title-lighter {
+        margin-left: 8px; 
+    }
 }
 .head {
 	display: flex;
@@ -167,6 +179,12 @@ a {
 }
 .title-bold {
     font-weight: 900;
+}
+.message-title .title-lighter {
+    color: #ffffff;
+}
+.message-title .title-bold {
+    color: #ffffff;
 }
 .head-menu,.head-menu a{
 	color: rgb(153,153,153);
