@@ -65,6 +65,9 @@
      	 .mybet {
             width: 80%;
         }
+        .cnt-text {
+        	font-size: 12px;
+        }
      }
  }
  

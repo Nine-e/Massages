@@ -19,7 +19,7 @@
 .bet-word {
     font-size: 13px;
     color: rgb(153, 153, 153);
-    /*font-weight: bold;*/
+    font-weight: bold;
     font-family: "Lato";
 }
 .bet-title {

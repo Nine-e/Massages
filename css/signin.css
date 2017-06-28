@@ -20,8 +20,8 @@
 .bet-word {
     font-size: 13px;
     color: rgb(153, 153, 153);
-    /*font-weight: bold;*/
-    font-family: chbold,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-family: "Lato";
 }
 .bet-title {
     font-size: 30px;
@@ -44,6 +44,9 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+.forgot>p {
+    margin-bottom: 0;
 }
 .facebook {
     width: 100%;
