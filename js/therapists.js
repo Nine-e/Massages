@@ -24,8 +24,9 @@ function load()
         {
             $('.commonfoot').css('position', 'relative');
         }
+        jQuery(function ($) {
+            $('.message').hyphenate('en-us');
+        });
     });
 }
-jQuery(function ($) {
-    $('message').hyphenate('en-us');
-});
+

@@ -85,15 +85,16 @@
 .message {
     width: 100%;
     margin-top: 2px;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    word-wrap: break-word;
+    /*-moz-hyphens: auto;*/
+    /*-ms-hyphens: auto;*/
+    /*-webkit-hyphens: auto;*/
+    /*-ms-hyphens: auto;*/
+    /*hyphens: auto;*/
+    /*word-wrap: break-word;*/
+    font-weight: bold;
     text-align: justify;
     font-family: "Lato";
-    font-size: 10px;
+    /*font-size: 10px;*/
 }
 input {
     display: none;
@@ -114,7 +115,6 @@ input {
             transform: scale(0.8, 0.8);
         }
         .message {
-            font-weight: bold;
             font-size:10px;
         }
         .therapistbtn {
@@ -142,7 +142,6 @@ input {
             line-height:70%
         }
         .message {
-            font-weight: bold;
             font-size:11px;
             /*letter-spacing: 85%;*/
             /*margin-top:-3px;*/
@@ -170,7 +169,6 @@ input {
         transform: scale(0.8, 0.8);
     }
     .message {
-        font-weight: bold;
         font-size:1.0rem;
         margin-top:-3px;
     }
@@ -191,8 +189,7 @@ input {
         margin-top: 40px;
     }
     .message {
-        /*width:30vw;*/
-        font-weight: bold;
+        font-size:10px;
     }
     .therapistbtn {
         width: 20%;
