@@ -27,6 +27,10 @@
     font-family: "FontAwesome";
     src:url(../lib/font-awesome/fonts/FontAwesome.otf);
 }
+@font-face {
+    font-family: 'icons';
+    src: url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAARgAAoAAAAABBgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAANgAAADYZbVvCE9TLzIAAAHMAAAAYAAAAGAIIvy2Y21hcAAAAiwAAABMAAAATBpVzFdnYXNwAAACeAAAAAgAAAAIAAAAEGhlYWQAAAKAAAAANgAAADYAl8viaGhlYQAAArgAAAAkAAAAJANuAeZobXR4AAAC3AAAABQAAAAUAwAAdG1heHAAAALwAAAABgAAAAYABVAAbmFtZQAAAvgAAAFFAAABRVcZpu5wb3N0AAAEQAAAACAAAAAgAAMAAAEABAQAAQEBCGljb21vb24AAQIAAQA6+BwC+BsD+BgEHgoAGVP/i4seCgAZU/+LiwwHi2v4lPh0BR0AAAB2Dx0AAAB7ER0AAAAJHQAAAM8SAAYBAQgPERMWG2ljb21vb25pY29tb29udTB1MXUyMHVFNjAwAAACAYkAAwAFAQEEBwoNTPyUDvyUDvyUDvuUDvgg958VgYD7AiOLi4aFg4iEi4SLg46GkYuL+wLzgZaAloqel5eWlpqMmX8I7yvv6wWZl5qKloCXf4p4gIAIDviUFPiUFYsMCgADAgABkAAFAAABTAFmAAAARwFMAWYAAAD1ABkAhAAAAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAEAAAOYAAeD/4P/gAeAAIAAAAAEAAAAAAAAAAAAAACAAAAAAAAIAAAADAAAAFAADAAEAAAAUAAQAOAAAAAoACAACAAIAAQAg5gD//f//AAAAAAAg5gD//f//AAH/4xoEAAMAAQAAAAAAAAAAAAAAAQAB//8ADwABAAAAAQAAss1nQF8PPPUACwIAAAAAAM/2xdgAAAAAz/bF2AAAAAABjAE1AAAACAACAAAAAAAAAAEAAAHg/+AAAAIAAAAAAAGMAAEAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAAAQAAAAIAAHQAAFAAAAUAAAAAAA4ArgABAAAAAAABAA4AAAABAAAAAAACAA4ARwABAAAAAAADAA4AJAABAAAAAAAEAA4AVQABAAAAAAAFABYADgABAAAAAAAGAAcAMgABAAAAAAAKADQAYwADAAEECQABAA4AAAADAAEECQACAA4ARwADAAEECQADAA4AJAADAAEECQAEAA4AVQADAAEECQAFABYADgADAAEECQAGAA4AOQADAAEECQAKADQAYwBpAGMAbwBtAG8AbwBuAFYAZQByAHMAaQBvAG4AIAAxAC4AMABpAGMAbwBtAG8AbwBuaWNvbW9vbgBpAGMAbwBtAG8AbwBuAFIAZQBnAHUAbABhAHIAaQBjAG8AbQBvAG8AbgBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAC4AAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format("woff");
+}
 /*---------------------------picture-----------------------------------------*/
 .index {
     width: 100%;
@@ -112,6 +116,122 @@
     }
 }
 
+/*-------------------------------book------------------------------*/
+#book, #bookTmpl {
+    width: 100%;
+}
+.book {
+    width: 20%;
+    display: flex;
+    margin: auto;
+    padding-top:60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.book-title {
+    margin-top: -50px;
+    color: rgb(102,209,165);
+    font-weight: lighter;
+    font-family: chlight;
+}
+.book-subtitle {
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: rgb(51,51,51);
+    font-weight: lighter;
+    font-family: chlight;
+};
+.pickTime,.time_picker,.timepicker_wrap {
+    margin: auto;
+    z-index: 9999;
+}
+.pickTime input {
+    width: 240px;
+    height: 30px;
+    padding-left: 10px;
+    background: url(../img/dropdown.png) center right no-repeat;
+    border: 1px solid rgb(204,204,204);
+    color: rgb(204,204,204);
+    font-family: Montserrat-Light;
+    font-size: 12px;
+}
+.continue-button {
+    z-index: -9999;
+    text-align: center;
+}
+/*mobile*/
+@media screen and (max-width: 750px) {
+    /*橫屏*/
+    @media screen and (orientation: landscape)
+    {
+        .book {
+            width: 80%;
+            font-size: 20px;
+        }
+        .book-title {
+            margin-top: -20px;
+            font-size: 25px;
+        }
+        .book-subtitle {
+            margin-top: -14px;
+            font-size: 15px;
+        }
+        .timetype {
+            margin-top: -33px;
+        }
+    }
+    /*竖屏*/
+    @media screen and (orientation: portrait)
+    {
+        .book {
+            width: 100%;
+            font-size: 20px;
+        }
+        .book-subtitle {
+            margin-top: -14px;
+            font-size: 10px;
+        }
+        .timetype {
+            margin-top: -25px;
+        }
+    }
+}
+
+/*ipad*/
+@media screen and (max-width: 969px) and (min-width: 751px) {
+    .book {
+        width: 70%;
+    }
+    .book-title {
+        font-size: 28px;
+    }
+    .book-subtitle {
+        margin-top: -14px;
+        font-size: 17px;
+    }
+    .timetype {
+        margin-top: -23px;
+    }
+}
+
+/*pc*/
+@media screen and (min-width: 970px) {
+    .book {
+        margin-top: 2%;
+        width: 60%;
+    }
+    .book-title {
+        font-size: 35px;
+    }
+    .book-subtitle {
+        margin-top: -16px;
+        font-size: 20px;
+    }
+    .timetype {
+        margin-top: -28px;
+    }
+}
 /*-------------------------------contact------------------------------*/
 .contact {
     padding-top: 60px;
@@ -313,6 +433,7 @@
         }
         .faq-title {
             margin-top: -15px;
+            font-size: 25px;
         }
         .question {
             font-size: 13px;

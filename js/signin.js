@@ -1,6 +1,7 @@
 
 function load()
-{   initPage();
+{   
+	initPage();
 	$.getJSON("../json/signin.json", function(data) {
         betData = data.bet;
         var betHtml = $.templates("#betTmpl").render(betData);
