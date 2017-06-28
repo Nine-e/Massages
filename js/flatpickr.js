@@ -27,20 +27,12 @@ function Flatpickr(element, config) {
 		self.setDate = setDate;
 		self.toggle = toggle;
 
-		self.isMobile = (
-			!self.config.disableMobile &&
-			/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-		);
+		
 
-		if (self.isMobile) {
-			bind();
-			setupMobile();
-		}
-
-		else {
+		
 			build();
 			bind();
-		}
+		
 
 		if (self.selectedDateObj)
 			updateValue();
@@ -67,8 +59,7 @@ function Flatpickr(element, config) {
 			});
 		}
 
-		if (self.isMobile)
-			return;
+		
 
 		document.addEventListener("keydown", onKeyDown);
 		window.addEventListener("resize", debounce(onResize, 300));
@@ -567,20 +558,7 @@ function Flatpickr(element, config) {
 	}
 
 	function open(e) {
-		if (self.isMobile) {
-			e.preventDefault();
-			e.target.blur();
-
-			setTimeout(() => {
-				self.mobileInput.click();
-			}, 0);
-
-			triggerEvent("Open");
-			return;
-		}
-
-		else if (self.isOpen || (self.altInput || self.input).disabled || self.config.inline)
-			return;
+		
 
 		self.calendarContainer.classList.add("open");
 
@@ -713,8 +691,7 @@ function Flatpickr(element, config) {
 	}
 
 	function redraw() {
-		if (self.config.noCalendar || self.isMobile)
-			return;
+		
 
 		buildWeekdays();
 		updateNavigationCurrentMonth();
@@ -889,46 +866,7 @@ function Flatpickr(element, config) {
 			(self.altInput || self.input).setAttribute("readonly", "readonly");
 	}
 
-	function setupMobile() {
-		const inputType = self.config.enableTime
-			? (self.config.noCalendar ? "time" : "datetime-local")
-			: "date";
-
-		self.mobileInput = createElement("input", "flatpickr-input");
-		self.mobileInput.step = "any";
-		self.mobileInput.tabIndex = -1;
-		self.mobileInput.type = inputType;
-
-		if (self.selectedDateObj) {
-			const formatStr = inputType === "datetime-local" ? "Y-m-d\\TH:i:S" :
-				inputType === "date" ? "Y-m-d" : "H:i:S";
-			const mobileFormattedDate = formatDate(formatStr, self.selectedDateObj);
-			self.mobileInput.defaultValue = self.mobileInput.value = mobileFormattedDate;
-		}
-
-		if (self.config.minDate)
-			self.mobileInput.min = formatDate("Y-m-d", self.config.minDate);
-
-		if (self.config.maxDate)
-			self.mobileInput.max = formatDate("Y-m-d", self.config.maxDate);
-
-		self.input.type = "hidden";
-		if (self.config.altInput)
-			self.altInput.type = "hidden";
-
-		try {
-			self.input.parentNode.insertBefore(self.mobileInput, self.input.nextSibling);
-		}
-		catch (e) {
-			//
-		}
-
-		self.mobileInput.addEventListener("change", e => {
-			self.setDate(e.target.value);
-			triggerEvent("Change");
-			triggerEvent("Close");
-		});
-	}
+	
 
 	function toggle() {
 		if (self.isOpen)
@@ -955,7 +893,7 @@ function Flatpickr(element, config) {
 		else if (!self.selectedDateObj)
 			return;
 
-		if (self.config.enableTime && !self.isMobile) {
+		if (self.config.enableTime) {
 			let hours,
 				minutes,
 				seconds;
@@ -1161,7 +1099,7 @@ Flatpickr.defaultConfig = {
 	minuteIncrement: 5,
 
 	// disable native mobile datetime input support
-	disableMobile: false,
+	disableMobile: true,
 
 	// onChange callback when user selects a date or time
 	onChange: null, // function (dateObj, dateStr) {}

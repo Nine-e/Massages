@@ -14,7 +14,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/signin.css">
 <link rel="stylesheet" type="text/css" href="../css/signup.css">
-<link rel="stylesheet" type="text/css" href="../css/calendar.css">
+<link rel="stylesheet" type="text/css" href="../css/flatpickr.min.css">
 <link rel="stylesheet" type="text/css" href="../css/timepicki.css">
 
 <link rel="stylesheet" type="text/css" href="../css/common.css">
@@ -26,7 +26,7 @@
 	<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../lib/jsrender/jsrender.js"></script>
 	<script type="text/javascript" src="../js/booking.js"></script>
-    <script type="text/javascript" src="../js/calendar.js"></script>
+    <script type="text/javascript" src="../js/flatpickr.js"></script>
     <script type="text/javascript" src="../js/timepicki.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
 </body>
@@ -205,8 +205,7 @@
             <div class="bet">
                 <div class="datetype">
                     <div class="bet-word">{{:choose1}}</div>
-                    <input id="dt" class="firstnin" contentEditable="true" value="Today"></input>
-                    <div id="dd"></div>
+                    <input id="cla" class="flatpickr firstnin" data-date-format="Y-m-d" data-min-date="today" value="Today" contentEditable="true">
                 </div>
                 <div class="datetype timetype">
                     <div class="bet-word">{{:choose2}}</div>
@@ -311,7 +310,7 @@
          <section id="betOne">
             <div class="bet">
                 {{for session}}
-                <div class="firstname">
+                <div class="selectContainer">
                     <div class="bet-word">{{:title}}</div>
                     <div class="select firstnin">
                         <select>
@@ -322,7 +321,7 @@
                 </div>
                 {{/for}}
                 {{for length}}
-                <div class="lastname">
+                <div class="selectContainer">
                     <div class="bet-word">{{:title}}</div>
                     <div class="select firstnin">
                         <select>
@@ -337,7 +336,7 @@
                 </div>
                 {{/for}}
                 {{for type}}
-                <div class="lastname">
+                <div class="selectContainer">
                     <div class="bet-word">{{:title}}</div>
                     <div class="select firstnin">
                         <select>
@@ -360,7 +359,7 @@
             <p class="bridge-available">{{:available}}</p>
         </div>
         {{/for}}
-        <div class="imgContainer">
+        <!--<div class="imgContainer">
             {{for imgContainer}}
             <div class="imgForEach">
                 <div class="imgBorder"></div>
@@ -369,7 +368,7 @@
                 <input type="text" value="{{:index}}">
             </div>
             {{/for}}
-        </div>
+        </div>-->
     </div>
 </script>
 
