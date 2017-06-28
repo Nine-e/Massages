@@ -388,7 +388,6 @@
     margin-bottom: 10%;
 }
 .faqForEach {
-    display: inline-block;
     margin-bottom: 2%;
 }
 .faq-icon {
@@ -396,17 +395,13 @@
     margin-right: 3px;
 }
 .question {
-     display: inline-block;
+    display: inline-block;
     color: rgb(102,209,165);
+    font-size: 15px;
     font-family: Lato;
     font-weight: 800;
 }
-.faqForEach:before {
-    font-family: "FontAwesome";
-    content: "\f192";
-    color: rgb(102,209,165);
-    margin-bottom: 30px;
-}
+
 .answer {
     font-size: 1.0vw;
     color: rgb(101,101,101);
@@ -466,11 +461,22 @@
             width: 80%;
         }
          .question {
+            width: 90%;
             color: #999;
-            font-weight: 800;
+            font-weight: 900;
         }
         .answer {
             display: none;
+        }
+        .faqForEach::before {
+            font-family: "FontAwesome";
+            content: "\f192";
+            color: rgb(102,209,165);
+
+            display: inline-block;
+            width: 5%;
+            height: 5%;
+            position: relative;
         }
     }
 }

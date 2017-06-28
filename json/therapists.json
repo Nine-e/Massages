@@ -7,13 +7,24 @@
       {
         "img":"../img/people1.png",
         "name":"Rose",
-        "message": "Rose immediately puts you at ease with her cheerful smile,calm approach & friendly personality. With over 3 years of experience from Latvia shere she focused on both beauty and message treatments, she is now massaging London  better with us as she loves London and always enjoyed doing massages more than beauty treatments.When you just fancy melting away from the rest of the world for a blissful,no fuss,real pampering treat from head to toe, we recommend you book a session with Rose!!",
+        "message":[
+          {"messagep":"Rose immediately puts you at ease with her cheerful smile," },
+          {"messagep":"calm approach & friendly personality. With over 3 years"},
+          {"messagep":"beauty and message treatments, she is now massaging"},
+          {"messagep":"London better with us as she loves London and always"},
+          {"messagep":"enjoyed doing massages more than beauty treatments."},
+          {"messagep":"When you just fancy melting away from the rest of the"},
+          {"messagep":"world for a blissful, no fuss, real pampering treat from head"},
+          {"messagep":"to toe, we recommend you book a session with Rose!!"}
+        ],
         "index":"1"
       },
       {
         "img":"../img/people2.png",
         "name":"Susan",
-        "message": "Susan has a deep passion for relaxing and rejuvenating people through her excellent massages. Her naturally warm, calm and flowing touch will unwind you into a state of bliss, or, if you wish, Susan can instead work firmer into your muscles for a more invigorating deeper session. Holistic massage is about the whole you, so enjoy her listening skills too – feel free to chat away during your session or remain totally silent if you prefer. Friendly, reliable, on time and a massage not to be missed.",
+        "message":[
+
+        ],
         "index":"2"
       },
       {

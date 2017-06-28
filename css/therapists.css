@@ -96,6 +96,11 @@
     font-family: "Lato";
     /*font-size: 10px;*/
 }
+.message>p {
+    width:100%;
+    text-align: justify;
+}
+
 input {
     display: none;
 }
