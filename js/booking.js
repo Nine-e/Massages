@@ -253,8 +253,9 @@ function chooseTherapist(){
 
 			messageData = data.message;
 			var messageHtml = $.templates("#messageTmpl").render(messageData[index-1]);
-			$(".messageBox").empty();
-			$(".imgContainer").append(messageHtml); 
+			$(".messageBox").css("padding","0px 30px");
+			$(".messageBox").empty();          /*清空div中的内容*/
+			$(".messageConnect").append(messageHtml); 
             $(".messageBox").show();
 	    }); 
 

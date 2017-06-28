@@ -146,9 +146,54 @@
         .datetype{
 			margin-bottom: 15vh;
 		}
+		.selectContainer {
+			width: 80%;
+		}
+		.bridge {
+			margin-bottom: -110px;
+		}
+		.bridge-title {
+			transform: scale(0.7);
+			margin-bottom: -10px;
+		}
+		.bridge-available {
+		    transform: scale(0.85);
+	    }
+		.imgContainer {
+			width: 580px;
+	        height: 900px;
+			transform: scale(0.75);
+		}
+		.messageConnect {
+			margin-top: -100px;
+		}
+		.messageBox {
+			width: 430px;
+		}
+        .imgForEach {
+			width: 120px;
+			height: 141px;
+		}
+		.imgForEach img {
+			width: 120px;
+			height: 141px;
+			border: 1px solid rgb(178,178,178);
+			cursor: pointer;
+		}
+		.imgForEach p { 
+		    color: rgb(100,210,163);
+		}
+		.imgBorder {
+			display: none;
+			position: absolute;
+			width: 120px;
+			height: 141px;
+			z-index: 999;
+			border: 6px solid rgb(100,210,163);
+		} 
     }
     /*竖屏*/
-     @media screen and (orientation: portrait)
+     @media screen and (orientation: portrait) 
      {
      	.third-title {
      		font-size: 20px;
@@ -161,10 +206,61 @@
             width: 80%;
         }
         .first-title {
-        	transform: scale(0.75);
+        	transform: scale(0.8);
+        }
+        .second-title {
+        	transform: scale(0.8);
         }
         .datetype{
 			margin-bottom: 4vh;
+		}
+		.selectContainer {
+			width: 100%;
+		}
+		.bridge-title {
+			transform: scale(0.7);
+			margin-bottom: -10px;
+		}
+		.bridge-available {
+		    transform: scale(0.8);
+	    }
+ 	    .imgContainer {
+	    	width: 290px;
+	    	height: 450px;
+	    	margin-bottom: 10px;
+	    }
+	    .imgForEach {
+			width: 53px;
+			height: 62px;
+		}
+		.imgForEach img {
+			width: 53px;
+			height: 62px;
+			border: 1px solid rgb(178,178,178);
+			cursor: pointer;
+		}
+		.imgBorder {
+			display: none;
+			position: absolute;
+			width: 53px;
+			height: 62px;
+			z-index: 999;
+			border: 4px solid rgb(100,210,163);
+		}
+		.imgForEach p { 
+		    color: rgb(100,210,163);
+		    font-size: 10px;
+		}
+		.messageConnect {
+			margin-top: -20px;
+			margin-bottom: -20px;
+		}
+		.messageBox {
+			width: 320px;
+			transform: scale(0.8);
+		}
+		.cnt-message {
+			margin-top: -20px;
 		}
      }
  }
@@ -184,11 +280,47 @@
 	.selectContainer {
 		width: 70%;
 	}
+	.bridge {
+		margin-bottom: -90px;
+	}
 	.bridge-title {
 		font-size: 13px;
 	}
 	.bridge-available {
 	    font-size: 16px;
+    }
+	.imgContainer {
+		width: 580px;
+	    height: 900px;
+		transform: scale(0.82);
+	}
+	.messageConnect {
+		margin-top: -60px;
+	}
+	.messageBox {
+		width: 450px;
+	}
+	.imgForEach {
+		width: 120px;
+		height: 141px;
+	}
+	.imgForEach img {
+		width: 120px;
+		height: 141px;
+		border: 1px solid rgb(178,178,178);
+		cursor: pointer;
+	}
+	.imgForEach p { 
+	    color: rgb(100,210,163);
+	    font-size: 18px;
+	}
+	.imgBorder {
+		display: none;
+		position: absolute;
+		width: 120px;
+		height: 141px;
+		z-index: 999;
+		border: 6px solid rgb(100,210,163);
 	}
  } 
  /*pc*/
@@ -205,6 +337,35 @@
 	}
 	.selectContainer {
 		width: 100%;
+	}
+	.messageBox {
+		width: 550px;
+	}
+	.imgContainer {
+		width: 580px;
+	    height: 900px;
+	}
+	.imgForEach {
+		width: 120px;
+		height: 141px;
+	}
+	.imgForEach img {
+		width: 120px;
+		height: 141px;
+		border: 1px solid rgb(178,178,178);
+		cursor: pointer;
+	}
+	.imgForEach p { 
+	    color: rgb(100,210,163);
+	    font-size: 18px;
+	}
+	.imgBorder {
+		display: none;
+		position: absolute;
+		width: 120px;
+		height: 141px;
+		z-index: 999;
+		border: 6px solid rgb(100,210,163);
 	}
  }
  .third-choose {
@@ -498,8 +659,6 @@
 	flex-wrap: wrap;
 	margin: auto;
 	padding: 0 30px;
-	width: 580px;
-	height: 900px;
 	font-size: 20px;
 	font-weight: 700;
 	color: #ccc;
@@ -508,35 +667,13 @@
 	justify-content:space-around;
 	align-items: center;
 }
-.imgForEach {
-	width: 120px;
-	height: 141px;
-}
-.imgForEach img {
-	width: 120px;
-	height: 141px;
-	border: 1px solid rgb(178,178,178);
-	cursor: pointer;
-}
-.imgBorder {
-	display: none;
-	position: absolute;
-	width: 120px;
-	height: 141px;
-	z-index: 999;
-	border: 6px solid rgb(100,210,163);
-}
-.imgForEach p { 
-    color: rgb(100,210,163);
-    font-size: 16px;
-}
 .imgForEach input {
 	display: none;
 }
 .messageBox {
 	display: none;
-	width: 444px;
 	margin: auto;
+	margin-top: 20px;
 	background-color: rgb(241,252,246);
 	font-size: 10px;
 	font-weight: 900;
