@@ -93,7 +93,7 @@
     word-wrap: break-word;
     text-align: justify;
     font-family: "Lato";
-    font-size: 0.6rem;
+    font-size: 10px;
 }
 input {
     display: none;
@@ -112,13 +112,10 @@ input {
             height:20vw;
             margin-top:20px;
             transform: scale(0.8, 0.8);
-            line-height:60%
         }
         .message {
             font-weight: bold;
-            font-size:0.2em;
-            letter-spacing: 85%;
-            /*margin-top:-3px;*/
+            font-size:10px;
         }
         .therapistbtn {
             width: 33.33%;
@@ -146,8 +143,8 @@ input {
         }
         .message {
             font-weight: bold;
-            font-size:0.2em;
-            letter-spacing: 85%;
+            font-size:11px;
+            /*letter-spacing: 85%;*/
             /*margin-top:-3px;*/
         }
         .therapistbtn {
@@ -174,7 +171,7 @@ input {
     }
     .message {
         font-weight: bold;
-        font-size:0.5rem;
+        font-size:1.0rem;
         margin-top:-3px;
     }
     .therapistbtn {

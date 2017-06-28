@@ -84,7 +84,7 @@
 .smaword1 {
     margin-top: 8px;
 }
-a:link, a:hover, a:visited, a:active{
+.bet>a:link, .bet>a:hover, .bet>a:visited, .bet>a:active{
     color: #fff;
     text-decoration: none;
 }
@@ -109,14 +109,14 @@ a:link, a:hover, a:visited, a:active{
 }
 
 /*ipad*/
-@media screen and (max-width: 969px) and (min-width: 751px) {
+@media screen and (max-width: 1024px) and (min-width: 751px) {
     .bet {
         width: 50%;
     }
 }
 
 /*pc*/
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1025px) {
     .bet {
         width: 20%;
     }
