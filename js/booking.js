@@ -225,20 +225,17 @@ function ctrlRadio(){
 }
 
 function chooseDate(){
-	$('#dd').calendar({
-        trigger: '#dt',
-        zIndex: 999,
-		format: 'yyyy-mm-dd',
-        onSelected: function (view, date, data) {
-            console.log('event: onSelected')
-        },
-        onClose: function (view, date, data) {
-            console.log('event: onClose')
-            console.log('view:' + view)
-            console.log('date:' + date)
-            console.log('data:' + (data || 'None'));
-        }
-    });
+	Flatpickr.l10n.firstDayOfWeek = 1;
+	document.getElementById("cla").flatpickr();
+	var x=($('.today').index('.flatpickr-day')+1)%7;
+	x=x+$('.flatpickr-day1').length;
+	x=x%7;
+	x--;
+	if(x<0)
+	{
+		x=6;
+	}
+	$('.flatpickr-weekday').eq(x).css('border-bottom','2px solid rgb(100,210,163)')
 }
 
 function chooseTime(){

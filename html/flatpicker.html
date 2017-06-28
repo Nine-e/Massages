@@ -3,8 +3,13 @@
 <head>
 	<title>zyx</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="dist/flatpickr.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/flatpickr.min.css">
 	<style>
+	    @charset "UTF-8";
+		@font-face{
+			font-family: Seravek;
+			src:url(../lib/Seravek-Medium.otf);
+		}
 		#where {
 			width:400px;
 			height: 400px;
@@ -24,10 +29,8 @@
 <input id="cla" class="flatpickr" data-date-format="Y-m-d" data-min-date="today">
 </div>
 </body>
-<script type="text/javascript" src="dist/jquery-3.2.1.js">
-</script>
-<script type="text/javascript" src="src/flatpickr.js">
-</script>
+<script type="text/javascript" src="../lib/jquery/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="../js/flatpickr.js"></script>
 <script> 
     Flatpickr.l10n.firstDayOfWeek = 1;
 	document.getElementById("cla").flatpickr();
