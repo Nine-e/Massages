@@ -21,11 +21,22 @@
 		},
         "length":{
         	"title":"Massage length",
-        	"option1":"60 minutes-£99"
+        	"option1":"60 minutes-£65",
+            "option2":"90 minutes-£75",
+            "option3":"120 minutes-£95",
+            "option4":"60 minutes-£130",
+            "option5":"90 minutes-£150",
+            "option6":"120 minutes-£190"
         },
         "type":{
         	"title":"Massage type",
-        	"option1":"Swedish Massage"
+        	"option1":"Swedish Massage",
+            "option2":"French Massage",
+            "option3":"British Massage",
+            "option4":"Chinese Massage",
+            "option5":"Thailand Massage",
+            "option6":"Korean Massage",
+            "option7":"Malaysia Massage"
         },
         "bridge":{
         	"title":"Choose your therapist",
@@ -53,82 +64,82 @@
         		"index":"4"
         	},
         	{
-        		"img":"../img/people4.png",
+        		"img":"../img/people5.png",
         		"name":"Carol",
         		"index":"5"
         	},
         	{
-        		"img":"../img/people5.png",
+        		"img":"../img/people6.png",
         		"name":"Lisa",
         		"index":"6"
         	},
         	{
-        		"img":"../img/people6.png",
+        		"img":"../img/people7.png",
         		"name":"Josie",
         		"index":"7"
         	},
         	{
-        		"img":"../img/people7.png",
+        		"img":"../img/people8.png",
         		"name":"Kate",
         		"index":"8"
         	},
         	{
-        		"img":"../img/people8.png",
+        		"img":"../img/people9.png",
         		"name":"Chloe",
         		"index":"9"
         	},
         	{
-        		"img":"../img/people9.png",
+        		"img":"../img/people10.png",
         		"name":"Alice",
         		"index":"10"
         	},
         	{
-        		"img":"../img/people10.png",
+        		"img":"../img/people11.png",
         		"name":"Maria",
         		"index":"11"
         	},
         	{
-        		"img":"../img/people11.png",
+        		"img":"../img/people12.png",
         		"name":"Sam",
         		"index":"12"
         	},
         	{
-        		"img":"../img/people12.png",
+        		"img":"../img/people13.png",
         		"name":"Lara",
         		"index":"13"
         	},
         	{
-        		"img":"../img/people13.png",
+        		"img":"../img/people14.png",
         		"name":"Tia",
         		"index":"14"
         	},
         	{
-        		"img":"../img/people14.png",
+        		"img":"../img/people15.png",
         		"name":"Sarah",
         		"index":"15"
         	},
         	{
-        		"img":"../img/people15.png",
+        		"img":"../img/people16.png",
         		"name":"Penelope",
         		"index":"16"
         	},
         	{
-        		"img":"../img/people16.png",
+        		"img":"../img/people17.png",
         		"name":"Molly",
         		"index":"17"
         	},
         	{
-        		"img":"../img/people17.png",
+        		"img":"../img/people18.png",
         		"name":"Clara",
         		"index":"18"
         	},
         	{
-        		"img":"../img/people18.png",
+        		"img":"../img/people19.png",
         		"name":"Kylie",
         		"index":"19"
         	},
         	{
-        		"img":"../img/people19.png",
+        		"img":"../img/people20.png",
         		"name":"Lauren",
         		"index":"20"
         	}

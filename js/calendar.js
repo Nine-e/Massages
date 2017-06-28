@@ -127,11 +127,13 @@
             '<div class="calendar-views">',
             '<div class="view view-date">',
             '<div class="calendar-hd">',
-            '<span class="prevgray" title="上一月" data-calendar-arrow-date>{prev}</span>',
             '<a href="javascript:;" data-calendar-display-date class="calendar-display">',
             '{yyyy}/<span class="m">{mm}</span>',
             '</a>',
-            '<span class="nextgray" title="下一月" data-calendar-arrow-date>{next}</span>',
+            '<div class="calendar-arrow">',
+            '<span class="prev" title="上一月" data-calendar-arrow-date>{prev}</span>',
+            '<span class="next" title="下一月" data-calendar-arrow-date>{next}</span>',
+            '</div>',
             '</div>',
             '<div class="calendar-ct">',
             '<ol class="week">{week}</ol>',
@@ -140,9 +142,11 @@
             '</div>',
             '<div class="view view-month">',
             '<div class="calendar-hd">',
-            '<span class="prevgray" title="上一年" data-calendar-arrow-month>{prev}</span>',
             '<a href="javascript:;" data-calendar-display-month class="calendar-display">{yyyy}</a>',
-            '<span class="nextgray" title="下一年" data-calendar-arrow-month>{next}</span>',
+            '<div class="calendar-arrow">',
+            '<span class="prev" title="上一年" data-calendar-arrow-month>{prev}</span>',
+            '<span class="next" title="下一年" data-calendar-arrow-month>{next}</span>',
+            '</div>',
             '</div>',
             '<ol class="calendar-ct month-items">{month}</ol>',
             '</div>',
@@ -298,7 +302,7 @@
         },
         getDayData: function(day) {
             var ret, data = this.data;
-
+   
             if (data) {
 
                 for (var i = 0, len = data.length; i < len; i++) {
@@ -530,10 +534,9 @@
         },
         updateDateView: function(y, m, dirc, cb) {
             m = m || this.date.getMonth() + 1;
-            if(dirc)
-            dirc=dirc.substring(0,4);
+
             var _this = this,
-                $dis = this.$dateItem
+                $dis = this.$dateItems,
                 exec = {
                     prev: function() {
                         var pm = Date.getPrevMonth(y, m),
@@ -582,7 +585,7 @@
             this.updateDisDate(y, m);
 
             this.setView('date');
-            alert('date');
+
             return {
                 y: y,
                 m: m

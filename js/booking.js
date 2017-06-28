@@ -123,7 +123,7 @@ function ctrlNum(){
 			$(".fourth").hide();
 			$(".fifth").hide();
 			$(".continue-button").show();
-			$(".agreeing-text").show();
+			$(".agreeing-text").hide();
 			$(".book-button").hide();
 			}
 	if(num == 2){

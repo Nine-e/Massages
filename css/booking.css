@@ -22,6 +22,7 @@
 .datetype{
 	z-index:99999;
 	height: 6vh;
+	width: 100%;
 }
 .timetype {
 	z-index:1000;
@@ -43,7 +44,8 @@
 .mybet {
     width: 20%;
     display: flex;
-    margin: 30px auto 10px;
+    margin: auto;
+    margin-top: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -114,6 +116,8 @@
 	text-decoration: none;
 	color: #999；
 }*/
+
+/*third*/
 .third-title{
  	font-family: Montserrat-Light;
  	font-size: 30px;
@@ -135,6 +139,9 @@
         .third-choose div {
             width: 40%;
         }
+        .datetype{
+			margin-bottom: 15vh;
+		}
     }
     /*竖屏*/
      @media screen and (orientation: portrait)
@@ -142,36 +149,47 @@
      	.third-title {
      		font-size: 20px;
      	}
-     	 .mybet {
+     	.mybet {
             width: 80%;
         }
-         .third-line,
-         .third-choose div {
-             width: 80%;
-         }
+        .third-line,
+        .third-choose div {
+            width: 80%;
+        }
+        .first-title {
+        	transform: scale(0.75);
+        }
+        .datetype{
+			margin-bottom: 4vh;
+		}
      }
  }
  
  /*ipad*/
  @media screen and (max-width: 969px) and (min-width: 751px) {
- 	 .mybet {
-            width: 40%;
-        }
-     .third-line,
-     .third-choose div {
+ 	.mybet {
         width: 40%;
-     }
- }
- 
+    }
+    .third-line,
+    .third-choose div {
+        width: 40%;
+    }
+	.datetype,.timetype {
+		width: 65%;
+	}
+ } 
  /*pc*/
  @media screen and (min-width: 970px) {
- 	 .mybet {
-            width: 20%;
-        }
-     .third-line,
-     .third-choose div {
-         width: 20%;
-     }
+ 	.mybet {
+        width: 20%;
+    }
+    .third-line,
+    .third-choose div {
+        width: 20%;
+    }
+    .datetype{
+		margin-bottom: 4vh;
+	}
  }
  .third-choose {
  	text-align: center;
@@ -220,44 +238,88 @@
  	line-height: 40px;
  	color: #919191;
  }
- .bet-word{
+ .third-bet-word{
 	float: left;
- }
- .forgot p{
- 	color: #777;
+	font-size: 13px;
+    color: rgb(153, 153, 153);
+    font-weight: bold;
+    font-family: "Lato";
  }
 
- .fourth-title,.fifth-title{
- 	font-family: Montserrat-Light;
- 	font-size: 30px;
- 	color: #adadad;
- 	margin: 20px 0;
- }
- .address1, .address2,.instructions,.procode  {
+.third-firstname, .third-lastname, .third-email, .third-mobile, .third-password, .third-forgot{
     width: 100%;
     margin-top: 15px;
 }
- .address1in, .address2in, .provincein, .codein, .instructionsin {
+.third-firstnin, .third-lastnin, .third-emailin, .third-mobilein, .third-passwordin {
     height: 35px;
     width: 100%;
     border: 1px solid rgb(229, 229, 229);
     margin-top: 2px;
     font-size: 15px;
 }
-.instructionsin{
+.third-forgot {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    color: rgb(153, 153, 153);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+ .third-forgot p{
+ 	color: #777;
+ 	font-weight: bold;
+ }
+
+
+/*fourth*/
+ .fourth-title,.fifth-title{
+ 	font-family: Montserrat-Light;
+ 	font-size: 30px;
+ 	color: #adadad;
+ 	margin: 20px 0;
+ }
+ .fourth-bet-word{
+	float: left;
+	font-size: 13px;
+    color: rgb(153, 153, 153);
+    font-weight: bold;
+    font-family: "Lato";
+ }
+
+ .fourth-address1, .fourth-address2,.fourth-instructions,.fourth-procode  {
+    width: 100%;
+    margin-top: 15px;
+}
+ .fourth-address1in, .fourth-address2in, .fourth-provincein, .fourth-codein, .fourth-instructionsin {
+    height: 35px;
+    width: 100%;
+    border: 1px solid rgb(229, 229, 229);
+    margin-top: 2px;
+    font-size: 15px;
+}
+.fourth-instructionsin{
 	height: 115px;
 }
-.province, .code {
+.fourth-province, .fourth-code {
 	display: inline-block;
 	width: 40%;
 	margin-top: 15px;
 }
-.province {
+.fourth-province {
 	float: left;
 }
-.code {
+.fourth-code {
 	float: right;
 }
+/*fifth*/
+.fifth-bet-word{
+	float: left;
+	font-size: 13px;
+    color: rgb(153, 153, 153);
+    font-weight: bold;
+    font-family: "Lato";
+ }
 .fifth-name,.fifth-num,.fifth-date-code,.fifth-billing,.fifth-gift-apply,.fifth-summary  {
     width: 100%;
     margin-top: 15px;
@@ -300,6 +362,7 @@
 	border-bottom: 2px solid #ecfdf4;
 	line-height: 35px;
 	font-size: 13px;
+	font-weight: bold;
     color: rgb(153, 153, 153);
     font-family: chbold,"Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align: left;
@@ -335,6 +398,7 @@
 	color: #adadad;
 	margin: 20px 0;
 }
+/*first*/
 .first-title p {
 	margin: 0;
 }
@@ -350,7 +414,7 @@ ul, ol, li {
 	padding: 0;
 	margin: 0;
 }
-
+/*second*/
 .second {
 	font-family: Montserrat-Light;
 	color: #adadad;
@@ -399,6 +463,9 @@ ul, ol, li {
     color: rgb(100,210,163);
     margin-top: -5px;       
     font-size: 20px;
+}
+.secondTherapist {
+	display: none;
 }
 .icon--down:before, .select:before {
     content: "\e600";
