@@ -201,19 +201,19 @@
         <div class="first-title">
             <p>{{:title}}</p>
         </div>
-        <section id="betOne">
+        <div id="betOne">
             <div class="bet">
-                <div class="firstname datetype">
+                <div class="datetype">
                     <div class="bet-word">{{:choose1}}</div>
                     <input id="dt" class="firstnin" contentEditable="true" value="Today"></input>
                     <div id="dd"></div>
                 </div>
-                <div class="lastname datetype timetype">
+                <div class="datetype timetype">
                     <div class="bet-word">{{:choose2}}</div>
                     <input id="di" class="lastnin" contentEditable="true" value="5:00 PM"></input>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 </script>
 
@@ -327,7 +327,11 @@
                     <div class="select firstnin">
                         <select>
                             <option selected>{{:option1}}</option>
-                            <option>Chrysler</option>
+                            <option>{{:option2}}</option>
+                            <option>{{:option3}}</option>
+                            <option class="secondTherapist">{{:option4}}</option>
+                            <option class="secondTherapist">{{:option5}}</option>
+                            <option class="secondTherapist">{{:option6}}</option>
                         </select>
                     </div>
                 </div>
@@ -338,7 +342,12 @@
                     <div class="select firstnin">
                         <select>
                             <option selected>{{:option1}}</option>
-                            <option>Chrysler</option>
+                            <option>{{:option2}}</option>
+                            <option>{{:option3}}</option>
+                            <option>{{:option4}}</option>
+                            <option>{{:option5}}</option>
+                            <option>{{:option6}}</option>
+                            <option>{{:option7}}</option>
                         </select>
                     </div>
                 </div>
@@ -355,7 +364,7 @@
             {{for imgContainer}}
             <div class="imgForEach">
                 <div class="imgBorder"></div>
-                <img src="{{:img}}">
+                <img src="{{:img}}">                
                 <p>{{:name}}</p>
                 <input type="text" value="{{:index}}">
             </div>

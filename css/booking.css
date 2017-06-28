@@ -22,6 +22,7 @@
 .datetype{
 	z-index:99999;
 	height: 6vh;
+	width: 100%;
 }
 .timetype {
 	z-index:1000;
@@ -135,6 +136,9 @@
         .third-choose div {
             width: 40%;
         }
+        .datetype{
+			margin-bottom: 15vh;
+		}
     }
     /*竖屏*/
      @media screen and (orientation: portrait)
@@ -142,36 +146,47 @@
      	.third-title {
      		font-size: 20px;
      	}
-     	 .mybet {
+     	.mybet {
             width: 80%;
         }
-         .third-line,
-         .third-choose div {
-             width: 80%;
-         }
+        .third-line,
+        .third-choose div {
+            width: 80%;
+        }
+        .first-title {
+        	transform: scale(0.75);
+        }
+        .datetype{
+			margin-bottom: 4vh;
+		}
      }
  }
  
  /*ipad*/
  @media screen and (max-width: 969px) and (min-width: 751px) {
- 	 .mybet {
-            width: 40%;
-        }
-     .third-line,
-     .third-choose div {
+ 	.mybet {
         width: 40%;
-     }
- }
- 
+    }
+    .third-line,
+    .third-choose div {
+        width: 40%;
+    }
+	.datetype,.timetype {
+		width: 65%;
+	}
+ } 
  /*pc*/
  @media screen and (min-width: 970px) {
- 	 .mybet {
-            width: 20%;
-        }
-     .third-line,
-     .third-choose div {
-         width: 20%;
-     }
+ 	.mybet {
+        width: 20%;
+    }
+    .third-line,
+    .third-choose div {
+        width: 20%;
+    }
+    .datetype{
+		margin-bottom: 4vh;
+	}
  }
  .third-choose {
  	text-align: center;
@@ -399,6 +414,9 @@ ul, ol, li {
     color: rgb(100,210,163);
     margin-top: -5px;       
     font-size: 20px;
+}
+.secondTherapist {
+	display: none;
 }
 .icon--down:before, .select:before {
     content: "\e600";
