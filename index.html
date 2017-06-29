@@ -4,10 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link rel="stylesheet"  href="../lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
-    <link href="../css/common.css" rel="stylesheet">
-    <link href="../css/home.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/booking.css">
+    <link rel="stylesheet" type="text/css" href="../css/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/timepicki.css">
 
     <title>Home</title>
 </head>
@@ -23,6 +27,9 @@
 <script type="text/javascript" src = "../js/commonhead.js"></script>
 <script type="text/javascript" src = "../js/commonfoot.js"></script>
 <script type="text/javascript" src = "../js/home.js"></script>
+<script type="text/javascript" src="../js/flatpickr.js"></script>
+<script type="text/javascript" src="../js/timepicki.js"></script>
+
 </html>
 <script type="text/x-jsrender" id="menuTmpl">
     <div class="massagesHide"></div>
@@ -81,6 +88,24 @@
             <img src="{{:img1}}" class="desktop_landscape">
             <img src="{{:img2}}" class="ipad">
             <img src="{{:img3}}" class="pages">
+        </div>
+    </section>
+</script>
+
+<script type="text/x-jsrender" id="bookTmpl">
+    <section id="book">
+        <div class="book">
+            <p class="book-title">{{:title}}</p>
+            <p class="book-subtitle">{{:subtitle}}</p>
+            <div class="pickTime">
+                <div class="datetype">
+                    <input id="cla" class="flatpickr firstnin" data-date-format="Y-m-d" data-min-date="today" value="Today" contentEditable="true">
+                </div>
+                <div class="datetype timetype">
+                    <input id="di" class="lastnin" contentEditable="true" value="5:00 PM"></input>
+                </div>
+            </div>
+            <div class="continue-button">{{:book}}</div>
         </div>
     </section>
 </script>
