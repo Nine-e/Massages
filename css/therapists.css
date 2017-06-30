@@ -249,8 +249,7 @@ input {
         flex-wrap: nowrap;
     }
     .message {
-        font-size:1.3rem;
-
+        font-size:13px;
         height:8%;
     }
     .therapistbtn {
@@ -260,6 +259,13 @@ input {
     }
     .name {
         font-size:1.8rem;
+
+    }
+    .message,.name {
+        width: 120%;
+        transform-origin: top left;
+        transform:scale(0.83,1);
+
     }
 }
 /*transform: scale(0.1,0.1);*/
