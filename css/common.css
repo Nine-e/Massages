@@ -254,6 +254,9 @@ a {
     font-family: "Lato";
     background-color: #ffffff;
 }
+.menu a {
+    text-decoration: none;
+}
 .menu-container {
     display: flex;
     flex-wrap: wrap;
