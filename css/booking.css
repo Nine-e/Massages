@@ -627,11 +627,7 @@
 .icon--down:before, .select:before {
     content: "\e600";
 }
-.sessionSelect {
-	display: none;
-	z-index: 2;
-}
-.lengthSelect {
+.sessionSelect,.lengthSelect,.typeSelect {
 	display: none;
 	z-index: 2;
 }
@@ -684,7 +680,7 @@
 .selectContainer {
     margin-top: 15px;
 }
-.selectContainer span,.firstLength span {
+.selectContainer span,.firstLength span,.firstType span {
 	float: left;
 	padding: 10px;
 	color: rgb(152,152,152);
@@ -695,6 +691,6 @@
 .selectContainer input {
 	display: none;
 }
-.firstSession,.firstLength {
+.firstSession,.firstLength,.firstType {
 	display: none;
 }
