@@ -39,6 +39,10 @@ function load()
         var introduceHtml = $.templates("#introduceTmpl").render(introduceData);
         $(".index").append(introduceHtml);
 
+        therapistsData = data.therapists;
+        var therapistsHtml = $.templates("#therapistsTmpl").render(therapistsData);
+        $(".index").append(therapistsHtml);
+
         faqData = data.faq;
         var faqHtml = $.templates("#faqTmpl").render(faqData);
         $(".index").append(faqHtml);
