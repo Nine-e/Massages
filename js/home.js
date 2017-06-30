@@ -26,7 +26,7 @@ function load()
 
 	initPage();
 
-	$.getJSON("../json/home.json", function(data) {
+	$.getJSON("json/home.json", function(data) {
         homeData = data.home;
         var homeHtml = $.templates("#homeTmpl").render(homeData);
         $(".index").append(homeHtml);
@@ -34,6 +34,10 @@ function load()
         bookData = data.book;
         var bookHtml = $.templates("#bookTmpl").render(bookData);
         $(".index").append(bookHtml);
+
+        introduceData = data.introduce;
+        var introduceHtml = $.templates("#introduceTmpl").render(introduceData);
+        $(".index").append(introduceHtml);
 
         faqData = data.faq;
         var faqHtml = $.templates("#faqTmpl").render(faqData);

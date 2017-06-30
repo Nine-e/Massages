@@ -177,6 +177,9 @@
             margin-top: -14px;
             font-size: 15px;
         }
+        .pickTime {
+            height: 120px;
+        }
         .timetype {
             margin-top: -33px;
         }
@@ -191,6 +194,9 @@
         .book-subtitle {
             margin-top: -14px;
             font-size: 10px;
+        }
+        .pickTime {
+            height: 120px;
         }
         .timetype {
             margin-top: -25px;
@@ -210,6 +216,9 @@
         margin-top: -14px;
         font-size: 17px;
     }
+    .pickTime {
+        height: 120px;
+    }
     .timetype {
         margin-top: -23px;
     }
@@ -228,10 +237,142 @@
         margin-top: -16px;
         font-size: 20px;
     }
+    .pickTime {
+        height: 100px;
+    }
     .timetype {
         margin-top: -28px;
     }
 }
+/*-------------------------------introduce------------------------------*/
+#introduce, #introduceTmpl {
+    width: 100%;
+}
+.introduce {
+    display: flex;
+    margin: auto;
+    margin-top: 5vw;
+    width: 100%;
+    height: 12vw;
+    background-color: rgb(217,251,234);
+}
+.introducePart {
+    display: flex;
+    /*border: 1px solid #000;*/
+}
+.introduceBox {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    font-family: Montserrat;
+    color: rgb(102,102,102);
+    /*border: 1px solid #000;*/
+}
+/*mobile*/
+ @media screen and (max-width: 750px) {
+     /*橫屏*/
+    @media screen and (orientation: landscape)
+    {
+        .introduce {
+            height: 80px;
+        }
+        .introducePart {
+            width: 33.3%;
+        }
+        .introduceBox {
+            transform: scale(0.9);
+            width: 100%;
+            height: 46%;
+            margin: auto;
+            font-size: 10px;
+        }
+        .introduceBox img {
+            width: 30px;
+            height: 30px;
+        }
+        .introduceBox p {
+            margin: auto;
+            padding-left: 3%;
+        }
+    }
+    /*竖屏*/
+     @media screen and (orientation: portrait)
+     {
+        .introduce {
+            flex-wrap: wrap;
+            height: 80px;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+        }
+        .introducePart {
+            width: 80%;
+            margin: auto;
+            padding-bottom: 2%;
+        }
+        .introduceBox {
+            transform: scale(0.9);
+            width: 100%;
+            height: 46%;
+            margin: auto;
+            font-size: 16px;
+        }
+        .introduceBox img {
+            width: 42px;
+            height: 42px;
+        }
+        .introduceBox p {
+            margin: auto;
+            padding-left: 3%;
+            font-family: Montserrat;
+        }
+     }
+ }
+ 
+ /*ipad*/
+ @media screen and (max-width: 969px) and (min-width: 751px) {
+    .introduce {
+        height: 110px;
+    }
+    .introducePart {
+        width: 33.3%;
+    }
+    .introduceBox {
+        width: 90%;
+        height: 46%;
+        margin: auto;
+        font-size: 11px;
+    }
+    .introduceBox img {
+        width: 40px;
+        height: 40px;
+    }
+    .introduceBox p {
+        margin: auto;
+        padding-left: 2%;
+    }
+ }
+ 
+ /*pc*/
+ @media screen and (min-width: 970px) {
+    .introduce {
+        height: 160px;
+    }
+    .introducePart {
+        width: 33.3%;
+    }
+    .introduceBox {
+        width: 80%;
+        height: 43%;
+        margin: auto;
+        font-size: 17px;
+    }
+    .introduceBox p{
+        height: 80%;
+        margin: auto;
+        padding-left: 4%;
+    }
+ }
+
 /*-------------------------------contact------------------------------*/
 .contact {
     padding-top: 60px;
@@ -458,6 +599,7 @@
         }
         .faqContainer {
             margin-top: 10%;
+            margin-left: 18%;
             width: 80%;
         }
          .question {
@@ -476,7 +618,8 @@
             display: inline-block;
             width: 5%;
             height: 5%;
-            position: relative;
+            left: 13%;
+            position: absolute;
         }
     }
 }
