@@ -141,7 +141,7 @@
     color: rgb(51,51,51);
     font-weight: lighter;
     font-family: chlight;
-};
+}
 .pickTime,.time_picker,.timepicker_wrap {
     margin: auto;
     z-index: 9999;
