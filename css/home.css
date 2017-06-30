@@ -4,6 +4,10 @@
     src:url(../lib/Montserrat-ExtraLight.otf);
  }
  @font-face{
+    font-family: Montserrat-Bold;
+    src:url(../lib/Montserrat-Bold.otf);
+ }
+ @font-face{
     font-family: Montserrat;
     src:url(../lib/Montserrat-Light.otf);
 }
@@ -843,4 +847,63 @@
         font-size: 1.2vw;
         line-height: 16px;
     }
+}
+
+/*-------------------------price-------------------------------*/
+.price {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+.price-title {
+    font-size: 35px;
+    color: rgb(102,209,165);
+    font-weight: lighter;
+    font-family: chlight;
+}
+.price-line {
+    width: 30%;
+    height: 50px;
+    margin: auto;
+    font-family: Montserrat;
+    border-bottom: 2px solid #f2fdf7;
+}
+.price-line-time {
+    display: inline-block;
+    width: 40%;
+    line-height: 50px;
+    font-family: Montserrat-Bold;
+    color: #64d2a3 ;
+    font-size: 20px;
+    font-weight: 800;
+}
+.price-line-time::after {
+    content: "minutes";
+    margin-left: 3px;
+    color: #888 ;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+}
+.price-line-money {
+    display: inline-block;
+    width: 40%;
+    line-height: 50px;
+    color: #888 ;
+    font-size: 20px;
+}
+.price-line-money::before {
+    content: "￡";
+}
+.price-button {
+    width: 200px;
+    height: 40px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #64d2a3;
 }
