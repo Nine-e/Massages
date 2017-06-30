@@ -35,6 +35,10 @@ function load()
         var bookHtml = $.templates("#bookTmpl").render(bookData);
         $(".index").append(bookHtml);
 
+        introduceData = data.introduce;
+        var introduceHtml = $.templates("#introduceTmpl").render(introduceData);
+        $(".index").append(introduceHtml);
+
         faqData = data.faq;
         var faqHtml = $.templates("#faqTmpl").render(faqData);
         $(".index").append(faqHtml);

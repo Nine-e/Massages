@@ -19,6 +19,14 @@
     "subtitle":"Book a spa quality massage to your door",
     "book":"BOOK A MASSAGE"
   },
+  "introduce":{
+    "homeImg":"../img/home.png",
+    "homeIntroduce":"Massage delivered to your home, office or hotel",
+    "calendarImg":"../img/calendar.png",
+    "calendarIntroduce":"Available 7 days a week, 8am to midnight,including holidays",
+    "timeImg":"../img/time.png",
+    "timeIntroduce":"We can be there in 1 hour or schedule in advance"
+  },
   "faq":{
     "line1":"FREQUENTLY ASKED",
     "line2":"QUESTIONS",
