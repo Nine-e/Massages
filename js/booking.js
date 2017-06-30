@@ -11,6 +11,7 @@ var choose=1;
 function load()
 { 
     /*initPage();*/
+
 	$.getJSON("../json/booking.json",function(data){
 		cntData = data.cnt;
 		var cntHtml = $.templates("#cntTmpl").render(cntData)
@@ -42,6 +43,7 @@ function load()
 		ctrlNum();
 		Continue();
 		Back();
+		sessionSelect()
 		
 	});
 
@@ -237,4 +239,32 @@ function chooseTherapist(){
 
 	});
 
+}
+
+
+function sessionSelect(){
+	$(".session").click(function(event) {
+
+		var index = $(this).find("input").val();
+		if(index == 1){
+			$(".sessionHead").find("span").text('Single-1 therapist');
+			$(this).css("display","none");
+			$(this).siblings().css("display","block");
+		}
+		else if(index == 2) {
+			$(".sessionHead").find("span").text('Double-2 therapist');
+			$(this).css("display","none");
+			$(this).siblings().css("display","block");
+		}
+		
+		$(".sessionSelect").slideToggle(200);
+	});
+
+	$(".session").mouseenter(function(event) {
+		$(this).css("background-color","rgb(235,235,235)");
+	});
+
+	$(".session").mouseleave(function(event) {
+		$(this).css("background-color","white");
+	});
 }

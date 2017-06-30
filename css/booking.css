@@ -615,23 +615,6 @@
     right: 0.5em;
     pointer-events: none;
 }
-.select select {
-    cursor: pointer;
-    padding: 0.5em;
-    padding-right: 2em;
-    width: 100%;
-    border: none;
-    color: rgb(154,154,154);
-    font-size: 13px;
-    line-height: 22px;
-    background: transparent;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-.select select:focus {
-    outline: none;
-}
 .select:before {
     font-family: "icons";
     color: rgb(100,210,163);
@@ -643,6 +626,14 @@
 }
 .icon--down:before, .select:before {
     content: "\e600";
+}
+.sessionSelect {
+	display: none;
+	z-index: 2;
+}
+.lengthSelect {
+	display: none;
+	z-index: 2;
 }
 .bridge-title {
 	font-size: 20px;
@@ -692,4 +683,18 @@
 }
 .selectContainer {
     margin-top: 15px;
+}
+.selectContainer span,.firstLength span {
+	float: left;
+	padding: 10px;
+	color: rgb(152,152,152);
+	font-size: 12px;
+	font-weight: 900;
+	line-height: 15px;
+}
+.selectContainer input {
+	display: none;
+}
+.firstSession,.firstLength {
+	display: none;
 }
