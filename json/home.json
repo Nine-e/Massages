@@ -31,6 +31,97 @@
     "title": "PROFESSIONAL MOBILE MASSAGE THERAPISTS",
     "btn": "BOOK MY MASSAGE"
   },
+  "styles": {
+    "title": "CHOOSE YOUR MASSAGE TYPE",
+    "elements":[
+        {
+            "img": "img/style1.png",
+            "name": "Swedish",
+            "message": [
+              {"messagediv": "A gentle technique, with long strokes,"},
+              { "messagediv": "kneading,and circular movements to"},
+              { "messagediv": "relax and energize."}
+            ],
+            "index":"1"
+        },
+        {
+            "img": "img/style2.png",
+            "name": "Deep tissue",
+            "message": [
+              { "messagediv": "Utilizes slow,more forceful strokes to"},
+              { "messagediv": "target deep muscle layers and"},
+              { "messagediv": "connective tissue."}
+            ],
+            "index":"2"
+        },
+        {
+            "img": "img/style3.png",
+            "name": "Sports",
+            "message": [
+              { "messagediv": "Targets muscle-tendon junctions to"},
+              { "messagediv": "boost flexibility and endurance,while"},
+              { "messagediv": "reducing muscle fatigue"}
+            ],
+            "index":"3"
+        },
+        {
+            "img": "img/style4.png",
+            "name": "Pre-natal",
+            "message": [
+              { "messagediv": "Lessens pregnancy discomfort, helping"},
+              { "messagediv": "alleviate backaches,stiffness,leg cramps,"},
+              { "messagediv": "headaches,and swelling."}
+            ],
+            "index":"4"
+        },
+        {
+            "img": "img/style5.png",
+            "name": "Couples Massage",
+            "message": [
+              { "messagediv": "All modalities can be performed as"},
+              { "messagediv": "couples massage. Order one therapist"},
+              { "messagediv": "for back to back or two simultaneous"},
+              { "messagediv": "massage."}
+            ],
+            "index":"5"
+        },
+        {
+            "img": "img/style6.png",
+            "name": "Thai Massage",
+            "message": [
+              { "messagediv": "It is an ancient healing system that"},
+              { "messagediv": "combines broad and targeted"},
+              { "messagediv": "acupressure, stimulation and"},
+              { "messagediv": "manipulation of energy lines called sen,"},
+              { "messagediv": "and assisted yoga postures."}
+            ],
+            "index":"6"
+        },
+        {
+            "img": "img/style7.png",
+            "name": "Relaxing",
+            "message": [
+              { "messagediv": "Helps de-stress and loosen up your body"},
+              { "messagediv": "and is great for those who have had a"},
+              { "messagediv": "hard working week or feel like treating"},
+              { "messagediv": "themselves to some TLC!"}
+            ],
+            "index":"7"
+        },
+        {
+            "img": "img/style8.png",
+            "name": "At work",
+            "message": [
+              { "messagediv": "Decrease stress,improve productivity,"},
+              { "messagediv": "and build employee morale with in-office"},
+              { "messagediv": "chair massage."}
+            ],
+            "index":"8"
+        }
+
+    ],
+    "btn": "BOOK NOW"
+  },
   "price":{
     "title":"SIMPLE PRICING",
     "button":"BOOK NOW"

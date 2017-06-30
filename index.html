@@ -134,6 +134,7 @@
         </div>
     </section>
 </script>
+
 <script type="text/x-jsrender" id="therapistsTmpl">
     <section id="therapists">
         <div class="therapists">
@@ -149,6 +150,31 @@
                 <div class="therapists-imgbox"><img src="img/people7.png"></div>
             </div>
             <div class="therapists-btn">{{:btn}}</div>
+        </div>
+    </section>
+</script>
+
+<script type="text/x-jsrender" id="stylesTmpl">
+    <section id="styles">
+        <div class="styles">
+            <div class="styles-title">{{:title}}</div>
+            <div class="styles-elements">
+                {{for elements}}
+                <div class="styles-element">
+                    <img src="{{:img}}">
+                    <div class="element-message">
+                        <div class="name">{{:name}}</div>
+                        {{for message}}
+                        <div class="message">
+                            <div>{{:messagediv}}</div>
+                        </div>
+                        {{/for}}
+                    </div>
+                    <input type="text" value="1">
+                </div>
+                {{/for}}
+            </div>
+            <div class="styles-btn">{{:btn}}</div>
         </div>
     </section>
 </script>
@@ -225,27 +251,27 @@
 </script>
 
 <script type="text/x-jsrender" id="contactTmpl">
-<div class="contact">
-        <div class="contact-title">{{:title}}</div>
-        <div class="contact-text">
-            <p>{{:text1}}</p>
-            <p>{{:text2}}</p>
-        </div>
-        <div class="contact-phone">
-            <p class="contact-phone-phone">{{:phone}}</p>
-            <p class="contact-phone-num">
-                <span>{{:num1}}</span>
-                <span>{{:num2}}</span>
-                <span>{{:num3}}</span>
-            </p>
-        </div>
-        <div class="mybet">
-        <input class="contact-namein" contentEditable="true" placeholder="Your Name"></input>
-        <input class="contact-emailin" contentEditable="true" placeholder="Your Email"></input>
-        <textarea class="contact-messagein" type="text" contentEditable="true" placeholder="Your Message"></textarea>
-        </div>
-        <div class="contact-send-button">{{:send}}</div>
-</div>
+    <div class="contact">
+            <div class="contact-title">{{:title}}</div>
+            <div class="contact-text">
+                <p>{{:text1}}</p>
+                <p>{{:text2}}</p>
+            </div>
+            <div class="contact-phone">
+                <p class="contact-phone-phone">{{:phone}}</p>
+                <p class="contact-phone-num">
+                    <span>{{:num1}}</span>
+                    <span>{{:num2}}</span>
+                    <span>{{:num3}}</span>
+                </p>
+            </div>
+            <div class="mybet">
+            <input class="contact-namein" contentEditable="true" placeholder="Your Name"></input>
+            <input class="contact-emailin" contentEditable="true" placeholder="Your Email"></input>
+            <textarea class="contact-messagein" type="text" contentEditable="true" placeholder="Your Message"></textarea>
+            </div>
+            <div class="contact-send-button">{{:send}}</div>
+    </div>
 </script>
 
 <script type="text/x-jsrender" id="footTmpl">
@@ -263,20 +289,20 @@
 </script>
 
 <script type="text/x-jsrender" id="priceTmpl">
-<div class="price">
-    <div class="price-title">{{:title}}</div>
-    <div class="price-line">
-        <div class="price-line-time">60</div>
-        <div class="price-line-money">65</div>
+    <div class="price">
+        <div class="price-title">{{:title}}</div>
+        <div class="price-line">
+            <div class="price-line-time">60</div>
+            <div class="price-line-money">65</div>
+        </div>
+        <div class="price-line">
+            <div class="price-line-time">60</div>
+            <div class="price-line-money">65</div>
+        </div>
+        <div class="price-line">
+            <div class="price-line-time">60</div>
+            <div class="price-line-money">65</div>
+        </div>
+        <div class="price-button">{{:button}}</div>
     </div>
-    <div class="price-line">
-        <div class="price-line-time">60</div>
-        <div class="price-line-money">65</div>
-    </div>
-    <div class="price-line">
-        <div class="price-line-time">60</div>
-        <div class="price-line-money">65</div>
-    </div>
-    <div class="price-button">{{:button}}</div>
-</div>
 </script>
