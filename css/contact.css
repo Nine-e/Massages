@@ -17,6 +17,9 @@
  * @date    2017-06-26 21:21:18
  * @version $Id$
  */
+ body {
+ 	min-height: 100vh;
+ }
 .cnt {
 	margin-top: 60px;
 	text-align: center;

@@ -188,6 +188,9 @@ input {
 
 /*pc*/
 @media all and (min-width: 1025px) {
+    body {
+        font-size: 10px;
+    }
     .therapister {
         width: 75vw;
     }
@@ -197,7 +200,7 @@ input {
         margin-top: 40px;
     }
     .message {
-        font-size:10px;
+        font-size:1.1rem;
     }
     .therapistbtn {
         width: 20%;
