@@ -10,9 +10,9 @@
     "signIn":"Sign In"
   },
   "home":{
-    "img1":"../img/desktop_landscape.png",
-    "img2":"../img/ipad.png",
-    "img3":"../img/pages.png"
+    "img1":"img/desktop_landscape.png",
+    "img2":"img/ipad.png",
+    "img3":"img/pages.png"
   },
   "book":{
     "title":"LONDON MOBILE MASSAGE",
@@ -20,11 +20,11 @@
     "book":"BOOK A MASSAGE"
   },
   "introduce":{
-    "homeImg":"../img/home.png",
+    "homeImg":"img/home.png",
     "homeIntroduce":"Massage delivered to your home, office or hotel",
-    "calendarImg":"../img/calendar.png",
+    "calendarImg":"img/calendar.png",
     "calendarIntroduce":"Available 7 days a week, 8am to midnight,including holidays",
-    "timeImg":"../img/time.png",
+    "timeImg":"img/time.png",
     "timeIntroduce":"We can be there in 1 hour or schedule in advance"
   },
   "faq":{
