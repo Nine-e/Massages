@@ -19,6 +19,10 @@ function load()
         var therapistsHtml = $.templates("#therapistsTmpl").render(therapistsData);
         $(".index").append(therapistsHtml);
 
+        priceData = data.price;
+        var priceHtml = $.templates("#priceTmpl").render(priceData);
+        $(".index").append(priceHtml);
+
         faqData = data.faq;
         var faqHtml = $.templates("#faqTmpl").render(faqData);
         $(".index").append(faqHtml);

@@ -31,6 +31,10 @@
     "title": "PROFESSIONAL MOBILE MASSAGE THERAPISTS",
     "btn": "BOOK MY MASSAGE"
   },
+  "price":{
+    "title":"SIMPLE PRICING",
+    "button":"BOOK NOW"
+},
   "faq":{
     "line1":"FREQUENTLY ASKED",
     "line2":"QUESTIONS",
