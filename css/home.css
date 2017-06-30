@@ -148,7 +148,7 @@
 }
 .pickTime,.time_picker,.timepicker_wrap {
     margin: auto;
-    z-index: 9999;
+    z-index: 1;
 }
 .pickTime input {
     width: 240px;
@@ -235,11 +235,11 @@
         width: 60%;
     }
     .book-title {
-        font-size: 35px;
+        font-size: 30px;
     }
     .book-subtitle {
         margin-top: -16px;
-        font-size: 20px;
+        font-size: 18px;
     }
     .pickTime {
         height: 100px;
@@ -675,16 +675,25 @@
 ::-webkit-input-placeholder { font-style:italic;color:rgb(229, 229, 229);}*/
 
 /*-------------------------------styles------------------------------*/
+#styles, #stylesTmpl {
+    width: 100%;
+}
 .styles {
     display: flex;
     justify-content: center;
+    margin: auto;
+    width: 100%;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: rgb(242, 253, 247);
     align-items: center;
     flex-direction: column;
 }
 .styles-title {
+    margin-top: 50px;
     color: rgb(100, 210, 163);
+    font-weight: lighter;
+    font-family: chlight;
+    text-align: center;
 }
 .styles-elements {
     display: flex;
@@ -695,17 +704,22 @@
 }
 .styles-btn {
     text-align: center;
+    margin: auto;
 }
-input {
+.element-message .name {
+    color: rgb(100, 210, 163);
+}
+.styleCommon {
+    display: block;
+}
+.styleUnique {
     display: none;
 }
 /*mobile*/
 @media screen and (max-width: 750px) {
      /*橫屏*/
     @media screen and (orientation: landscape) {
-        
        .styles-title {
-            margin-top: -3vw;
             font-size: 21px;
             color: rgb(100, 210, 163);
         }
@@ -720,29 +734,85 @@ input {
             color: #fff;
             background-color: #64d2a3;
        }
+        .styles-elements {
+            width: 90vw;
+        }
+        .styles-element {
+            width: 44vw;
+            height: 14vw;
+            margin-top: 3vw;
+            transform: scale(0.95,0.95);
+        }
+        .element-message {
+            margin-left: 1vw;
+        }
+        .name {
+            font-size: 13px;
+        }
+        .message {
+            font-size: 10px;
+        }
+        .styles-element>img {
+            width: 7vw;
+            height: 7vw;
+        }
     }
     /*竖屏*/
     @media screen and (orientation: portrait) {
-        .styles {
-            background: rgb(242,253,247);
-            margin-top: 50vw;
+        .styleCommon {
+            display: none;
         }
-        
-        .styles-title {
+        .styleUnique {
+            display: block;
+            background-color: #ffffff;
+        }
+        .styles {
+            margin-top: 10vw;
+        }
+        .styles-title-unique {
+            text-align: center;
+            margin-bottom: 10vw;
             font-size: 20px;
             font-weight:400;
             color: rgb(100, 210, 163);
         }
-        .styles-btn {
-            width: 50vw;
-            height: 13vw;
-            margin-top: -3px;
-            margin-bottom: 35px;
-            line-height: 13vw;
-            font-size: 13px;
-            font-weight: 500;
-            color: #fff;
-            background-color: #64d2a3;
+        .styles-elements-unique {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100vw;
+            margin: auto;
+        }
+        .square {
+            display: flex;
+            width: 45vw;
+            height: 45vw;
+            margin-top: 2vw;
+        }
+        .left {
+            margin-left: 4vw;
+            margin-right: 2vw;
+        }
+        .right {
+            margin-right: 4vw;
+        }
+        .lightColor {
+            background-color: rgb(217,251,234);
+        }
+        .deepColor {
+            background-color: rgb(100,210,163);
+        }
+        .squareContainer {
+            margin: auto;
+        }
+        .lightColor p,.deepColor p {
+            font-size: 16px; 
+            text-align: center;
+        }
+        .lightColor p {
+            color: rgb(41,168,138);
+        }
+        .deepColor p {
+            color: rgb(217,251,234);
         }
     }
 }
@@ -750,12 +820,12 @@ input {
  /*ipad*/
 @media screen and (max-width: 969px) and (min-width: 751px) {
 
-   .styles-title {
+    .styles-title {
         font-size: 24px;
         font-weight:400;
         color: rgb(100, 210, 163);
     }
-   .styles-btn {
+    .styles-btn {
         width: 16.67vw;
         height: 3vw;
         margin-top: 43px;
@@ -765,17 +835,39 @@ input {
         font-weight: 500;
         color: #fff;
         background-color: #64d2a3;
-   }
+    }
+    .styles-elements {
+        width: 82vw;
+    }
+    .styles-element {
+        width: 40vw;
+        height: 14vw;
+        margin-top: 3vw;
+        transform: scale(0.95,0.95);
+    }
+    .element-message {
+        margin-left: 1vw;
+    }
+    .name {
+        font-size: 15px;
+    }
+    .message {
+        font-size: 10px;
+    }
+    .styles-element>img {
+        width: 7vw;
+        height: 7vw;
+    }
 }
  
  /*pc*/
 @media screen and (min-width: 970px) {
 
-   .styles-title {
-        font-size: 26px;
+    .styles-title {
+        font-size: 28px;
         color: rgb(100, 210, 163);
     }
-   .styles-btn {
+    .styles-btn {
         width: 16.67vw;
         height: 3vw;
         margin-top: 60px;
@@ -785,21 +877,18 @@ input {
         font-weight: 600;
         color: #fff;
         background-color: #64d2a3;
-   }
-   .styles-elements {
-        width: 50vw;
+    }
+    .styles-elements {
+        width: 60vw;
     }
     .styles-element {
-        width: 24vw;
-        height: 6vw;
+        width: 28vw;
+        height: 8vw;
         margin-top: 3vw;
         transform: scale(0.95,0.95);
     }
     .name {
-        font-size: 12px;
-    }
-    .styles-message {
-        font-size: 10px;
+        font-size: 18px;
     }
     .styles-element>img {
         width: 6vw;
@@ -807,11 +896,6 @@ input {
         transform: scale(0.8,0.8);
     }
 }
-
-
-
-
-
 
 
 /*----------------------faq----------------------------------------*/

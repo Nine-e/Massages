@@ -157,24 +157,81 @@
 <script type="text/x-jsrender" id="stylesTmpl">
     <section id="styles">
         <div class="styles">
-            <div class="styles-title">{{:title}}</div>
-            <div class="styles-elements">
-                {{for elements}}
-                <div class="styles-element">
-                    <img src="{{:img}}">
-                    <div class="element-message">
-                        <div class="name">{{:name}}</div>
-                        {{for message}}
-                        <div class="message">
-                            <div>{{:messagediv}}</div>
+            <div class="styleCommon">
+                <div class="styles-title">{{:title}}</div>
+                <div class="styles-elements">
+                    {{for elements}}
+                    <div class="styles-element">
+                        <img src="{{:img}}">
+                        <div class="element-message">
+                            <div class="name">{{:name}}</div>
+                            {{for message}}
+                            <div class="message">
+                                <div>{{:messagediv}}</div>
+                            </div>
+                            {{/for}}
                         </div>
-                        {{/for}}
                     </div>
-                    <input type="text" value="1">
+                    {{/for}}
                 </div>
-                {{/for}}
+                <div class="styles-btn">{{:btn}}</div>
             </div>
-            <div class="styles-btn">{{:btn}}</div>
+            <div class="styleUnique">
+                <div class="styles-title-unique">
+                    <p>{{:line1}}</p>
+                    <p>{{:line2}}</p>
+                </div>
+                <div class="styles-elements-unique">
+                    <div class="square left lightColor">
+                        <div class="squareContainer">
+                            <img src="{{:img1}}"><br>
+                            <p>Swedish</p>
+                        </div>
+                    </div>
+                    <div class="square right deepColor">
+                        <div class="squareContainer">
+                            <img src="{{:img2}}"><br>
+                            <p>Deep Tissue</p>
+                        </div>
+                    </div>
+                    <div class="square left deepColor">
+                        <div class="squareContainer">
+                            <img src="{{:img3}}"><br>
+                            <p>Pre-natal</p>
+                        </div>
+                    </div>
+                    <div class="square right lightColor">
+                        <div class="squareContainer">
+                            <img src="{{:img4}}"><br>
+                            <p>Sports</p>
+                        </div>
+                    </div>
+                    <div class="square left lightColor">
+                        <div class="squareContainer">
+                            <img src="{{:img5}}"><br>
+                            <p>Couples</p>
+                        </div>
+                    </div>
+                    <div class="square right deepColor">
+                        <div class="squareContainer">
+                            <img src="{{:img6}}"><br>
+                            <p>Thai</p>
+                        </div>
+                    </div>
+                    <div class="square left deepColor">
+                        <div class="squareContainer">
+                            <img src="{{:img7}}"><br>
+                            <p>Relaxing</p>
+                        </div>
+                    </div>
+                    <div class="square right lightColor">
+                        <div class="squareContainer">
+                            <img src="{{:img8}}"><br>
+                            <p>At work</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </script>

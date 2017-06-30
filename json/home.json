@@ -120,7 +120,17 @@
         }
 
     ],
-    "btn": "BOOK NOW"
+    "btn": "BOOK NOW",
+    "line1":"CHHOSE YOUR",
+    "line2":"MASSAGE TYPE",
+    "img1":"img/img1.png",
+    "img2":"img/img2.png",
+    "img3":"img/img3.png",
+    "img4":"img/img4.png",
+    "img5":"img/img5.png",
+    "img6":"img/img6.png",
+    "img7":"img/img7.png",
+    "img8":"img/img8.png"
   },
   "price":{
     "title":"SIMPLE PRICING",
