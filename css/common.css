@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 @font-face{
     font-family: "Lato";
     src:url(../lib/Lato/Lato-Regular.ttf);
@@ -7,10 +7,13 @@
     font-family: "LatoLight";
     src:url(../lib/Lato/Lato-Light.ttf);
 }
-html,body {
+body {
+    position: relative;
     width:100%;
+    min-height: 80vh;
     margin: 0;
 }
+
 a {
 	text-decoration: none;
 }
@@ -50,6 +53,9 @@ a {
     }
     /*pages 竖屏*/
     @media screen and (orientation:portrait) {
+        .foot-container {
+            height: 18vh;
+        }
 	    .menu-container {
             height: 61%;
         }
@@ -65,11 +71,20 @@ a {
             margin-left: 3%;
         }
         .message-title .title-lighter {
-            margin-left: 10px; 
+            font-size: 18px;
+            margin-left: 18px; 
+        }
+        .title-small {
+            font-size: 10px;
+            transform: scale(0.9);
+            line-height: 8px;
         }
 	}
     /*lanscape 横屏*/
 	@media screen and (orientation:landscape) {
+        .foot-container {
+            height: 50vh;
+        }
 	    .menu-container {
             height: 90%;
         }
@@ -88,12 +103,16 @@ a {
             margin-left: 25%;
         }
         .message-title .title-lighter {
-            margin-left: 10px; 
+            font-size: 20px;
+            margin-left: 3px; 
+        }
+        .title-bold {
+            font-size: 18px;
         }
 	}
 }
 /** ipad **/
-@media screen and (min-width:750px) and (max-width:970px) {
+@media screen and (min-width:751px) and (max-width:1024px) {
 	.head {
 		height: 35px;
 		line-height: 35px;
@@ -118,7 +137,7 @@ a {
     	margin-left: 6%;
     }
     .foot-container {
-    	height: 320px;
+    	height: 30vh;
     }
     .foot-message {
     	font-size: 8px;
@@ -127,11 +146,18 @@ a {
         font-size: 16px;
     }
     .message-title .title-lighter {
-        margin-left: 10px; 
+        margin-left: 25px; 
+    }
+    .message-title .title-bold {
+        font-size: 12px;
+    }
+    .message-title .title-small {
+        font-size: 10px;
+        transform: scale(0.8);
     }
 }
 /** desktop **/
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1025px) {
 	.head {
 		height: 60px;
 		line-height: 60px;
@@ -142,26 +168,34 @@ a {
     }
     .normal { 
     	width: 43%;
-    	margin-left: 37%;
+    	margin-left: 40%;
     	font-size: 13px;
     }
     .normal span {
     	margin-right: 2%;
     }
     .sign-in {
-    	margin-left: 6%;
+    	margin-left: 8%;
     }
     .foot-container {
-    	height: 270px;
+    	height: 45vh;
     }
     .foot-message {
     	font-size: 12px;
     }
     .message-title {
         font-size: 18px;
+        text-align: center;
     }
     .message-title .title-lighter {
+        font-size: 18px;
         margin-left: 8px; 
+    }
+    .message-title .title-bold {
+        font-size: 15px;
+    }
+    .message-title .title-small {
+        font-size: 12px;
     }
 }
 .head {
@@ -180,16 +214,26 @@ a {
 .title-bold {
     font-weight: 900;
 }
+.title-small {
+    font-weight: 900;
+}
 .message-title .title-lighter {
     color: #ffffff;
 }
 .message-title .title-bold {
     color: #ffffff;
 }
+.message-title .title-small {
+    color: #ffffff;
+}
 .head-menu,.head-menu a{
 	color: rgb(153,153,153);
+    text-decoration: none;
 }
 .head-menu a:hover {
+    font-weight: 900;
+}
+.head-menu .active {
     font-weight: 900;
 }
 .sign-in a{
@@ -252,6 +296,10 @@ a {
     color: rgb(153,153,153);
 }
 .foot-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transform: translate(0,100%);
 	display: flex;
     font-family: "Lato";
 	background-color: rgb(40,171,139);
