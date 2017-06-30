@@ -27,6 +27,10 @@
     "timeImg":"img/time.png",
     "timeIntroduce":"We can be there in 1 hour or schedule in advance"
   },
+  "therapists": {
+    "title": "PROFESSIONAL MOBILE MASSAGE THERAPISTS",
+    "btn": "BOOK MY MASSAGE"
+  },
   "faq":{
     "line1":"FREQUENTLY ASKED",
     "line2":"QUESTIONS",

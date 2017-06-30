@@ -141,7 +141,7 @@
     color: rgb(51,51,51);
     font-weight: lighter;
     font-family: chlight;
-};
+}
 .pickTime,.time_picker,.timepicker_wrap {
     margin: auto;
     z-index: 9999;
@@ -409,10 +409,9 @@
     font-size: 15px;
 }
 /*mobile*/
- @media screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
      /*橫屏*/
-     @media screen and (orientation: landscape)
-     {
+    @media screen and (orientation: landscape) {
         .mybet {
             width: 40%;
         }
@@ -421,9 +420,8 @@
         }
     }
     /*竖屏*/
-     @media screen and (orientation: portrait)
-     {
-         .mybet {
+    @media screen and (orientation: portrait) {
+        .mybet {
             width: 80%;
         }
         .contact {
@@ -432,37 +430,37 @@
         .contact-text {
             font-size: 12px;
         }
-     }
- }
+    }
+}
  
  /*ipad*/
- @media screen and (max-width: 969px) and (min-width: 751px) {
-     .mybet {
-            width: 40%;
-        }
-     .contact {
-            background-color: #fff;
-        }
- }
+@media screen and (max-width: 969px) and (min-width: 751px) {
+    .mybet {
+        width: 40%;
+    }
+    .contact {
+        background-color: #fff;
+    }
+}
  
  /*pc*/
- @media screen and (min-width: 970px) {
-     .mybet {
-            width: 30%;
-        }
-     .contact {
-            background-color: #fff;
-        }
- }
- .mybet {
+@media screen and (min-width: 970px) {
+    .mybet {
+        width: 30%;
+    }
+    .contact {
+        background-color: #fff;
+    }
+}
+.mybet {
     margin: auto;
- }
- .mybet input {
+}
+.mybet input {
     display: block;
     width: 100%;
     margin-top: 10px;
- }
- .contact-emailin, .contact-namein {
+}
+.contact-emailin, .contact-namein {
     height: 35px;
     border: 1px solid rgb(229, 229, 229);
     margin-top: 2px;
@@ -494,6 +492,185 @@
     background-color: #64d2a3;
 }
 ::-webkit-input-placeholder { font-style:italic;color:rgb(229, 229, 229);}
+
+
+/*-------------------------------therapists------------------------------*/
+.therapists {
+    padding-top: 60px;
+    text-align: center;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.therapists-title {
+    color: rgb(100, 210, 163);
+}
+/*mobile*/
+@media screen and (max-width: 750px) {
+     /*橫屏*/
+    @media screen and (orientation: landscape) {
+        .therapists-img {
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            transform: scale(0.8, 0.8);
+       }
+       .therapists-imgbox {
+            width: 25vw;
+            height: 25vw;
+            border-radius: 13vw;
+            overflow: hidden;
+            transform: scale(0.85, 0.85);
+            border:1px solid rgb(170,242,205);
+       }
+       .therapists-imgbox>img {
+            transform: scale(0.8, 0.8);
+            margin-left: -3vw;
+            margin-top:-3vw;
+        }
+       .therapists-title {
+            margin-top: -3vw;
+            font-size: 21px;
+            color: rgb(100, 210, 163);
+        }
+       .therapists-btn {
+            width: 31vw;
+            height: 6vw;
+            margin-top: 28px;
+            margin-bottom: 44px;
+            line-height: 6vw;
+            font-size: 12px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #64d2a3;
+       }
+    }
+    /*竖屏*/
+    @media screen and (orientation: portrait) {
+        .therapists {
+            background: rgb(242,253,247);
+            margin-top: 50vw;
+        }
+        .therapists-img {
+            width: 100vw;
+            display: flex;
+            margin-top: 4vw;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            transform: scale(0.8, 0.8);
+        }
+        .therapists-imgbox>img {
+            /*transform: scale(0.65, 0.65);*/
+            margin-left: -2vw;
+        }
+        .therapists-imgbox {
+            width: 50vw;
+            height: 50vw;
+            border-radius: 25vw;
+            overflow: hidden;
+            border:1px solid rgb(170,242,205);
+            transform: scale(0.8,0.8);
+        }
+        .therapists-title {
+            font-size: 20px;
+            font-weight:400;
+            color: rgb(100, 210, 163);
+        }
+        .therapists-btn {
+            width: 50vw;
+            height: 13vw;
+            margin-top: -3px;
+            margin-bottom: 35px;
+            line-height: 13vw;
+            font-size: 13px;
+            font-weight: 500;
+            color: #fff;
+            background-color: #64d2a3;
+        }
+    }
+}
+ 
+ /*ipad*/
+@media screen and (max-width: 969px) and (min-width: 751px) {
+    .therapists-img {
+        width: 100vw;
+        display: flex;
+        margin-top: 4vw;
+        justify-content: space-around;
+        transform: scale(0.6, 0.6);
+   }
+   .therapists-imgbox>img {
+        transform: scale(0.65, 0.65);
+        margin-left: -4vw;
+        margin-top: -5vw;
+   }
+   .therapists-imgbox {
+        width: 15vw;
+        height: 15vw;
+        border-radius: 10vw;
+        overflow: hidden;
+        border:1px solid rgb(170,242,205);
+   }
+   .therapists-title {
+        font-size: 24px;
+        font-weight:400;
+        color: rgb(100, 210, 163);
+    }
+   .therapists-btn {
+        width: 16.67vw;
+        height: 3vw;
+        margin-top: 43px;
+        margin-bottom: 80px;
+        line-height: 3vw;
+        font-size: 8px;
+        font-weight: 500;
+        color: #fff;
+        background-color: #64d2a3;
+   }
+}
+ 
+ /*pc*/
+@media screen and (min-width: 970px) {
+   .therapists-img {
+        width: 90vw;
+        display: flex;
+        justify-content: space-around;
+        transform: scale(0.6, 0.6);
+   }
+   .therapists-imgbox {
+        width: 15vw;
+        height: 15vw;
+        border-radius: 10vw;
+        overflow: hidden;
+        border:1px solid rgb(170,242,205);
+   }
+   .therapists-title {
+        font-size: 26px;
+        color: rgb(100, 210, 163);
+    }
+   .therapists-btn {
+        width: 16.67vw;
+        height: 3vw;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        line-height: 3vw;
+        font-size: 13px;
+        font-weight: 600;
+        color: #fff;
+        background-color: #64d2a3;
+   }
+}
+
+/*::-webkit-input-placeholder { font-style:italic;color:rgb(229, 229, 229);}*/
+
+
+
+
+
+
 
 /*----------------------faq----------------------------------------*/
 
