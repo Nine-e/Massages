@@ -680,8 +680,8 @@
 	padding: 10px 30px;
 	color: rgb(102,102,102);
 }
-.message-title {
-	font-size: 13px;
+.messageBox-title {
+	font-size: 16px;
 	font-family: Montserrat;
 	color: rgb(38,172,139);
 	text-align: left;

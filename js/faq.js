@@ -1,7 +1,7 @@
 
 function load()
 { 
-    initPage();
+    /*initPage();*/
 	$.getJSON("../json/faq.json", function(data) {
         faqData = data.faq;
         var faqHtml = $.templates("#faqTmpl").render(faqData);
@@ -15,5 +15,5 @@ function load()
 		{
 		   $('.commonfoot').css('position', 'relative');
 		} 
-		});
+	});
 }

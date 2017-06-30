@@ -71,8 +71,7 @@ a {
             margin-left: 3%;
         }
         .message-title .title-lighter {
-            font-size: 18px;
-            margin-left: 18px; 
+            font-size: 18px; 
         }
         .title-small {
             font-size: 10px;
@@ -144,9 +143,6 @@ a {
     }
     .message-title {
         font-size: 16px;
-    }
-    .message-title .title-lighter {
-        margin-left: 25px; 
     }
     .message-title .title-bold {
         font-size: 12px;

@@ -5,4 +5,5 @@ function load()
         betData = data.bet;
         var betHtml = $.templates("#betTmpl").render(betData);
         $(".signin").append(betHtml);
+    });
 }

@@ -52,6 +52,10 @@
 	font-family: Montserrat-Light;
 	display: inline;
 	font-size: 15px;
+	letter-spacing: -4px;
+}
+.cnt-phone-num span {
+	margin-right: 2px;
 }
 /*mobile*/
  @media screen and (max-width: 750px) {

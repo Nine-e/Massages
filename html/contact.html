@@ -12,16 +12,17 @@
 <link rel="stylesheet" type="text/css" href="../css/contact.css">
 <link rel="stylesheet" type="text/css" href="../css/common.css">
 </head>
-<body>
+<body onload="load()">
+    <div class="commonhead"></div>
     <div class="contact"></div>
-    
-    <script type="text/javascript" src="../lib/jquery/jquery-3.2.1.js"></script>
-	<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../lib/jsrender/jsrender.js"></script>
-	
-	<script type="text/javascript" src="../js/common.js"></script>
-	<script type="text/javascript" src="../js/contact.js"></script>
+    <div class="commonfoot"></div>
 </body>
+<script type="text/javascript" src="../lib/jquery/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../lib/jsrender/jsrender.js"></script>
+<script type="text/javascript" src = "../js/commonhead.js"></script>
+<script type="text/javascript" src = "../js/commonfoot.js"></script>
+<script type="text/javascript" src="../js/contact.js"></script>
 </html>
 
 <script type="text/x-jsrender" id="cntTmpl">
@@ -33,7 +34,11 @@
         </div>
         <div class="cnt-phone">
             <p class="cnt-phone-phone">{{:phone}}</p>
-            <p class="cnt-phone-num">{{:num}}</p>
+            <p class="cnt-phone-num">
+                <span>{{:num1}}</span>
+                <span>{{:num2}}</span>
+                <span>{{:num3}}</span>
+            </p>
         </div>
         <div class="mybet">
         <input class="namein" contentEditable="true" placeholder="Your Name"></input>

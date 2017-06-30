@@ -1,4 +1,14 @@
 {
+    "head":{
+        "home":"Home",
+        "booking":"Booking",
+        "therapist":"Therapist",
+        "style":"Style",
+        "pricing":"Pricing",
+        "faq":"FAQ",
+        "contactUs":"Contact Us",
+        "signIn":"Sign In"
+    },
 	"cnt":{
 		"title":"Book my massage",
 		"chooseDate":"Choose a date",
@@ -262,5 +272,10 @@
         "total":"Total",
         "money":"99"
 
-	}
+	},
+    "foot":{
+        "copyright":"©2017MOBILE MASSAGES",
+        "team":"TEAMS & CONDITIONS",
+        "policy":"PRIVACY POLICY"
+    }
 }

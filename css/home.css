@@ -314,7 +314,7 @@
             width: 100%;
             height: 46%;
             margin: auto;
-            font-size: 16px;
+            font-size: 13px;
         }
         .introduceBox img {
             width: 42px;
@@ -407,6 +407,10 @@
     font-family: Montserrat-Light;
     display: inline;
     font-size: 15px;
+    letter-spacing: -4px;
+}
+.contact-phone-num span {
+    margin-right: 2px;
 }
 /*mobile*/
 @media screen and (max-width: 750px) {

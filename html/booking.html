@@ -16,20 +16,22 @@
 <link rel="stylesheet" type="text/css" href="../css/signup.css">
 <link rel="stylesheet" type="text/css" href="../css/flatpickr.min.css">
 <link rel="stylesheet" type="text/css" href="../css/timepicki.css">
-
 <link rel="stylesheet" type="text/css" href="../css/common.css">
 
 </head>
-<body>
+<body onload="load()">
+    <div class="commonhead"></div>
     <div class="booking"></div>
-    <script type="text/javascript" src="../lib/jquery/jquery-3.2.1.js"></script>
-	<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../lib/jsrender/jsrender.js"></script>
-	<script type="text/javascript" src="../js/booking.js"></script>
-    <script type="text/javascript" src="../js/flatpickr.js"></script>
-    <script type="text/javascript" src="../js/timepicki.js"></script>
-	<script type="text/javascript" src="../js/common.js"></script>
+    <div class="commonfoot"></div>
 </body>
+<script type="text/javascript" src="../lib/jquery/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../lib/jsrender/jsrender.js"></script>
+<script type="text/javascript" src="../js/commonhead.js"></script>
+<script type="text/javascript" src="../js/commonfoot.js"></script>
+<script type="text/javascript" src="../js/booking.js"></script>
+<script type="text/javascript" src="../js/flatpickr.js"></script>
+<script type="text/javascript" src="../js/timepicki.js"></script>
 </html>
 
 <script type="text/x-jsrender" id="cntTmpl">
@@ -376,7 +378,7 @@
 <script type="text/x-jsrender" id="messageTmpl">
     <div class="message">
         <div class="messageBox">
-            <p class="message-title">{{:title}}</p>
+            <p class="messageBox-title">{{:title}}</p>
             <p class="message-content">{{:content}}</p>
         </div>
     </div> 
