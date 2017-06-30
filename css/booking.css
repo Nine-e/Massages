@@ -21,15 +21,15 @@
 	margin-top: 50px;
 }
 .bet{
-	z-index:-99999;
+	z-index:-0;
 }
 .datetype{
-	z-index:99999;
+	z-index:1;
 	height: 6vh;
 	width: 100%;
 }
 .timetype {
-	z-index:1000;
+	z-index:1;
 }
 .cnt-num {
 	display: flex;
