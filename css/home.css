@@ -856,6 +856,7 @@
     text-align: center;
 }
 .price-title {
+    margin-bottom: 30px;
     font-size: 35px;
     color: rgb(102,209,165);
     font-weight: lighter;
@@ -865,12 +866,14 @@
     width: 30%;
     height: 50px;
     margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
     font-family: Montserrat;
     border-bottom: 2px solid #f2fdf7;
 }
 .price-line-time {
     display: inline-block;
-    width: 40%;
+    width: 45%;
     line-height: 50px;
     font-family: Montserrat-Bold;
     color: #64d2a3 ;
@@ -887,7 +890,7 @@
 }
 .price-line-money {
     display: inline-block;
-    width: 40%;
+    width: 45%;
     line-height: 50px;
     color: #888 ;
     font-size: 20px;
@@ -906,4 +909,41 @@
     font-weight: 600;
     color: #fff;
     background-color: #64d2a3;
+}
+/*mobile*/
+@media screen and (max-width: 750px) {
+     /*橫屏*/
+    @media screen and (orientation: landscape) {
+        .price-line {
+            width: 40%;
+        }
+    }
+    /*竖屏*/
+    @media screen and (orientation: portrait) {
+        .price-line {
+            width: 100%;
+            background-color: #f2fdf7;
+        }
+        .price-line-time,
+        .price-line-time::after
+        {
+            font-family: Montserrat-Bold;
+            color: #888;
+            font-weight: 800;
+        }
+    }
+}
+ 
+ /*ipad*/
+@media screen and (max-width: 969px) and (min-width: 751px) {
+    .price-line {
+        width: 40%;
+    }
+}
+ 
+ /*pc*/
+@media screen and (min-width: 970px) {
+    .price-line {
+        width: 30%;
+    }
 }
