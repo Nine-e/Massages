@@ -1,0 +1,224 @@
+.styles {
+    display: flex;
+    margin: auto ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.styles-title1 {
+    font-size: 26px;
+    color: rgb(101, 211,164);
+    font-family: "Lato", "sans-serif";
+}
+.styles-title2 {
+    font-size: 22px;
+    color: rgb(153, 153, 153);
+    font-weight: lighter;
+    font-family: "Lato", "sans-serif";
+}
+.stylesbtn {
+    display: flex;
+    background: rgb(100,210,163);
+    color: #fff;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato", "sans-serif";
+    cursor: pointer;
+}
+.elements {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.element {
+    margin: auto;
+    display: flex;
+    /*border:1px solid #000;*/
+}
+.element>i {
+    width: 25%;
+    color: rgb(101, 211,164);
+}
+.message>div {
+    word-wrap: break-word;
+}
+.element-message {
+    /*margin-left: 8px;*/
+}
+.name {
+    font-weight: bold;
+    color: rgb(101, 211,164);
+}
+.message {
+    margin-top: 0;
+    color: rgb(152, 152, 152);
+    text-align: justify;
+}
+input {
+    display: none;
+}
+
+/*mobile*/
+@media screen and (max-width: 750px) {
+    /*橫屏*/
+    @media screen and (orientation: landscape) {
+        .elements {
+            width: 90vw;
+        }
+        .element {
+            width: 44vw;
+            height: 11vw;
+            margin-top: 7vw;
+            transform: scale(0.95,0.95);
+        }
+        .name {
+            font-size: 14px;
+        }
+        .message {
+            margin-top: 2px;
+            font-size: 9px;
+        }
+        .stylesbtn {
+            font-size: 13px;
+            width: 33.33vw;
+            height: 7vw;
+            margin-top: 11vw;
+            margin-bottom: 11vw;
+            line-height: 11vw;
+        }
+        img {
+            width: 10vw;
+            height: 10vw;
+            transform: scale(0.8,0.8);
+        }
+        .styles-title1 {
+            margin-top: 5vw;
+            margin-bottom: 5vw;
+        }
+        .styles-title2 {
+            display: none;
+        }
+    }
+    /*竖屏*/
+    @media screen and (orientation: portrait) {
+        .styles-title2 {
+            display: block;
+            margin-top: 8vw;
+            margin-bottom: 8vw;
+        }
+        .styles-title1 {
+            display: none;
+        }
+        .elements {
+            width: 100vw;
+        }
+        .element-message {
+            margin-left: 1vw;
+        }
+        .element {
+            width: 100vw;
+            transform: scale(0.8, 0.8);
+        }
+        img {
+            width: 25vw;
+            height: 25vw;
+            /*transform: scale(0.8,0.8);*/
+        }
+        .name {
+            font-size: 20px;
+        }
+        .message {
+            font-size: 13px;
+        }
+        .stylesbtn {
+            width: 50vw;
+            height: 12vw;
+            font-size: 11px;
+            margin-top: 12vw;
+            margin-bottom: 12vw;
+        }
+    }
+}
+
+/*ipad*/
+@media screen and (max-width: 1024px) and (min-width: 751px) {
+
+    .elements {
+        width: 80vw;
+    }
+    .element {
+        width: 40vw;
+        height: 10vw;
+        margin-top: 2vw;
+        transform: scale(0.9,0.9);
+    }
+    .name {
+        font-size: 14px;
+    }
+    .message {
+        margin-top: 2px;
+        font-size: 9px;
+    }
+    .stylesbtn {
+        font-size: 13px;
+        width: 31vw;
+        height: 6vw;
+        margin-top: 7vw;
+        margin-bottom: 7vw;
+        line-height: 11vw;
+    }
+    img {
+        width: 10vw;
+        height: 10vw;
+        transform: scale(0.8,0.8);
+    }
+    .styles-title1 {
+        margin-top: 7vw;
+        margin-bottom: 5vw;
+    }
+    .styles-title2 {
+        display: none;
+    }
+}
+
+/*pc*/
+@media screen and (min-width: 1025px) {
+    .elements {
+        width: 50vw;
+    }
+    .element {
+        width: 24vw;
+        height: 6vw;
+        margin-top: 3vw;
+        transform: scale(0.95,0.95);
+    }
+    .name {
+        font-size: 12px;
+    }
+    .message {
+        font-size: 10px;
+    }
+    .stylesbtn {
+        font-size: 14px;
+        width: 18vw;
+        height: 3vw;
+        margin-top: 8vw;
+        margin-bottom: 8vw;
+        line-height: 3vw;
+    }
+    img {
+        width: 6vw;
+        height: 6vw;
+        transform: scale(0.8,0.8);
+    }
+    .styles-title1 {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+    .styles-title2 {
+        display: none;
+    }
+}
+/*transform: scale(0.1,0.1);*/
