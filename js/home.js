@@ -26,7 +26,7 @@ function load()
 
 	initPage();
 
-	$.getJSON("../json/home.json", function(data) {
+	$.getJSON("json/home.json", function(data) {
         homeData = data.home;
         var homeHtml = $.templates("#homeTmpl").render(homeData);
         $(".index").append(homeHtml);
