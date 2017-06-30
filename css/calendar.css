@@ -1,3 +1,6 @@
+body {
+    min-height: 100vh;
+}
 .calendar {
     width: 280px;
     height: 330px;

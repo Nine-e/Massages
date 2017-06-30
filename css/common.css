@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 @font-face{
     font-family: "Lato";
     src:url(../lib/Lato/Lato-Regular.ttf);
@@ -7,10 +7,13 @@
     font-family: "LatoLight";
     src:url(../lib/Lato/Lato-Light.ttf);
 }
-html,body {
+body {
+    position: relative;
     width:100%;
+    min-height: 80vh;
     margin: 0;
 }
+
 a {
 	text-decoration: none;
 }
@@ -252,6 +255,10 @@ a {
     color: rgb(153,153,153);
 }
 .foot-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transform: translate(0,100%);
 	display: flex;
     font-family: "Lato";
 	background-color: rgb(40,171,139);

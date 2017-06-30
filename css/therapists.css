@@ -1,3 +1,4 @@
+﻿
 .therapists {
     width: 100%;
 }
@@ -85,6 +86,9 @@
 .message {
     width: 100%;
     margin-top: 2px;
+    text-align:justify;
+    text-justify:distribute-all-lines; 
+    text-align-last:justify;
     /*-moz-hyphens: auto;*/
     /*-ms-hyphens: auto;*/
     /*-webkit-hyphens: auto;*/
@@ -92,7 +96,6 @@
     /*hyphens: auto;*/
     /*word-wrap: break-word;*/
     font-weight: bold;
-    text-align: justify;
     font-family: "Lato";
     /*font-size: 10px;*/
 }
@@ -107,9 +110,9 @@ input {
 
 
 /*mobile*/
-@media screen and (max-width: 750px) {
+@media all and (max-width: 750px) {
     /*橫屏*/
-    @media screen and (orientation: landscape) {
+    @media all and (orientation: landscape) {
         .therapister {
             width: 100vw;
         }
@@ -135,7 +138,7 @@ input {
         }
     }
     /*竖屏*/
-    @media screen and (orientation: portrait) {
+    @media all and (orientation: portrait) {
         .therapister {
             width: 100vw;
         }
@@ -163,7 +166,7 @@ input {
 }
 
 /*ipad*/
-@media screen and (max-width: 1024px) and (min-width: 751px) {
+@media all and (max-width: 1024px) and (min-width: 751px) {
     .therapister {
         width: 95vw;
     }
@@ -184,7 +187,7 @@ input {
 }
 
 /*pc*/
-@media screen and (min-width: 1025px) {
+@media all and (min-width: 1025px) {
     .therapister {
         width: 75vw;
     }
