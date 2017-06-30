@@ -102,10 +102,35 @@
                     <input id="cla" class="flatpickr firstnin" data-date-format="Y-m-d" data-min-date="today" value="Today" contentEditable="true">
                 </div>
                 <div class="datetype timetype">
-                    <input id="di" class="lastnin" contentEditable="true" value="5:00 PM"></input>
+                    <input id="di" class="lastnin" contentEditable="true" value="12:20 PM"></input>
                 </div>
             </div>
             <div class="continue-button">{{:book}}</div>
+        </div>
+    </section>
+</script>
+
+<script type="text/x-jsrender" id="introduceTmpl">
+    <section id="introduce">
+        <div class="introduce">
+            <div class="introducePart">
+                <div class="introduceBox">
+                   <img src="{{:homeImg}}">
+                   <p>{{:homeIntroduce}}</p>
+                </div>
+            </div>
+            <div class="introducePart">
+                <div class="introduceBox">
+                    <img src="{{:calendarImg}}">
+                    <p>{{:calendarIntroduce}}</p>
+                </div>
+            </div>
+            <div class="introducePart">
+                <div class="introduceBox">
+                    <img src="{{:timeImg}}">
+                    <p>{{:timeIntroduce}}</p>
+                </div>
+            </div>
         </div>
     </section>
 </script>
