@@ -1,32 +1,8 @@
 
 function load()
 {  
-	/*$.getJSON("../json/home.json", function(data) {
-        homeData = data.home;
-        var homeHtml = $.templates("#homeTmpl").render(homeData);
-        $(".index").append(homeHtml);
 
-        faqData = data.faq;
-        var faqHtml = $.templates("#faqTmpl").render(faqData);
-        $(".index").append(faqHtml);
-
-        contactData = data.contact;
-        var contactHtml = $.templates("#contactTmpl").render(contactData);
-        $(".index").append(contactHtml);*/
-
-        /*if($(window).height()>=$(document.body).outerHeight())
-		{
-		   $('.commonfoot').css('position', 'absolute');
-		   $('.commonfoot').css('width', '100%');
-		   $('.commonfoot').css('bottom','0');
-		}else
-		{
-		   $('.commonfoot').css('position', 'relative');
-		} */
-
-	initPage();
-
-	$.getJSON("../json/home.json", function(data) {
+	$.getJSON("json/home.json", function(data) {
         homeData = data.home;
         var homeHtml = $.templates("#homeTmpl").render(homeData);
         $(".index").append(homeHtml);
@@ -34,6 +10,14 @@ function load()
         bookData = data.book;
         var bookHtml = $.templates("#bookTmpl").render(bookData);
         $(".index").append(bookHtml);
+
+        introduceData = data.introduce;
+        var introduceHtml = $.templates("#introduceTmpl").render(introduceData);
+        $(".index").append(introduceHtml);
+
+        therapistsData = data.therapists;
+        var therapistsHtml = $.templates("#therapistsTmpl").render(therapistsData);
+        $(".index").append(therapistsHtml);
 
         faqData = data.faq;
         var faqHtml = $.templates("#faqTmpl").render(faqData);

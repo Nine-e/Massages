@@ -10,14 +10,26 @@
     "signIn":"Sign In"
   },
   "home":{
-    "img1":"../img/desktop_landscape.png",
-    "img2":"../img/ipad.png",
-    "img3":"../img/pages.png"
+    "img1":"img/desktop_landscape.png",
+    "img2":"img/ipad.png",
+    "img3":"img/pages.png"
   },
   "book":{
     "title":"LONDON MOBILE MASSAGE",
     "subtitle":"Book a spa quality massage to your door",
     "book":"BOOK A MASSAGE"
+  },
+  "introduce":{
+    "homeImg":"img/home.png",
+    "homeIntroduce":"Massage delivered to your home, office or hotel",
+    "calendarImg":"img/calendar.png",
+    "calendarIntroduce":"Available 7 days a week, 8am to midnight,including holidays",
+    "timeImg":"img/time.png",
+    "timeIntroduce":"We can be there in 1 hour or schedule in advance"
+  },
+  "therapists": {
+    "title": "PROFESSIONAL MOBILE MASSAGE THERAPISTS",
+    "btn": "BOOK MY MASSAGE"
   },
   "faq":{
     "line1":"FREQUENTLY ASKED",
@@ -60,7 +72,9 @@
     "text1":"We're just one phone call or click away from you.",
     "text2":"Call us or contact us using the form below.",
     "phone":"Phone:",
-    "num":"11111 111 1111",
+    "num1":"11111",
+    "num2":"111",
+    "num3":"1111",
     "send":"SEND"
   },
   "foot":{

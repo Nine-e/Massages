@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿﻿@charset "UTF-8";
 @font-face{
 	font-family: Montserrat;
 	src:url(../lib/Montserrat-Light.otf);
@@ -20,16 +20,16 @@
 	font-family: Montserrat;
 	margin-top: 50px;
 }
-.bet {
-	z-index:-99999;
+.bet{
+	z-index:-0;
 }
-.datetype {
-	z-index:99999;
+.datetype{
+	z-index:1;
 	height: 6vh;
 	width: 100%;
 }
 .timetype {
-	z-index:1000;
+	z-index:1;
 }
 .cnt-num {
 	display: flex;
@@ -54,12 +54,12 @@
     justify-content: center;
     align-items: center;
 }
-@media(max-width:420px) {
+@media(max-width:420px){
 	.cnt-num {
 		width: 100%;
     }
 }
-@media(min-width:420px) {
+@media(min-width:420px){
 	.cnt-num {
 		width: 400px;
 	}
@@ -73,7 +73,8 @@
     font-family: chlight;
 }
 .continue-button,
-.book-button {
+.book-button
+{
 	width: 200px;
 	height: 40px;
 	margin: auto;
@@ -85,7 +86,7 @@
 	color: #fff;
 	background-color: #64d2a3;
 }
-.agreeing-text {
+.agreeing-text{
 	width: 300px;
 	margin: auto;
 	font-size: 10px;
@@ -121,7 +122,7 @@
 }*/
 
 /*third*/
-.third-title {
+.third-title{
  	font-family: Montserrat-Light;
  	font-size: 30px;
  	color: #adadad;
@@ -131,9 +132,9 @@
  	margin: 0;
  }
  /*mobile*/
-@media screen and (max-width: 750px) {
+ @media screen and (max-width: 750px) {
      /*橫屏*/
-    @media screen and (orientation: landscape)
+     @media screen and (orientation: landscape)
      {
      	.mybet {
             width: 40%;
@@ -192,7 +193,7 @@
 		} 
     }
     /*竖屏*/
-    @media screen and (orientation: portrait) 
+     @media screen and (orientation: portrait) 
      {
      	.third-title {
      		font-size: 20px;
@@ -265,7 +266,7 @@
  }
  
  /*ipad*/
-@media screen and (max-width: 969px) and (min-width: 751px) {
+ @media screen and (max-width: 969px) and (min-width: 751px) {
  	.mybet {
         width: 40%;
     }
@@ -321,7 +322,7 @@
 		z-index: 999;
 		border: 6px solid rgb(100,210,163);
 	}
-} 
+ } 
  /*pc*/
  @media screen and (min-width: 970px) {
  	.mybet {
@@ -679,8 +680,8 @@
 	padding: 10px 30px;
 	color: rgb(102,102,102);
 }
-.message-title {
-	font-size: 13px;
+.messageBox-title {
+	font-size: 16px;
 	font-family: Montserrat;
 	color: rgb(38,172,139);
 	text-align: left;

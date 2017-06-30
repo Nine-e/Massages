@@ -1,10 +1,24 @@
 {
+	"head":{
+	    "home":"Home",
+	    "booking":"Booking",
+	    "therapist":"Therapist",
+	    "style":"Style",
+	    "pricing":"Pricing",
+	    "faq":"FAQ",
+	    "contactUs":"Contact Us",
+	    "signIn":"Sign In"
+	},
 	"cnt":{
 		"text1":"THANK YOU!",
 		"text2":"SUCCESFUL BOOKING",
 		"text3":"We have sent your booking",
 		"text4":"detail to ",
 		"email":"johndoe@gmail.com"
-
+	},
+	"foot":{
+	    "copyright":"©2017MOBILE MASSAGES",
+	    "team":"TEAMS & CONDITIONS",
+	    "policy":"PRIVACY POLICY"
 	}
 }

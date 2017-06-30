@@ -4,14 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/common.css">
-    <link rel="stylesheet" type="text/css" href="../css/home.css">
-
-    <link rel="stylesheet" type="text/css" href="../css/booking.css">
-    <link rel="stylesheet" type="text/css" href="../css/flatpickr.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/timepicki.css">
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/booking.css">
+    <link rel="stylesheet" type="text/css" href="css/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="css/timepicki.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
 
     <title>Home</title>
 </head>
@@ -21,14 +20,14 @@
     <div class="commonfoot"></div>
 </body>
 
-<script type="text/javascript" src = "../lib/jquery/jquery-3.2.1.js"></script>
-<script type="text/javascript" src = "../lib/bootstrap/js/bootstrap.min.js"></script>
-<script src="../lib/jsrender/jsrender.js"></script>
-<script type="text/javascript" src = "../js/commonhead.js"></script>
-<script type="text/javascript" src = "../js/home.js"></script>
-<script type="text/javascript" src = "../js/commonfoot.js"></script>
-<script type="text/javascript" src="../js/flatpickr.js"></script>
-<script type="text/javascript" src="../js/timepicki.js"></script>
+<script type="text/javascript" src="lib/jquery/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/jsrender/jsrender.js"></script>
+<script type="text/javascript" src="js/commonhead.js"></script>
+<script type="text/javascript" src="js/commonfoot.js"></script>
+<script type="text/javascript" src="js/home.js"></script>
+<script type="text/javascript" src="js/flatpickr.js"></script>
+<script type="text/javascript" src="js/timepicki.js"></script>
 
 </html>
 <script type="text/x-jsrender" id="menuTmpl">
@@ -46,13 +45,13 @@
                 </div>
             </div>
             <div class="menu-bar"><a href="#">Home</a></div>
-            <div class="menu-bar"><a href="#">Booking</a></div>
-            <div class="menu-bar"><a href="#">Therapists</a></div>
-            <div class="menu-bar"><a href="#">Styles</a></div>
-            <div class="menu-bar"><a href="#">Massages description</a></div>
-            <div class="menu-bar"><a href="#">FAQ</a></div>
-            <div class="menu-bar"><a href="#">Contact us</a></div>
-            <div class="menu-bar no-border"><a href="#">Login</a></div>
+            <div class="menu-bar"><a href="html/booking.html">Booking</a></div>
+            <div class="menu-bar"><a href="html/therapists.html">Therapists</a></div>
+            <div class="menu-bar"><a href="html/styles.html">Styles</a></div>
+            <div class="menu-bar"><a href="html/price.html">Massages description</a></div>
+            <div class="menu-bar"><a href="html/faq.html">FAQ</a></div>
+            <div class="menu-bar"><a href="html/contact.html">Contact us</a></div>
+            <div class="menu-bar no-border"><a href="html/signin.html">Login</a></div>
         </div>
     </div>
 </script>
@@ -65,14 +64,14 @@
         </div>
         <div class="head-menu normal">
             <div class="normal-scale">
-                <span><a href="#">{{:home}}</a></span>
-                <span><a href="#">{{:booking}}</a></span>
-                <span><a href="#">{{:therapist}}</a></span>
-                <span><a href="#">{{:style}}</a></span>
-                <span><a href="#">{{:pricing}}</a></span>
-                <span><a href="#">{{:faq}}</a></span>
-                <span><a href="#">{{:contactUs}}</a></span>
-                <span class="sign-in"><a  href="#">{{:signIn}}</a></span>
+                <span><a href="#" class="active">{{:home}}</a></span>
+                <span><a href="html/booking.html">{{:booking}}</a></span>
+                <span><a href="html/therapists.html">{{:therapist}}</a></span>
+                <span><a href="html/styles.html">{{:style}}</a></span>
+                <span><a href="html/price.html">{{:pricing}}</a></span>
+                <span><a href="html/faq.html">{{:faq}}</a></span>
+                <span><a href="html/contact.html">{{:contactUs}}</a></span>
+                <span class="sign-in"><a href="html/signin.html">{{:signIn}}</a></span>
             </div>
         </div>
         <div class="head-menu dropdown">
@@ -102,7 +101,7 @@
                     <input id="cla" class="flatpickr firstnin" data-date-format="Y-m-d" data-min-date="today" value="Today" contentEditable="true">
                 </div>
                 <div class="datetype timetype">
-                    <input id="di" class="lastnin" contentEditable="true" value="5:00 PM"></input>
+                    <input id="di" class="lastnin" contentEditable="true" value="12:20 PM"></input>
                 </div>
             </div>
             <div class="continue-button">{{:book}}</div>
@@ -110,6 +109,48 @@
     </section>
 </script>
 
+<script type="text/x-jsrender" id="introduceTmpl">
+    <section id="introduce">
+        <div class="introduce">
+            <div class="introducePart">
+                <div class="introduceBox">
+                   <img src="{{:homeImg}}">
+                   <p>{{:homeIntroduce}}</p>
+                </div>
+            </div>
+            <div class="introducePart">
+                <div class="introduceBox">
+                    <img src="{{:calendarImg}}">
+                    <p>{{:calendarIntroduce}}</p>
+                </div>
+            </div>
+            <div class="introducePart">
+                <div class="introduceBox">
+                    <img src="{{:timeImg}}">
+                    <p>{{:timeIntroduce}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</script>
+<script type="text/x-jsrender" id="therapistsTmpl">
+    <section id="therapists">
+        <div class="therapists">
+            <div class="therapists-title">{{:title}}</div>
+            <div class="therapists-img">
+                <div class="therapists-imgbox">
+                    <img src="img/people1.png">
+                </div>
+                <div class="therapists-imgbox">
+                    <img src="img/people3.png">
+                </div>
+                <div class="therapists-imgbox"><img src="img/people5.png"></div>
+                <div class="therapists-imgbox"><img src="img/people7.png"></div>
+            </div>
+            <div class="therapists-btn">{{:btn}}</div>
+        </div>
+    </section>
+</script>
 <script  type="text/x-jsrender" id="faqTmpl">
     <section id="faq">
         <div class="faq">
@@ -118,39 +159,41 @@
             <p class="pages-title">{{:line3}}</p>
             <div class="faqContainer">
                 <div class="faqForEach">
-                    <p class="question">{{:question1}}</p>
+                   <!--  <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question1}}</p>
                     <p class="answer">{{:answer1}}</p>
                 </div>
                 <div class="faqForEach">
-                    <p class="question">{{:question2}}</p> 
+                   <!--  <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i>-->{{:question2}}</p> 
                     <p class="answer">{{:answer2}}</p>
                 </div>
                 <div class="faqForEach">
-                    <p class="question">{{:question3}}</p>
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i>-->{{:question3}}</p>
                     <p class="answer">{{:answer3}}</p>
                 </div>
                 <div class="faqForEach">
-                    <p class="question">{{:question4}}</p>
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question4}}</p>
                     <p class="answer">{{:answer4}}</p>
                 </div>
                 <div class="faqForEach">
-                    <p class="question">{{:question5}}</p>
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question5}}</p>
                     <p class="answer">{{:answer5}}</p>
                 </div>
                 <div class="faqForEach">
-                    <p class="question">{{:question6}}</p>
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question6}}</p>
                     <p class="answer">{{:answer6}}</p>
                 </div>
                 <div class="faqForEach">
-                    <p class="question">{{:question7}}</p>
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question7}}</p>
                     <p class="answer">{{:answer7}}</p>
                 </div>
                 <div class="faqForEach">
-                    <p class="question">{{:question8}}</p>
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question8}}</p>
                     <p class="answer">{{:answer8}}</p>
                 </div>
                 <div class="faqForEach">
-                    <p class="question">{{:question9}}</p>
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question9}}</p>
                     <p class="answer wide">{{:answer9Line1}}</p>
                     <p class="answer narrow">{{:answer9Line2}}</p>
                     <p class="answer narrow">{{:answer9Line3}}</p>
@@ -159,19 +202,19 @@
                     <p class="answer narrow">{{:answer9Line6}}</p>
                 </div>
                 <div class="faqForEach">
-                    <p class="question">{{:question10}}</p>
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question10}}</p>
                     <p class="answer">{{:answer10}}</p>
                 </div>
                 <div class="faqForEach">
-                    <p class="question">{{:question11}}</p>
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question11}}</p>
                     <p class="answer">{{:answer11}}</p>
                 </div>
                 <div class="faqForEach">
-                    <p class="question">{{:question12}}</p>
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question12}}</p>
                     <p class="answer">{{:answer12}}</p>
                 </div>
                 <div class="faqForEach">
-                    <p class="question">{{:question13}}</p>
+                    <p class="question"><!-- <i class="fa fa-dot-circle-o faq-icon" aria-hidden="true"></i> -->{{:question13}}</p>
                     <p class="answer">{{:answer13}}</p>
                 </div>
             </div>
@@ -188,7 +231,11 @@
         </div>
         <div class="contact-phone">
             <p class="contact-phone-phone">{{:phone}}</p>
-            <p class="contact-phone-num">{{:num}}</p>
+            <p class="contact-phone-num">
+                <span>{{:num1}}</span>
+                <span>{{:num2}}</span>
+                <span>{{:num3}}</span>
+            </p>
         </div>
         <div class="mybet">
         <input class="contact-namein" contentEditable="true" placeholder="Your Name"></input>
@@ -205,9 +252,9 @@
                 <span class="title-lighter">Mobile</span>
                 <span class="title-bold">massages</span>
             </p><br>
-        	<p class="title-bold">{{:copyright}}</p>
-        	<p class="title-bold">{{:team}}</p>
-        	<p class="title-bold">{{:policy}}</p>
+        	<p class="title-small">{{:copyright}}</p>
+        	<p class="title-small">{{:team}}</p>
+        	<p class="title-small">{{:policy}}</p>
         </div>
     </div>
 </script>
