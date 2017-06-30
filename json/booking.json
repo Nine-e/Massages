@@ -41,12 +41,13 @@
         "type":{
         	"title":"Massage type",
         	"option1":"Swedish Massage",
-            "option2":"French Massage",
-            "option3":"British Massage",
-            "option4":"Chinese Massage",
-            "option5":"Thailand Massage",
-            "option6":"Korean Massage",
-            "option7":"Malaysia Massage"
+            "option2":"Deep tissue",
+            "option3":"Sports",
+            "option4":"Pre-natal",
+            "option5":"Couples Massage",
+            "option6":"Thai Massage",
+            "option7":"Relaxing",
+            "option8":"At work"
         },
         "bridge":{
         	"title":"Choose your therapist",

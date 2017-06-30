@@ -11,6 +11,7 @@ var choose=1;
 function load()
 { 
     /*initPage();*/
+
 	$.getJSON("../json/booking.json",function(data){
 		cntData = data.cnt;
 		var cntHtml = $.templates("#cntTmpl").render(cntData)
@@ -42,6 +43,9 @@ function load()
 		ctrlNum();
 		Continue();
 		Back();
+		sessionSelect();
+		selectLength();
+		selectType();
 		
 	});
 
@@ -237,4 +241,107 @@ function chooseTherapist(){
 
 	});
 
+}
+var session = [
+    "Single-1 therapist",
+    "Double-2 therapist"
+];
+
+function sessionSelect(){
+	$(".session").click(function(event) {
+
+		var index = $(this).find("input").val();
+
+		if(index > 0){
+			$(this).css("display","none");
+		    $(this).siblings().css("display","block");
+		}
+
+		$(".sessionHead").find("span").text(session[index-1]);
+		$(".sessionSelect").slideToggle(200);
+	});
+
+	$(".session").mouseenter(function(event) {
+		$(this).css("background-color","rgb(235,235,235)");
+	});
+
+	$(".session").mouseleave(function(event) {
+		$(this).css("background-color","white");
+	});
+}
+
+var length = [
+    "60 minutes-£65",
+    "90 minutes-£75",
+    "120 minutes-£95",
+    "60 minutes-£130",
+    "90 minutes-£150",
+    "120 minutes-£190"
+];
+function selectLength(){
+
+	$(".length").click(function(event) {
+
+		var index = $(this).find("input").val();
+        if(index > 0){
+			$(this).css("display","none");
+		    $(this).siblings().css("display","block");
+		}
+        
+        if(index>0 && index<4){
+	    	$(".firstTherapist").css("display","block");
+	    	$(".secondTherapist").css("display","none");
+	    }
+	    else if(index>3){
+	    	$(".firstTherapist").css("display","none");
+	    	$(".secondTherapist").css("display","block");
+	    }
+
+		$(".lengthHead").find("span").text(length[index-1]);
+
+		$(".lengthSelect").slideToggle(200);
+
+	});
+
+	$(".length").mouseenter(function(event) {
+		$(this).css("background-color","rgb(235,235,235)");
+	});
+
+	$(".length").mouseleave(function(event) {
+		$(this).css("background-color","white");
+	});
+}
+
+var type = [
+    "Swedish Massage",
+    "Deep tissue",
+    "Sports",
+    "Pre-natal",
+    "Couples Massage",
+    "Thai Massage",
+    "Relaxing",
+    "At work"
+];
+function selectType(){
+
+	$(".type").click(function(event) {
+
+		var index = $(this).find("input").val();
+        if(index > 0){
+			$(this).css("display","none");
+		    $(this).siblings().css("display","block");
+		}
+		$(".typeHead").find("span").text(type[index-1]);
+
+		$(".typeSelect").slideToggle(200);
+
+	});
+
+	$(".type").mouseenter(function(event) {
+		$(this).css("background-color","rgb(235,235,235)");
+	});
+
+	$(".type").mouseleave(function(event) {
+		$(this).css("background-color","white");
+	});
 }

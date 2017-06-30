@@ -16,6 +16,7 @@
 <link rel="stylesheet" type="text/css" href="../css/signup.css">
 <link rel="stylesheet" type="text/css" href="../css/flatpickr.min.css">
 <link rel="stylesheet" type="text/css" href="../css/timepicki.css">
+<link rel="stylesheet" type="text/css" href="../lib/select/htools.select.skin.css">
 <link rel="stylesheet" type="text/css" href="../css/common.css">
 
 </head>
@@ -32,6 +33,7 @@
 <script type="text/javascript" src="../js/booking.js"></script>
 <script type="text/javascript" src="../js/flatpickr.js"></script>
 <script type="text/javascript" src="../js/timepicki.js"></script>
+<script type="text/javascript" src="../lib/select/jquery.htools.select.js"></script>
 </html>
 
 <script type="text/x-jsrender" id="cntTmpl">
@@ -309,42 +311,94 @@
                 {{for session}}
                 <div class="selectContainer">
                     <div class="bet-word">{{:title}}</div>
-                    <div class="select firstnin">
-                        <select>
-                            <option selected>{{:option1}}</option>
-                            <option>{{:option2}}</option>
-                        </select>
+                    <div class="select firstnin session sessionHead">
+                        <span>{{:option1}}</span>
+                    </div>
+                    <div class="sessionSelect firstin">
+                        <div class="firstnin session firstSession">
+                            <span>{{:option1}}</span>
+                            <input type="text" value="1">
+                        </div>
+                        <div class="firstnin session">
+                            <span>{{:option2}}</span>
+                            <input type="text" value="2">
+                        </div>
                     </div>
                 </div>
                 {{/for}}
                 {{for length}}
                 <div class="selectContainer">
                     <div class="bet-word">{{:title}}</div>
-                    <div class="select firstnin">
-                        <select>
-                            <option selected>{{:option1}}</option>
-                            <option>{{:option2}}</option>
-                            <option>{{:option3}}</option>
-                            <option class="secondTherapist">{{:option4}}</option>
-                            <option class="secondTherapist">{{:option5}}</option>
-                            <option class="secondTherapist">{{:option6}}</option>
-                        </select>
+                    <div class="select firstnin length lengthHead">
+                        <span>{{:option1}}</span>
+                    </div>
+                    <div class="lengthSelect firstin">
+                        <div class="firstnin length firstLength firstTherapist">
+                            <span>{{:option1}}</span>
+                            <input type="text" value="1">
+                        </div>
+                        <div class="firstnin length firstTherapist">
+                            <span>{{:option2}}</span>
+                            <input type="text" value="2">
+                        </div>
+                        <div class="firstnin length firstTherapist">
+                            <span>{{:option3}}</span>
+                            <input type="text" value="3">
+                        </div>
+                        <div class="firstnin length secondTherapist">
+                            <span>{{:option4}}</span>
+                            <input type="text" value="4">
+                        </div>
+                        <div class="firstnin length secondTherapist">
+                            <span>{{:option5}}</span>
+                            <input type="text" value="5">
+                        </div>
+                        <div class="firstnin length secondTherapist">
+                            <span>{{:option6}}</span>
+                            <input type="text" value="6">
+                        </div>
                     </div>
                 </div>
                 {{/for}}
                 {{for type}}
                 <div class="selectContainer">
                     <div class="bet-word">{{:title}}</div>
-                    <div class="select firstnin">
-                        <select>
-                            <option selected>{{:option1}}</option>
-                            <option>{{:option2}}</option>
-                            <option>{{:option3}}</option>
-                            <option>{{:option4}}</option>
-                            <option>{{:option5}}</option>
-                            <option>{{:option6}}</option>
-                            <option>{{:option7}}</option>
-                        </select>
+                    <div class="select firstnin type typeHead">
+                        <span>{{:option1}}</span>
+                    </div>
+                    <div class="typeSelect firstin">
+                        <div class="firstnin type firstType">
+                            <span>{{:option1}}</span>
+                            <input type="text" value="1">
+                        </div>
+                        <div class="firstnin type">
+                            <span>{{:option2}}</span>
+                            <input type="text" value="2">
+                        </div>
+                        <div class="firstnin type">
+                            <span>{{:option3}}</span>
+                            <input type="text" value="3">
+                        </div>
+                        <div class="firstnin type">
+                            <span>{{:option4}}</span>
+                            <input type="text" value="4">
+                        </div>
+                        <div class="firstnin type">
+                            <span>{{:option5}}</span>
+                            <input type="text" value="5">
+                        </div>
+                        <div class="firstnin type">
+                            <span>{{:option6}}</span>
+                            <input type="text" value="6">
+                        </div>
+                        <div class="firstnin type">
+                            <span>{{:option7}}</span>
+                            <input type="text" value="7">
+                        </div>
+                        <div class="firstnin type">
+                            <span>{{:option8}}</span>
+                            <input type="text" value="8">
+                        </div>
                     </div>
                 </div>
                 {{/for}}
