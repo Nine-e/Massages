@@ -5,11 +5,11 @@ function initPage(){
     $.getJSON("../json/commonhead.json",function(data){
 
         menuData = data.menu;
-        var menuHtml = $.templates("#menuTmpl").render(menuData)
+        var menuHtml = $.templates("#menuTmpl").render(menuData);
         $(".commonhead").append(menuHtml);
 
         headData = data.head;
-        var headHtml = $.templates("#headTmpl").render(headData)
+        var headHtml = $.templates("#headTmpl").render(headData);
         $(".commonhead").append(headHtml);
 
         showMenu();
@@ -17,6 +17,21 @@ function initPage(){
 
     });
 }
+
+/*$.getJSON("../json/commonhead.json",function(data){
+
+        menuData = data.menu;
+        var menuHtml = $.templates("#menuTmpl").render(menuData);
+        $(".commonhead").append(menuHtml);
+
+        headData = data.head;
+        var headHtml = $.templates("#headTmpl").render(headData);
+        $(".commonhead").append(headHtml);
+
+        showMenu();
+        hideMenu();
+
+    });*/
 
 function showMenu(){
     $('#showMenu').click(function() {
