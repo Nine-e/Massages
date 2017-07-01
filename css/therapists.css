@@ -117,16 +117,27 @@ input {
     /*橫屏*/
     @media all and (orientation: landscape) {
         .therapister {
-            width: 100vw;
+            width: 89vw;
         }
         .element {
-            width: 50vw;
-            height:20vw;
+            width: 37vw;
+            height:13.8vw;
             margin-top:20px;
-            transform: scale(0.8, 0.8);
+        }
+        .headimg {
+            width: 31%;
+            height: 100%;
         }
         .message {
-            font-size:10px;
+            font-size: 15px;
+            width: 286%;
+            transform-origin: top left;
+            transform: scale(0.34);
+            height: 8.7%;
+            margin-top: 0px;
+        }
+        .element-message {
+            width: 69%;
         }
         .therapistbtn {
             width: 33.33%;
@@ -147,35 +158,35 @@ input {
             overflow-x:hidden;
         }
         .therapister {
-            width: 100vw;
-            transform: translateX(5vw);
+            width: 95vw;
+            
         }
         .element {
-            width: 100vw;
-            height:40vw;
+            width: 100%;
+            height:40%;
             margin-top:20px;
             transform: scale(0.95, 0.95);
             line-height:70%
         }
         .element-message {
-            width:80%;
-            transform: scale(0.875,1);
+            width:81%;
         }
         .headimg {
-            width: 20%;
-            height: 98%;
-            transform: scale(1.5,1);
+            width: 29%;
+            height: 100%;
         }
         .message {
-            font-size:0.9rem;
-            width: 100%;
-            height: 10px;
+            font-size: 13px;
+            width: 165%;
+            transform-origin: top left;
+            transform: scale(0.60);
+            height: 8%;
             /*letter-spacing: 85%;*/
             /*margin-top:-3px;*/
         }
         .therapistbtn {
-            width: 90%;
-            font-size:75%;
+            width: 93vw;
+            height:32.9vw;
         }
         .bet-title1 {
             margin-top:0;
@@ -195,25 +206,27 @@ input {
         width: 100%;
     }
     .therapister {
-        width: 95vw;
+        width: 89vw;
     }
     .headimg {
-        width: 27%;
-        height: 98%;
+        width: 31%;
+        height: 100%;
     }
     .element {
-        width: 46vw;
-        height:17vw;
-        margin-top:15px;
-        transform: scale(0.8, 0.8);
+        width: 36vw;
+        height: 12.8vw;
+        margin-top: 20px;
     }
     .element-message {
-        width: 72%;
+        width: 79%;
         height: 100%;
     }
     .message {
-        font-size:0.8rem;
-        height: 7.8%
+        font-size:13px;
+        height: 7.2%;
+        width: 190%;
+        transform-origin: top left;
+        transform:scale(0.52);
        
     }
     .therapistbtn {
@@ -231,13 +244,12 @@ input {
         width: 75vw;
     }
     .element {
-
-        width: 34vw;
-        height: 13vw;
+        width: 30.4vw;
+        height: 10.1vw;
         margin-top: 40px;
     }
     .headimg {
-        width: 30%;
+        width: 29%;
         height: 100%;
     }
     .element-message {
@@ -249,7 +261,7 @@ input {
         flex-wrap: nowrap;
     }
     .message {
-        font-size:13px;
+        font-size:16px;
         height:8%;
     }
     .therapistbtn {
@@ -258,13 +270,14 @@ input {
         font-size: 18px;
     }
     .name {
-        font-size:1.8rem;
+        font-size: 16px;
+        margin-bottom: -5px;
 
     }
     .message,.name {
-        width: 120%;
+        width: 130%;
         transform-origin: top left;
-        transform:scale(0.83,1);
+        transform:scale(0.76);
 
     }
 }
