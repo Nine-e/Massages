@@ -53,6 +53,9 @@ a {
     }
     /*pages 竖屏*/
     @media screen and (orientation:portrait) {
+        body {
+            min-height:82vh;
+        }
         .foot-container {
             height: 18vh;
         }
@@ -81,6 +84,9 @@ a {
 	}
     /*lanscape 横屏*/
 	@media screen and (orientation:landscape) {
+        body {
+            min-height:50vh;
+        }
         .foot-container {
             height: 50vh;
         }
@@ -112,6 +118,9 @@ a {
 }
 /** ipad **/
 @media screen and (min-width:751px) and (max-width:1024px) {
+    body {
+        min-height: 78vh;   
+    }
 	.head {
 		height: 35px;
 		line-height: 35px;
@@ -154,6 +163,9 @@ a {
 }
 /** desktop **/
 @media screen and (min-width: 1025px) {
+    body {
+        min-height: 55vh;
+    }
 	.head {
 		height: 60px;
 		line-height: 60px;
