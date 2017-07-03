@@ -4,15 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link rel="stylesheet"  href="../lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
-     <link href="../css/common.css" rel="stylesheet">
-    <link href="../css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
 
     <title>style</title>
 </head>
- <body>
- <div class="commonhead"></div>
+<body>
+<div class="commonhead"></div>
 <div class="styles">
     <div class="styles-title1">CHOOSE YOUR MASSAGE TYPE</div>
     <div class="styles-title2">Massages</div>
@@ -127,10 +127,10 @@
 
 <script type="text/javascript" src = "../lib/jquery/jquery-3.2.1.js"></script>
 <script type="text/javascript" src = "../lib/bootstrap/js/bootstrap.min.js"></script>
- <script src="../lib/jsrender/jsrender.js"></script>
- <script type="text/javascript" src = "../js/commonhead.js"></script>
- <script type="text/javascript" src = "../js/commonfoot.js"></script>
- <script type="text/javascript" src = "../js/styles.js"></script>
+<script type="text/javascript" src = "../lib/jsrender/jsrender.js"></script>
+<script type="text/javascript" src = "../js/commonhead.js"></script>
+<script type="text/javascript" src = "../js/commonfoot.js"></script>
+<script type="text/javascript" src = "../js/styles.js"></script>
 </html>
 <script type="text/x-jsrender" id="menuTmpl">
     <div class="massagesHide"></div>
@@ -143,16 +143,31 @@
                         <span class="title-lighter">Mobile</span>
                         <span class="title-bold">massages</span>
                     </span>
-                    <i id="hideMenu" class="fa fa-times-circle-o"></i>
+                    <!--<i id="hideMenu" class="fa fa-times-circle-o"></i>-->
+                    <img id="hideMenu" src="../img/hideMenu.png">
                 </div>
             </div>
-            <div class="menu-bar"><a href="../index.html">Home</a></div>
-            <div class="menu-bar"><a href="../html/booking.html">Booking</a></div>
-            <div class="menu-bar"><a href="../html/therapists.html">Therapists</a></div>
-            <div class="menu-bar"><a href="#">Styles</a></div>
-            <div class="menu-bar"><a href="../html/price.html">Massages description</a></div>
-            <div class="menu-bar"><a href="../html/faq.html">FAQ</a></div>
-            <div class="menu-bar"><a href="../html/contact.html">Contact us</a></div>
+            <div class="menu-bar">
+                <div class="aFather"><a href="../index.html">Home</a></div>
+            </div>
+            <div class="menu-bar">
+                <div class="aFather"><a href="../html/booking.html">Booking</a></div>
+            </div>
+            <div class="menu-bar">
+                <div class="aFather"><a href="../html/therapists.html">Therapists</a></div>
+            </div>
+            <div class="menu-bar">
+                <div class="aFather"><a href="../html/styles.html" class="active">Styles</a></div>
+            </div>
+            <div class="menu-bar">
+                <div class="aFather"><a href="../html/price.html">Massages description</a></div>
+            </div>
+            <div class="menu-bar">
+                <div class="aFather"><a href="../html/faq.html">FAQ</a></div>
+            </div>
+            <div class="menu-bar">
+                <div class="aFather"><a href="../html/contact.html">Contact us</a></div>
+            </div>
             <div class="menu-bar no-border"><a href="../html/signin.html">Login</a></div>
         </div>
     </div>
@@ -169,7 +184,7 @@
                 <span><a href="../index.html">{{:home}}</a></span>
                 <span><a href="../html/booking.html">{{:booking}}</a></span>
                 <span><a href="../html/therapists.html">{{:therapist}}</a></span>
-                <span><a href="#" class="active">{{:style}}</a></span>
+                <span><a href="../html/styles.html" class="active">{{:style}}</a></span>
                 <span><a href="../html/price.html">{{:pricing}}</a></span>
                 <span><a href="../html/faq.html">{{:faq}}</a></span>
                 <span><a href="../html/contact.html">{{:contactUs}}</a></span>

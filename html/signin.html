@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link rel="stylesheet"  href="../lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
-    <link href="../css/common.css" rel="stylesheet">
-    <link href="../css/signin.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/common.css" >
+    <link rel="stylesheet" type="text/css" href="../css/signin.css" >
 
     <title>sign in</title>
 </head>
@@ -21,6 +21,7 @@
 <script type="text/javascript" src = "../lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="../lib/jsrender/jsrender.js"></script>
 <script type="text/javascript" src="..\lib\layui\layui.js"></script>
+<script type="text/javascript" src = "../lib/jsrender/jsrender.js"></script>
 <script type="text/javascript" src = "../js/commonhead.js"></script>
 <script type="text/javascript" src = "../js/commonfoot.js"></script>
 <script type="text/javascript" src = "../js/signin.js"></script>
@@ -36,17 +37,32 @@
                         <span class="title-lighter">Mobile</span>
                         <span class="title-bold">massages</span>
                     </span>
-                    <i id="hideMenu" class="fa fa-times-circle-o"></i>
+                    <!--<i id="hideMenu" class="fa fa-times-circle-o"></i>-->
+                    <img id="hideMenu" src="../img/hideMenu.png">
                 </div>
             </div>
-            <div class="menu-bar"><a href="../index.html">Home</a></div>
-            <div class="menu-bar"><a href="../html/booking.html">Booking</a></div>
-            <div class="menu-bar"><a href="../html/therapists.html">Therapists</a></div>
-            <div class="menu-bar"><a href="../html/styles.html">Styles</a></div>
-            <div class="menu-bar"><a href="../html/price.html">Massages description</a></div>
-            <div class="menu-bar"><a href="../html/faq.html">FAQ</a></div>
-            <div class="menu-bar"><a href="../html/contact.html">Contact us</a></div>
-            <div class="menu-bar no-border"><a href="#">Login</a></div>
+            <div class="menu-bar">
+                <div class="aFather"><a href="../index.html">Home</a></div>
+            </div>
+            <div class="menu-bar">
+                <div class="aFather"><a href="../html/booking.html">Booking</a></div>
+            </div>
+            <div class="menu-bar">
+                <div class="aFather"><a href="../html/therapists.html">Therapists</a></div>
+            </div>
+            <div class="menu-bar">
+                <div class="aFather"><a href="../html/styles.html">Styles</a></div>
+            </div>
+            <div class="menu-bar">
+                <div class="aFather"><a href="../html/price.html">Massages description</a></div>
+            </div>
+            <div class="menu-bar">
+                <div class="aFather"><a href="../html/faq.html">FAQ</a></div>
+            </div>
+            <div class="menu-bar">
+                <div class="aFather"><a href="../html/contact.html">Contact us</a></div>
+            </div>
+            <div class="menu-bar no-border"><a href="../html/signin.html" class="active">Login</a></div>
         </div>
     </div>
 </script>
@@ -66,7 +82,7 @@
 				<span><a href="../html/price.html">{{:pricing}}</a></span>
 				<span><a href="../html/faq.html">{{:faq}}</a></span>
 				<span><a href="../html/contact.html">{{:contactUs}}</a></span>
-				<span class="sign-in"><a href="#" class="active">{{:signIn}}</a></span>
+				<span class="sign-in"><a href="../html/signin.html" class="active">{{:signIn}}</a></span>
     	    </div>
     	</div>
     	<div class="head-menu dropdown">

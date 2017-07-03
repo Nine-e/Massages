@@ -19,11 +19,6 @@ function Tocheck()
             {
                 type: "GET", //提交方式  
                 url: "http://localhost:8080/phpbin/test.php", //路径  
-                dataType: "string",
-                data:{
-
-                 //数据，这里使用的是Json格式进行传输  
-                },
                 success: function(result) {
                  //返回数据根据结果进行相应的处理 
                     $(".sign-in a").html(result);
