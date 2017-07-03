@@ -1,7 +1,24 @@
-﻿
+﻿@charset "UTF-8";
+@font-face{
+    font-family: "Lato";
+    src:url(../lib/Lato/Lato-Regular.ttf);
+}
+@font-face{
+    font-family: "LatoLight";
+    src:url(../lib/Lato/Lato-Light.ttf);
+}
+@font-face{
+    font-family: Montserrat;
+    src:url(../lib/Montserrat-Light.otf);
+}
+@font-face{
+    font-family: Montserrat-Light;
+    src:url(../lib/Montserrat-ExtraLight.otf);
+ }
 .styles {
     display: flex;
     margin: auto ;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -9,13 +26,13 @@
 .styles-title1 {
     font-size: 26px;
     color: rgb(101, 211,164);
-    font-family: "Lato", "sans-serif";
+    font-family: Lato;
 }
 .styles-title2 {
     font-size: 22px;
     color: rgb(153, 153, 153);
     font-weight: lighter;
-    font-family: "Lato", "sans-serif";
+    font-family: Lato;
 }
 .stylesbtn {
     display: flex;
@@ -24,7 +41,7 @@
     font-weight: bold;
     justify-content: center;
     align-items: center;
-    font-family: "Lato", "sans-serif";
+    font-family: Lato;
     cursor: pointer;
 }
 .elements {
@@ -49,11 +66,13 @@
     /*margin-left: 8px;*/
 }
 .name {
-    font-weight: bold;
+    font-family: Lato;
+    font-weight: 600;
     color: rgb(101, 211,164);
 }
 .message {
     margin-top: 0;
+    font-family: Montserrat;
     color: rgb(152, 152, 152);
     text-align: justify;
 }
@@ -69,21 +88,27 @@ input {
 @media screen and (max-width: 750px) {
     /*橫屏*/
     @media screen and (orientation: landscape) {
+
         .elements {
-            width: 90vw;
+            width: 110%;
+            margin-left: -2vw;
+            margin-top: -10vh;
+            transform: scale(0.85,0.85);
         }
         .element {
-            width: 44vw;
-            height: 11vw;
+            width: 50%;
+            height: 13%;
             margin-top: 7vw;
-            transform: scale(0.95,0.95);
+        }
+        .element-message {
+            width: 100%;
         }
         .name {
-            font-size: 14px;
+            font-size: 16px;
         }
         .message {
             margin-top: 2px;
-            font-size: 9px;
+            font-size: 6px;
         }
         .stylesbtn {
             font-size: 13px;
@@ -96,7 +121,8 @@ input {
         .element img {
             width: 10vw;
             height: 10vw;
-            transform: scale(0.8,0.8);
+            margin-left: -2vw;
+            transform: scale(0.85,0.85);
         }
         .styles-title1 {
             margin-top: 5vw;
@@ -117,22 +143,26 @@ input {
             display: none;
         }
         .elements {
-            width: 100vw;
-        }
-        .element-message {
+            width: 100%;
             margin-left: 1vw;
-        }
-        .element {
-            width: 100vw;
+            margin-top: -10vh;
             transform: scale(0.8, 0.8);
         }
+        .element-message {
+            margin-left: 3vw;
+        }
+        .element {
+            width: 100%;
+            margin-bottom: 5vw;
+            margin-left: -2vw;
+        }
         .element img {
-            width: 25vw;
-            height: 25vw;
-            /*transform: scale(0.8,0.8);*/
+            width: 20vw;
+            height: 20vw;
+            /*transform: scale(0.7,0.7);*/
         }
         .name {
-            font-size: 20px;
+            font-size: 18px;
         }
         .message {
             font-size: 13px;
@@ -151,16 +181,18 @@ input {
 @media screen and (max-width: 1024px) and (min-width: 751px) {
 
     .elements {
-        width: 80vw;
+        width: 84vw;
+        margin-top: -4vw;
+        transform: scale(0.85,0.85);
     }
     .element {
-        width: 40vw;
-        height: 10vw;
+        width: 42vw;
+        height: 14vw;
         margin-top: 2vw;
-        transform: scale(0.9,0.9);
+        
     }
     .name {
-        font-size: 14px;
+        font-size: 16px;
     }
     .message {
         margin-top: 2px;
@@ -191,6 +223,7 @@ input {
 /*pc*/
 @media screen and (min-width: 1025px) {
     .elements {
+        margin-top: -3vw;
         width: 50vw;
     }
     .element {
@@ -200,10 +233,10 @@ input {
         transform: scale(0.95,0.95);
     }
     .name {
-        font-size: 16px;
+        font-size: 17px;
     }
     .message {
-        font-size: 10px;
+        font-size: 12px;
     }
     .stylesbtn {
         font-size: 14px;
