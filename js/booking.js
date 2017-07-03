@@ -41,6 +41,7 @@ function load()
         chooseDate();
         chooseTime();
 		ctrlNum();
+		ctrlRadio();
 		Continue();
 		Back();
 		sessionSelect();
