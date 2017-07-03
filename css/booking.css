@@ -75,17 +75,30 @@
 .continue-button,
 .book-button
 {
-	width: 200px;
-	height: 40px;
-	margin: auto;
-	margin-top: 40px;
-	margin-bottom: 20px;
-	line-height: 40px;
-	font-size: 15px;
-	font-weight: 600;
+	/*width: 200px;*/
+	/*height: 40px;*/
+	/*margin: auto;*/
+	/*margin-top: 40px;*/
+	/*margin-bottom: 20px;*/
+	/*line-height: 40px;*/
+	/*font-size: 15px;*/
+	/*font-weight: 600;*/
+	/*color: #fff;*/
+	/*cursor: pointer;*/
+	/*background-color: #64d2a3;*/
+	/*cursor: pointer;*/
+	width: 100%;
+	height: 35px;
+	margin-bottom: 40px;
+	margin-top: 14px;
+	display: flex;
+	background: rgb(100,210,163);
 	color: #fff;
+	font-weight: bold;
+	justify-content: center;
+	line-height: 35px;
+	font-family: "Lato";
 	cursor: pointer;
-	background-color: #64d2a3;
 }
 .agreeing-text{
 	width: 300px;
@@ -115,6 +128,7 @@
 	font-size: 15px;
 	font-weight: 900;
 	color: #999;
+	cursor: pointer;
 }
 /*.back-button-icon:hover,
 .back-button-text:hover {
@@ -191,7 +205,12 @@
 			height: 141px;
 			z-index: 999;
 			border: 6px solid rgb(100,210,163);
-		} 
+		}
+		 .continue-button {
+			 width:40vw;
+			 margin-left:30vw;
+			 margin-top: 36px;
+		 }
     }
     /*竖屏*/
      @media screen and (orientation: portrait) 
@@ -262,6 +281,11 @@
 		}
 		.cnt-message {
 			margin-top: -20px;
+		}
+		.continue-button {
+			width:80vw;
+			margin-left:10vw;
+			margin-top: 62px;
 		}
      }
  }
@@ -506,6 +530,9 @@
 	display: inline-block;
 	width: 45%;
 	margin-top: 15px;
+}
+.fifth-apply {
+	cursor: pointer;
 }
 .fifth-date,.fifth-gift{
 	float: left;

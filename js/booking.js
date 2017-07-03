@@ -53,7 +53,7 @@ function load()
         	}
 
         });
-        chooseTherapist();
+        
         chooseDate();
         chooseTime();
 		ctrlNum();
@@ -63,7 +63,8 @@ function load()
 		sessionSelect();
 		selectLength();
 		selectType();
-		
+		chooseTherapist();
+
 	});
 
 
@@ -421,27 +422,6 @@ function chooseTime(){
 	$("#di").timepicki();
 }
 
-function chooseTherapist(){
-
-	$(".imgForEach").click(function(event) {
-		name=$(this).find("p").html();
-		$(this).find(".imgBorder").css("display","block");
-		$(this).siblings().find(".imgBorder").css("display","none");
-		var index = $(this).find("input").val();
-        
-		$.getJSON("../json/booking.json",function(data){
-
-			messageData = data.message;
-			var messageHtml = $.templates("#messageTmpl").render(messageData[index-1]);
-			$(".messageBox").css("padding","0px 30px");
-			$(".messageBox").empty();          /*清空div中的内容*/
-			$(".messageConnect").append(messageHtml); 
-            $(".messageBox").show();
-	    }); 
-
-	});
-
-}
 var session = [
     "Single-1 therapist",
     "Double-2 therapist"
@@ -475,6 +455,13 @@ function sessionSelect(){
         }
 		$(".sessionHead").find("span").text(session[index-1]);
 		$(".sessionSelect").slideToggle(200);
+
+		/*即时刷新*/
+		for(var i=1;i<=20;++i){
+			$(".imgForEach").eq(i-1).find(".imgBorder").css("display","none");
+		}
+		$(".messageBox").hide();
+
 	});
 
 	$(".session").mouseenter(function(event) {
@@ -549,4 +536,63 @@ function selectType(){
 	$(".type").mouseleave(function(event) {
 		$(this).css("background-color","white");
 	});
+}
+
+function chooseTherapist(){
+    
+    var n=-1;
+	var m=new Array("-1","-1","-1");
+	$(".imgForEach").click(function(event) {
+
+		/*console.log(flag);*/
+		if(flag == 0){
+			name=$(this).find("p").html();
+			$(this).find(".imgBorder").css("display","block");
+			$(this).siblings().find(".imgBorder").css("display","none");
+			var index = $(this).find("input").val();
+	        
+			$.getJSON("../json/booking.json",function(data){
+
+				messageData = data.message;
+				var messageHtml = $.templates("#messageTmpl").render(messageData[index-1]);
+				$(".messageBox").css("padding","0px 30px");
+				$(".messageBox").empty();          /*清空div中的内容*/
+				$(".messageConnect").append(messageHtml); 
+	            $(".messageBox").show();
+		    }); 
+		}
+
+		else if(flag == 1){
+
+    		n++;
+    		console.log(n);
+            var index = $(this).find("input").val();
+	        m[n] = index;
+         
+            $(this).find(".imgBorder").css("display","block");
+			if(n==2){
+				$(".imgForEach").eq(m[0]-1).find(".imgBorder").css("display","none");
+                m[0]=m[1];
+                m[1]=m[2];
+                m[2]="-1";
+                n=1;
+			}
+
+			$.getJSON("../json/booking.json",function(data){
+
+				messageData = data.message;
+				if(n==0){
+				    var messageHtml = $.templates("#messageTmpl").render(messageData[m[0]-1]);
+				}
+				else if(n==1){
+					var messageHtml = $.templates("#messageTmpl").render(messageData[m[1]-1]);
+				}
+				$(".messageBox").css("padding","0px 30px");
+				$(".messageBox").empty();          /*清空div中的内容*/
+				$(".messageConnect").append(messageHtml); 
+	            $(".messageBox").show();
+		    }); 
+		}
+	});
+		
 }

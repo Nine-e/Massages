@@ -193,7 +193,7 @@
             height: 6vw;
             line-height: 6vw;
             font-size: 12px;
-            margin-top: -29px;
+            margin-top: -7px;
             margin-bottom: 2px;
             cursor: pointer;
         }
@@ -840,6 +840,7 @@
        }
         .styles-elements {
             width: 90vw;
+            margin-left: 8vw;
         }
         .styles-element {
             width: 44vw;
@@ -946,6 +947,7 @@
     .styles-elements {
         width: 80vw;
         margin-top: 3vw;
+        margin-left: 7vw;
     }
     .styles-element {
         width: 40vw;
@@ -990,6 +992,7 @@
     }
     .styles-elements {
         width: 60vw;
+        margin-left: 5vw;
     }
     .styles-element {
         width: 28vw;
