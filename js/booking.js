@@ -247,17 +247,33 @@ var session = [
     "Single-1 therapist",
     "Double-2 therapist"
 ];
-
+var flag = 0;
 function sessionSelect(){
 	$(".session").click(function(event) {
-
+        flag=0;
 		var index = $(this).find("input").val();
-
+		if(index>=0)
+        flag = index;
+        console.log(flag);
 		if(index > 0){
 			$(this).css("display","none");
 		    $(this).siblings().css("display","block");
 		}
-
+		if(flag==1)
+		{
+			$("#span1").html(length[0][0]);
+		}else {
+			$("#span1").html(length[1][0]);
+		}
+		if(flag==0)
+			flag=0;
+		else flag--;
+		$("#span1").html(length[flag][0]);
+        for(var i=2;i<=4;i++)
+        {
+        	var s="#span"+i;
+        	$(s).html(length[flag][i-2]);
+        }
 		$(".sessionHead").find("span").text(session[index-1]);
 		$(".sessionSelect").slideToggle(200);
 	});
@@ -271,38 +287,26 @@ function sessionSelect(){
 	});
 }
 
+
+/*2*3的二维数组*/
 var length = [
-    "60 minutes-£65",
-    "90 minutes-£75",
-    "120 minutes-£95",
-    "60 minutes-£130",
-    "90 minutes-£150",
-    "120 minutes-£190"
+    ["60 minutes-£65","90 minutes-£75","120 minutes-£95"],
+    ["60 minutes-£130","90 minutes-£150","120 minutes-£190"],
 ];
-var flag = 0;
 function selectLength(){
 
 	$(".length").click(function(event) {
 
 		var index = $(this).find("input").val();
-        if(index > 0){
-			$(this).css("display","none");
-		    $(this).siblings().css("display","block");
-		}
+		
         
-        if(index>0 && index<4){
-	    	$(".firstTherapist").css("display","block");
-	    	$(".secondTherapist").css("display","none");
-	    }
-	    else if(index>3){
-	    	$(".firstTherapist").css("display","none");
-	    	$(".secondTherapist").css("display","block");
-	    }
-
-		$(".lengthHead").find("span").text(length[index-1]);
-
+        if(index > 0){
+		    $(this).siblings().css("display","block");
+		    $(this).css("display","none");
+		}
+		if(index>0)
+		$("#span1").html(length[flag][index-1]);
 		$(".lengthSelect").slideToggle(200);
-
 	});
 
 	$(".length").mouseenter(function(event) {

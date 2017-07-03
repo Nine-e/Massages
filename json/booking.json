@@ -31,12 +31,7 @@
 		},
         "length":{
         	"title":"Massage length",
-        	"option1":"60 minutes-£65",
-            "option2":"90 minutes-£75",
-            "option3":"120 minutes-£95",
-            "option4":"60 minutes-£130",
-            "option5":"90 minutes-£150",
-            "option6":"120 minutes-£190"
+        	"option1":"60 minutes-£65"
         },
         "type":{
         	"title":"Massage type",
