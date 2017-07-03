@@ -195,6 +195,7 @@
             font-size: 12px;
             margin-top: -29px;
             margin-bottom: 2px;
+            cursor: pointer;
         }
     }
     /*竖屏*/
@@ -220,6 +221,7 @@
             line-height: 12vw;
             font-size: 13px;
             margin-top: -32px;
+            cursor: pointer;
         }
         .book-title {
             font-size: 17px;
@@ -254,6 +256,7 @@
         line-height: 3vw;
         font-size: 8px;
         margin-top: 0;
+        cursor: pointer;
     }
 }
 
@@ -281,6 +284,7 @@
         height: 3vw;
         line-height: 3vw;
         font-size: 13px;
+        cursor: pointer;
     }
 }
 /*-------------------------------introduce------------------------------*/
@@ -676,6 +680,8 @@
             font-weight: 500;
             color: #fff;
             background-color: #64d2a3;
+            cursor: pointer;
+
         }
     }
 }
@@ -717,6 +723,8 @@
         font-weight: 500;
         color: #fff;
         background-color: #64d2a3;
+       cursor: pointer;
+
    }
 }
  
@@ -751,6 +759,7 @@
         font-weight: 600;
         color: #fff;
         background-color: #64d2a3;
+       cursor: pointer;
    }
 }
 /*
@@ -787,6 +796,7 @@
 .styles-btn {
     text-align: center;
     margin: auto;
+    cursor: pointer;
 }
 .element-message .name {
     color: rgb(100, 210, 163);
@@ -815,6 +825,8 @@
             font-weight: 600;
             color: #fff;
             background-color: #64d2a3;
+            cursor: pointer;
+
        }
         .styles-elements {
             width: 90vw;
@@ -919,6 +931,7 @@
         font-weight: 500;
         color: #fff;
         background-color: #64d2a3;
+        cursor: pointer;
     }
     .styles-elements {
         width: 80vw;
@@ -962,6 +975,8 @@
         font-weight: 600;
         color: #fff;
         background-color: #64d2a3;
+        cursor: pointer;
+
     }
     .styles-elements {
         width: 60vw;
