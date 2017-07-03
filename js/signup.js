@@ -6,7 +6,18 @@
 //     });
 // });
 
-
+function alertMessage(){
+                           layui.use(['layer', 'form'], function(){
+                              var layer = layui.layer,form = layui.form();
+                              layer.open({
+                                type: 1,
+                                area: ['300px', '150px'],
+                                shadeClose: true, //点击遮罩关闭
+                                content: '\<\div style="padding:20px;">账号或者密码错误\<\/div>'
+                              });
+                              //layer.alert('为了不侵犯叔叔阿姨的肖像权，最后还是决定用一些食物的照片来代替头像')
+                            });
+};
 function load()
 {  
     $.getJSON("../json/signup.json", function(data) {
@@ -31,7 +42,18 @@ function ToSignUp()
         email=$('.emailin').val(),
         mobile=$('.mobilein').val(),
         password=$('.passwordin').val();
-    if(firstname&&lastname&&email&&mobile&&password)
+        firstname.trim();
+        lastname.trim();
+        email.trim();
+        mobile.trim();
+        password.trim();
+        var re = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/; 
+        var tt=false;
+        if(re.test(email))
+        {
+            tt=true;
+        }
+    if(firstname&&lastname&&email&&mobile&&password&&tt)
     {
         $.ajax(
             {
@@ -45,16 +67,20 @@ function ToSignUp()
                     "password":password
                 },
                  //数据，这里使用的是Json格式进行传输  
-                success: function(result) { //返回数据根据结果进行相应的处理  
-                    if (result) {
-                       alert("yeah");
+                success: function(result) {
+                 //返回数据根据结果进行相应的处理 
+                    var ans=result.search(email) 
+                    if (ans>0) {
+                       window.location.href="/signin.html"
                     } else {
-                        alert("No");
+                        alertMessage();
                     }
                 }
 
             }
         );
+    }else {
+        alertMessage();
     }
 
 }

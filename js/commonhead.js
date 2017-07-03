@@ -1,4 +1,4 @@
-$.getJSON("../json/commonhead.json",function(data){
+﻿$.getJSON("../json/commonhead.json",function(data){
 
         menuData = data.menu;
         var menuHtml = $.templates("#menuTmpl").render(menuData);
@@ -7,13 +7,34 @@ $.getJSON("../json/commonhead.json",function(data){
         headData = data.head;
         var headHtml = $.templates("#headTmpl").render(headData);
         $(".commonhead").append(headHtml);
-
+        Tocheck();
         showMenu();
         hideMenu();
        /* addMenuLink();*/
 
 });
+function Tocheck()
+{
+    $.ajax(
+            {
+                type: "GET", //提交方式  
+                url: "http://localhost:8080/phpbin/test.php", //路径  
+                dataType: "string",
+                data:{
 
+                 //数据，这里使用的是Json格式进行传输  
+                },
+                success: function(result) {
+                 //返回数据根据结果进行相应的处理 
+                    $(".sign-in a").html(result);
+                },
+                error:function(data) {
+                    alert("yyyy");
+                }
+
+            }
+        );
+}
 function showMenu(){
     $('#showMenu').click(function() {
         $(".menu").show();

@@ -42,7 +42,9 @@ var data=
 
 var cntHtml = $.templates("#price-inf").render(data);
 $(".price").append(cntHtml);
-
+$("body").delegate('.buy-button', 'click', function(event) {
+	window.location.href="booking.html";
+});
 /*$(initpages);
 
 function initpages(){
