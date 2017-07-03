@@ -44,7 +44,26 @@ function load()
 		{
 		   $('.commonfoot').css('position', 'relative');
 		}
-        
+
+        $(".continue-button").mousedown(function () {
+            window.location.href = 'html/booking.html';
+        });
+
+        $(".therapists-btn").mousedown(function () {
+            window.location.href = 'html/therapists.html';
+        });
+
+        $(".styles-btn").mousedown(function () {
+            window.location.href = 'html/styles.html';
+        });
+
+        $(".price-button").mousedown(function () {
+            window.location.href = 'html/price.html';
+        });
+
+        $(".contact-send-button").mousedown(function () {
+            window.location.href = 'html/contact.html';
+        });
         chooseDate();
         chooseTime();
 
