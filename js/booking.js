@@ -1,9 +1,3 @@
-/**
- * 
- * @authors Your Name (you@example.org)
- * @date    2017-06-22 16:21:13
- * @version $Id$
- */
 
 var num=1;
 var mine=0;
@@ -145,18 +139,16 @@ function ctrlNum(){
 		}
 	if(num == 3){
 		     $.ajax({
-		    	url: '/path/to/file',
-		    	type: 'default GET (Other values: POST)',
-		    	dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
-		    	data: {param1: 'value1'},
+		    	url: 'http://localhost:8080/phpbin/test.php',
+		    	type: 'GET',
 		    	success: function(result){
-		    		var s=result.find("Sign In");
-		    		s.substring(3,s.length);
+		    		var s=result.search("Sign In");
+		    		result.substring(3,s.length);
 		    		if(s<0)
 		    		{
-		    			$('.third-emailin').eq(0).val(s);
+		    			$('.third-emailin').eq(0).val(result);
 		    			$('.third-passwordin').eq(0).val("11111");
-		    			$('.third-emailin').eq(1).val(s);
+		    			$('.third-emailin').eq(1).val(result);
 		    			$('.third-passwordin').eq(1).val("11111");
 		    			flag=true;
 		    		}
@@ -194,7 +186,7 @@ function ctrlNum(){
 		   	{
 		   		var email=$('.third-emailin').eq(1).val(),
                     password=$('.third-passwordin').eq(1).val();
-			    if(email&&password)
+			    if(email&&password&&!flag)
 			    {
 			        $.ajax(
 			            {
@@ -215,6 +207,12 @@ function ctrlNum(){
 			                       flag=true;
 			                    } else {
 									flag=false;
+									swal({
+                						title:"ERROR",
+               						    text:"Format error & Empty data",
+            							type:'error',
+            							confirmButtonColor:"#64D2A3"
+            						});
 			                    }
 			                }
 
@@ -222,7 +220,7 @@ function ctrlNum(){
 			        );
 			    }
 		   	}
-		   	else
+		   	else if(choose==1&&!flag)
 		   	{
 		   		
 			    var firstname=$('.third-firstnin').val(),
@@ -261,11 +259,24 @@ function ctrlNum(){
 				                    if (ans>0) {
 				                      flag=true;
 				                    } else {
-				                       flag=false;
+				                      swal({
+                        				title:"WARNING",
+                        				text:"This account already exists",
+                        				type:'warning',
+                        				confirmButtonColor:"#64D2A3"
+                         				});
 				                    }
 				                }
 
 				            });
+				    }else
+				    {
+				    	swal({
+                		title:"ERROR",
+                		text:"Format error & Empty data",
+                		type:'error',
+                		confirmButtonColor:"#64D2A3"
+       });
 				    }
             }
 		    if(flag)
@@ -282,7 +293,7 @@ function ctrlNum(){
 				$(".continue-button").hide();
 				$(".agreeing-text").hide();
 				$(".book-button").show();
-			}
+			}else num--;
 	}
 	if(num == 5){
 		    street1=$('.fourth-address1in').val();
@@ -290,12 +301,13 @@ function ctrlNum(){
 		    state=$('.fourth-provincein').val();
 		    zip=$('.fourth-codein').val();
 		    parking=$('.fourth-instructionsin').val();
-		   newdate = date.slice(5, 7) + "/" + date.slice(8, 10) + "/" + date.slice(0, 4);
-newtime = time.slice(0, 5) + " " + time.slice(7, 9);
-newsession = session.slice(0, 6);
-newlength = length.slice(0, length.indexOf(" "));
-money = length.slice(length.lastIndexOf(" ")+1, length.length);
+		    newdate = date.slice(5, 7) + "/" + date.slice(8, 10) + "/" + date.slice(0, 4);
+		    newtime = time.slice(0, time.lastIndexOf(":")-1) + " " + time.slice(time.lastIndexOf(":") + 2, time.length);
+		  	newsession = session.slice(0, 6);
+		    newlength = length.slice(0, length.indexOf(" "));
+		    money = length.slice(length.lastIndexOf("£")+1, length.length);
 
+		  	$(".fifth-summaryin-total-money").html(money-mine)
 		    $(".fifth-summaryin-item").eq(0).html(newdate+" "+newtime);
 		    $(".fifth-summaryin-item").eq(1).html(newsession);
 		    $(".fifth-summaryin-item").eq(2).html(type+"/"+newlength+"/"+name+" "+"Therapist");

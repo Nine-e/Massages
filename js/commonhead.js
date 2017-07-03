@@ -13,16 +13,27 @@
        /* addMenuLink();*/
        $('.sign-in a').dblclick(function(event) {
            /* Act on the event */
+           swal({
+                      title: 'Are you sure?',
+                      text: "I don't want to see this website anymore!",
+                      type: 'warning',
+                      showCancelButton: true,
+                      confirmButtonColor: '#64D2A3',
+                      cancelButtonColor: '#d33',
+                      confirmButtonText: 'Yes, sign out!'
+           });
+           $('.confirm').click(function(e){
            $.ajax({
-               url: 'http://localhost:8080/phpbin/logout.php',
+               url: 'http://localhost:8080/phpbin/logout.php?id='+7,
                success:function(result)
                {
-                    $('.sign-in a').html("SignIn");
+
+                     $('.sign-in a').html("SignIn");
+                     $(".sign-in a").attr('href','signin.html');
                }
            })
-       });
-
-});
+          });
+});});
 function Tocheck()
 {
     $.ajax(
@@ -32,6 +43,7 @@ function Tocheck()
                 success: function(result) {
                  //返回数据根据结果进行相应的处理 
                     $(".sign-in a").html(result);
+                    $(".sign-in a").attr('href','#');
                 }
             }
         );

@@ -596,6 +596,8 @@
 .therapists-title {
     color: rgb(100, 210, 163);
 }
+
+
 /*mobile*/
 @media screen and (max-width: 750px) {
      /*橫屏*/
@@ -806,7 +808,15 @@
 }
 .styleUnique {
     display: none;
+
 }
+.name {
+    font-family: Lato;
+}
+.message {
+    font-family: Montserrat;
+}
+
 /*mobile*/
 @media screen and (max-width: 750px) {
      /*橫屏*/
