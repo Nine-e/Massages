@@ -131,5 +131,6 @@
 	font-weight: 600;
 	color: #fff;
 	background-color: #64d2a3;
+	cursor: pointer;
 }
 ::-webkit-input-placeholder { font-style:italic;color:rgb(229, 229, 229);}

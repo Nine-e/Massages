@@ -44,7 +44,10 @@ function load()
 		{
 		   $('.commonfoot').css('position', 'relative');
 		}
-        
+
+		$("continue-button").click(function () {
+            self.location = 'html/booking.html';
+        });
         chooseDate();
         chooseTime();
 
