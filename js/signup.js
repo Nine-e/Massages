@@ -73,14 +73,25 @@ function ToSignUp()
                     if (ans>0) {
                        window.location.href="/signin.html"
                     } else {
-                        alertMessage();
+                        swal({
+                        title:"WARNING",
+                        text:"This account already exists",
+                        type:'warning',
+                        confirmButtonColor:"#64D2A3"
+                         });
                     }
                 }
 
             }
         );
     }else {
-        alertMessage();
+       swal({
+                title:"ERROR",
+                text:"Format error & Empty data",
+                type:'error',
+                confirmButtonColor:"#64D2A3"
+            });
+
     }
 
 }

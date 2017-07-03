@@ -84,6 +84,7 @@
 	font-size: 15px;
 	font-weight: 600;
 	color: #fff;
+	cursor: pointer;
 	background-color: #64d2a3;
 	cursor: pointer;
 }
@@ -522,6 +523,7 @@
 	height: 35px;
 	background-color: #64d2a3;
 	color: #fff;
+	cursor: pointer;
 	line-height: 35px;
 	font-family: chbold,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
