@@ -9,7 +9,7 @@ body{
 	display:flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	width: ;
+	/*width: ;*/
 	margin:auto;
 	width:25%;
 }
@@ -88,6 +88,9 @@ body{
 @media all and (min-width:750px) and (max-width:1024px) {
 	.price {
 		width:50%;
+	}
+	.buy-button {
+		width: 35vw;
 	}
 }
 @media all and (max-width:750px) and (orientation:landscape) {
