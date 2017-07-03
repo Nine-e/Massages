@@ -122,7 +122,7 @@ function ctrlNum(){
 			$(".agreeing-text").show();
 			$(".book-button").hide();
 			date=$('#cla').val();
-			time=$('#di')val();
+			time=$('#di').val();
 		}
 	if(num == 3){
 		    session=$('.session span').html();
