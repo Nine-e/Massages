@@ -15,6 +15,13 @@
 	font-family: Seravek;
 	src:url(../lib/Seravek-Medium.otf);
 }
+.third-line-left,
+.third-line-right {
+    display: inline-block;
+    width: 45%;
+    height: 40px;
+    border-bottom: 1px solid #afafaf;
+}
 .cnt {
     text-align: center;
 	font-family: Montserrat;
@@ -206,11 +213,15 @@
 			z-index: 999;
 			border: 6px solid rgb(100,210,163);
 		}
-		 .continue-button {
+		 .continue-button,.book-button {
 			 width:40vw;
 			 margin-left:30vw;
 			 margin-top: 36px;
 		 }
+         .third-line-left {
+             width: 43%;
+         }
+
     }
     /*竖屏*/
      @media screen and (orientation: portrait) 
@@ -282,7 +293,7 @@
 		.cnt-message {
 			margin-top: -20px;
 		}
-		.continue-button {
+		.continue-button,.book-button {
 			width:80vw;
 			margin-left:10vw;
 			margin-top: 62px;
@@ -425,13 +436,7 @@
  	height: 50px;
  	margin:auto;
  }
- .third-line-left,
- .third-line-right {
- 	display: inline-block;
- 	width: 45%;
- 	height: 40px;
- 	border-bottom: 1px solid #afafaf;
- }
+
  .third-line-middle{
  	display: inline;
  	width: 5%;
