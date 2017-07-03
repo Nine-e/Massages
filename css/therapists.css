@@ -185,8 +185,9 @@ input {
             /*margin-top:-3px;*/
         }
         .therapistbtn {
-            width: 93vw;
-            height:32.9vw;
+            width: 80vw;
+            height: 12vw;
+            font-size: 15px;
         }
         .bet-title1 {
             margin-top:0;
