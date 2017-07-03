@@ -7,11 +7,10 @@
 
 var num=1;
 var choose=1;
-
+var date,time,session,length,type,name,email,street1,street2,state,zip,parparking,user,credit,security,expiration,Billing,gift;
 function load()
 { 
     /*initPage();*/
-
 	$.getJSON("../json/booking.json",function(data){
 		cntData = data.cnt;
 		var cntHtml = $.templates("#cntTmpl").render(cntData)
@@ -122,8 +121,13 @@ function ctrlNum(){
 			$(".continue-button").show();
 			$(".agreeing-text").show();
 			$(".book-button").hide();
+			date=$('#cla').val();
+			time=$('#di')val();
 		}
 	if(num == 3){
+		    session=$('.session span').html();
+		    length=$('#span1').html();
+		    type=$('.type span').html();
 			$(".cnt-num-third").siblings().css("font-size","20px");
 			$(".cnt-num-third").css("font-size","30px");
 			$(".cnt-num-third").siblings().css("color","#ccc");
@@ -163,6 +167,11 @@ function ctrlNum(){
 			$(".book-button").show();
 		}
 	if(num == 5){
+		    street1=$('.fourth-address1in').val();
+		    street2=$('.fourth-address2in').val();
+		    state=$('.fourth-provincein').val();
+		    zip=$('.fourth-codein').val();
+		    parking=$('.fourth-instructionsin').val();
 			$(".cnt-num-fourth").siblings().css("font-size","20px");
 			$(".cnt-num-fourth").css("font-size","30px");
 			$(".cnt-num-fourth").siblings().css("color","#ccc");
@@ -175,8 +184,43 @@ function ctrlNum(){
 			$(".continue-button").hide();
 			$(".agreeing-text").hide();
 			$(".book-button").show();
+	        
+	        
 		}
 		if(num == 6) {
+			user=$('.fifth-namein').val();
+			credit=$('.fifth-numin').val();
+			expiration=$('.fifth-datein').val();
+			Billing=$('.fifth-numin').val();
+			gift=$('.fifth-giftin').val();
+			/*$.ajax({
+	        	url: 'http://localhost:8080/phpbin/booking.php',
+	        	dataType: 'json',
+	        	data: {
+	        	   "date" : date,
+			       "time" : time,
+			       "session": session,
+			       "length" :length,
+			       "type" :type,
+			       "name" :name,
+			       "email" :email,
+			       "street1": street1,
+			       "street2": street2,
+			       "state":state, 
+			       "zip": zip
+			       "parking":parking 
+			       "user" :email
+			       "credit": credit
+			       "security": security
+			       "expiration": expiration
+			       "Billing":Billing
+			       "gift": gift
+	           },
+	           success :function(result)
+	           {
+
+	           }
+	        });*/
 			location.href = "../html/sucorder.html";
 		}
     
@@ -226,10 +270,11 @@ function chooseTime(){
 function chooseTherapist(){
 
 	$(".imgForEach").click(function(event) {
+		name=$(this).find("p").html();
 		$(this).find(".imgBorder").css("display","block");
 		$(this).siblings().find(".imgBorder").css("display","none");
 		var index = $(this).find("input").val();
-
+        
 		$.getJSON("../json/booking.json",function(data){
 
 			messageData = data.message;
