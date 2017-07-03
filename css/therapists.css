@@ -269,12 +269,12 @@ input {
         font-size: 18px;
     }
     .name {
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: -5px;
 
     }
     .message,.name {
-        width: 130%;
+        width: 133%;
         transform-origin: top left;
         transform:scale(0.76);
 
