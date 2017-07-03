@@ -110,7 +110,10 @@
 input {
     display: none;
 }
-
+.therapistbtn:link, .therapistbtn:hover, .therapistbtn:visited, .therapistbtn:active{
+    color: #fff;
+    text-decoration: none;
+}
 
 /*mobile*/
 @media all and (max-width: 750px) {
