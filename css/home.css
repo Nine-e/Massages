@@ -91,7 +91,7 @@
 }
 
 /*ipad*/
-@media screen and (max-width: 969px) and (min-width: 751px) {
+@media screen and (max-width: 1024px) and (min-width: 751px) {
     .desktop_landscape {
         display: none;
     }
@@ -104,7 +104,7 @@
 }
 
 /*pc*/
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1025px) {
     .desktop_landscape {
         display: block;
     }
@@ -230,7 +230,7 @@
 }
 
 /*ipad*/
-@media screen and (max-width: 969px) and (min-width: 751px) {
+@media screen and (max-width: 1024px) and (min-width: 751px) {
     .book {
         width: 70%;
     }
@@ -257,7 +257,7 @@
 }
 
 /*pc*/
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1025px) {
     .book {
         margin-top: 2%;
         width: 60%;
@@ -367,7 +367,7 @@
  }
  
  /*ipad*/
- @media screen and (max-width: 969px) and (min-width: 751px) {
+ @media screen and (max-width: 1024px) and (min-width: 751px) {
     .introduce {
         height: 110px;
     }
@@ -391,7 +391,7 @@
  }
  
  /*pc*/
- @media screen and (min-width: 970px) {
+ @media screen and (min-width: 1025px) {
     .introduce {
         height: 160px;
     }
@@ -504,7 +504,7 @@
 }
  
  /*ipad*/
-@media screen and (max-width: 969px) and (min-width: 751px) {
+@media screen and (max-width: 1024px) and (min-width: 751px) {
     .mybet {
         width: 40%;
     }
@@ -520,7 +520,7 @@
 }
  
  /*pc*/
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1025px) {
     .mybet {
         width: 30%;
     }
@@ -674,7 +674,7 @@
 }
  
  /*ipad*/
-@media screen and (max-width: 969px) and (min-width: 751px) {
+@media screen and (max-width: 1024px) and (min-width: 751px) {
     .therapists-img {
         width: 100vw;
         display: flex;
@@ -714,7 +714,7 @@
 }
  
  /*pc*/
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1025px) {
    .therapists-img {
         width: 90vw;
         display: flex;
@@ -893,7 +893,7 @@
 }
  
  /*ipad*/
-@media screen and (max-width: 969px) and (min-width: 751px) {
+@media screen and (max-width: 1024px) and (min-width: 751px) {
 
     .styles-title {
         font-size: 24px;
@@ -939,7 +939,7 @@
 }
  
  /*pc*/
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1025px) {
 
     .styles-title {
         font-size: 28px;
@@ -1115,7 +1115,7 @@
 }
 
 /*ipad*/
-@media screen and (max-width: 969px) and (min-width: 751px) {
+@media screen and (max-width: 1024px) and (min-width: 751px) {
     #faq {
             background-color: #f2fdf7;
         }
@@ -1134,7 +1134,7 @@
 }
 
 /*pc*/
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1025px) {
     #faq {
             background-color: #f2fdf7;
         }
@@ -1265,7 +1265,7 @@
 }
  
  /*ipad*/
-@media screen and (max-width: 969px) and (min-width: 751px) {
+@media screen and (max-width: 1024px) and (min-width: 751px) {
     .price-line {
         width: 40%;
     }
@@ -1290,7 +1290,7 @@
 }
  
  /*pc*/
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1025px) {
     .price-line {
         width: 30%;
     }
