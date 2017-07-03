@@ -161,7 +161,7 @@
     font-size: 12px;
 }
 .continue-button {
-    z-index: -1;
+    /*z-index: -1;*/
     text-align: center;
     cursor: pointer;
 }
