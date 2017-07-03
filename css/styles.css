@@ -60,6 +60,10 @@
 input {
     display: none;
 }
+.stylesbtn:link, .stylesbtn:hover, .stylesbtn:visited, .stylesbtn:active{
+    color: #fff;
+    text-decoration: none;
+}
 
 /*mobile*/
 @media screen and (max-width: 750px) {

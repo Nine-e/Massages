@@ -110,7 +110,10 @@
 input {
     display: none;
 }
-
+.therapistbtn:link, .therapistbtn:hover, .therapistbtn:visited, .therapistbtn:active{
+    color: #fff;
+    text-decoration: none;
+}
 
 /*mobile*/
 @media all and (max-width: 750px) {
@@ -154,7 +157,6 @@ input {
     /*竖屏*/
     @media all and (orientation: portrait) {
         body {
-            font-size:10px;
             overflow-x:hidden;
         }
         .therapister {
@@ -203,7 +205,6 @@ input {
 /*ipad*/
 @media all and (max-width: 1024px) and (min-width: 751px) {
     body {
-        font-size: 10px;
         width: 100%;
     }
     .therapister {
@@ -238,9 +239,6 @@ input {
 
 /*pc*/
 @media all and (min-width: 1025px) {
-    body {
-        font-size: 10px;
-    }
     .therapister {
         width: 75vw;
     }
