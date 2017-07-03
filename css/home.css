@@ -830,6 +830,7 @@
        }
         .styles-elements {
             width: 90vw;
+            margin-left: 8vw;
         }
         .styles-element {
             width: 44vw;
@@ -936,6 +937,7 @@
     .styles-elements {
         width: 80vw;
         margin-top: 3vw;
+        margin-left: 7vw;
     }
     .styles-element {
         width: 40vw;
@@ -980,6 +982,7 @@
     }
     .styles-elements {
         width: 60vw;
+        margin-left: 5vw;
     }
     .styles-element {
         width: 28vw;

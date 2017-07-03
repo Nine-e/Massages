@@ -274,7 +274,7 @@ function chooseTherapist(){
 		$(this).find(".imgBorder").css("display","block");
 		$(this).siblings().find(".imgBorder").css("display","none");
 		var index = $(this).find("input").val();
-        
+
 		$.getJSON("../json/booking.json",function(data){
 
 			messageData = data.message;
