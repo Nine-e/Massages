@@ -220,6 +220,14 @@ function ctrlNum(){
 
 			            }
 			        );
+			    }if(!(email&&password))
+			    {
+			    	swal({
+                		title:"ERROR",
+                		text:"Format error & Empty data",
+                		type:'error',
+                		confirmButtonColor:"#64D2A3"
+       				});
 			    }
 		   	}
 		   	else if(choose==1&&!flag)
@@ -337,7 +345,7 @@ function ctrlNum(){
 			gift=$('.fifth-giftin').val();
 			security=$('.fifth-codein').val();
 			$.ajax({
-	        	url: 'http://localhost:8080/phpbin/booking.php',
+	        	url: 'http://localhost:8080/phpbin/booking.php?id='+Math.random(),
 	        	data: {
 	        	   "date" : date,
 			       "time" : time,

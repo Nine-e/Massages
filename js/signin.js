@@ -33,7 +33,7 @@ function ToSignUp()
                     } else {
 						swal({
                     title:"ERROR",
-                    text:"Not exsit",
+                    text:"Not exsit or wrong user",
                     type:'error',
                     confirmButtonColor:"#64D2A3"
                     });
@@ -43,6 +43,14 @@ function ToSignUp()
 
             }
         );
+    }else
+    {
+        swal({
+                        title:"ERROR",
+                        text:"Format error & Empty data",
+                        type:'error',
+                        confirmButtonColor:"#64D2A3"
+       });
     }
 
 }

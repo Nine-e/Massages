@@ -7,12 +7,33 @@ $.getJSON("json/commonhead.json",function(data){
         headData = data.head;
         var headHtml = $.templates("#headTmpl").render(headData);
         $(".commonhead").append(headHtml);
-	Tocheck();
+        Tocheck();
         showMenu();
         hideMenu();
        /* addMenuLink();*/
+       $('.sign-in a').dblclick(function(event) {
+           /* Act on the event */
+           swal({
+                      title: 'Are you sure?',
+                      text: "I don't want to see this website anymore!",
+                      type: 'warning',
+                      showCancelButton: true,
+                      confirmButtonColor: '#64D2A3',
+                      cancelButtonColor: '#d33',
+                      confirmButtonText: 'Yes, sign out!'
+           });
+           $('.confirm').click(function(e){
+           $.ajax({
+               url: 'http://localhost:8080/phpbin/logout.php?id='+7,
+               success:function(result)
+               {
 
-});
+                     $('.sign-in a').html("SignIn");
+                     $(".sign-in a").attr('href','html/signin.html');
+               }
+           })
+          });
+});});
 function Tocheck()
 {
     $.ajax(
@@ -22,6 +43,7 @@ function Tocheck()
                 success: function(result) {
                  //返回数据根据结果进行相应的处理 
                     $(".sign-in a").html(result);
+                    $(".sign-in a").attr('href','#');
                 }
             }
         );
@@ -43,12 +65,12 @@ function hideMenu(){
 }
 
 /*function addMenuLink(){
-    $(".menu-bar a:eq(0)").attr("href","../index.html");
-    $(".menu-bar a:eq(1)").attr("href","booking.html");
-    $(".menu-bar a:eq(2)").attr("href","therapists.html");
-    $(".menu-bar a:eq(3)").attr("href","styles.html");
-    $(".menu-bar a:eq(4)").attr("href","price.html");
-    $(".menu-bar a:eq(5)").attr("href","faq.html");
-    $(".menu-bar a:eq(6)").attr("href","contact.html");
-    $(".menu-bar a:eq(7)").attr("href","signin.html");
+    $(".menu-bar a:eq(0)").attr("href","index.html");
+    $(".menu-bar a:eq(1)").attr("href","html/booking.html");
+    $(".menu-bar a:eq(2)").attr("href","html/therapists.html");
+    $(".menu-bar a:eq(3)").attr("href","html/styles.html");
+    $(".menu-bar a:eq(4)").attr("href","html/price.html");
+    $(".menu-bar a:eq(5)").attr("href","html/faq.html");
+    $(".menu-bar a:eq(6)").attr("href","html/contact.html");
+    $(".menu-bar a:eq(7)").attr("href","html/signin.html");
 }*/
