@@ -85,6 +85,7 @@
 	font-weight: 600;
 	color: #fff;
 	background-color: #64d2a3;
+	cursor: pointer;
 }
 .agreeing-text{
 	width: 300px;
@@ -114,6 +115,7 @@
 	font-size: 15px;
 	font-weight: 900;
 	color: #999;
+	cursor: pointer;
 }
 /*.back-button-icon:hover,
 .back-button-text:hover {
@@ -505,6 +507,9 @@
 	display: inline-block;
 	width: 45%;
 	margin-top: 15px;
+}
+.fifth-apply {
+	cursor: pointer;
 }
 .fifth-date,.fifth-gift{
 	float: left;
