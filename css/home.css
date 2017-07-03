@@ -163,6 +163,7 @@
 .continue-button {
     z-index: -1;
     text-align: center;
+    cursor: pointer;
 }
 /*mobile*/
 @media screen and (max-width: 750px) {
@@ -465,6 +466,7 @@
             height: 6vw;
             line-height: 6vw;
             font-size: 12px;
+            cursor: pointer;
         }
         .contact-title {
             font-size: 26px;
@@ -490,6 +492,7 @@
             height: 12vw;
             line-height: 12vw;
             font-size: 13px;
+            cursor: pointer;
         }
         .contact-title {
             font-size: 16px;
@@ -516,6 +519,7 @@
         height: 3vw;
         line-height: 3vw;
         font-size: 8px;
+        cursor: pointer;
     }
 }
  
@@ -532,6 +536,7 @@
         height: 3vw;
         line-height: 3vw;
         font-size: 13px;
+        cursor: pointer;
     }
 }
 .mybet {
@@ -569,6 +574,7 @@
     font-weight: 600;
     color: #fff;
     background-color: #64d2a3;
+    cursor: pointer;
 }
 ::-webkit-input-placeholder { font-style:italic;color:rgb(229, 229, 229);}
 
@@ -625,6 +631,7 @@
             font-weight: 600;
             color: #fff;
             background-color: #64d2a3;
+            cursor: pointer;
        }
     }
     /*竖屏*/
@@ -1215,6 +1222,7 @@
     font-weight: 600;
     color: #fff;
     background-color: #64d2a3;
+    cursor: pointer;
 }
 /*mobile*/
 @media screen and (max-width: 750px) {
