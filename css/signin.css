@@ -72,6 +72,7 @@
 .signipbtn {
     width: 100%;
     height: 35px;
+    margin-bottom: 40px;
     margin-top: 14px;
     display: flex;
     background: rgb(100,210,163);
