@@ -14,7 +14,24 @@ function load()
 		}else
 		{
 		   $('.commonfoot').css('position', 'relative');
-		} 
+		}
+        $(".send-button").mousedown(function(){
+
+            layui.use(['layer', 'form'], function(){
+                var layer = layui.layer
+                    ,form = layui.form();
+
+                layer.open({
+                    type: 1,
+                    area: ['300px', '150px'],
+                    shadeClose: true, //点击遮罩关闭
+                    content: '\<\div style="padding:20px;">发送成功！！\<\/div>'
+                });
+            });
+
+        });
 
 	});
+
 }
+
