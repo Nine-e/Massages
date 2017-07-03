@@ -15,7 +15,8 @@
     "pwd": "Password",
     "facebook": "Sign in with Facebook",
     "forgot": "Forgot Password?",
-    "signin": "SIGN IN"
+    "signin": "SIGN IN",
+    "signup": "sign up"
   },
   "foot":{
     "copyright":"©2017MOBILE MASSAGES",
