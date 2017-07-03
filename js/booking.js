@@ -278,6 +278,7 @@ var length = [
     "90 minutes-£150",
     "120 minutes-£190"
 ];
+var flag = 0;
 function selectLength(){
 
 	$(".length").click(function(event) {
