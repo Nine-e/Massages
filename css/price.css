@@ -80,12 +80,12 @@ body{
 	line-height: 40px;
 	text-align: center;
 }
-@media all and (min-width:970px) {
+@media all and (min-width:1025px) {
 	.buy-button {
 		width:15%;
 	}
 }
-@media all and (min-width:750px) and (max-width:970px) {
+@media all and (min-width:750px) and (max-width:1024px) {
 	.price {
 		width:50%;
 	}
