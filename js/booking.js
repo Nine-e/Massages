@@ -46,6 +46,7 @@ function load()
         			success:function(result)
         			{
         					mine=result;
+        					$('.fifth-summaryin-total-money').html(money-mine);
         			}
         		})
         		
@@ -224,7 +225,7 @@ function ctrlNum(){
 		   	{
 		   		
 			    var firstname=$('.third-firstnin').val(),
-			        lastname=$('.third-lastname').val(),
+			        lastname=$('.third-lastnin').val(),
 			        email=$('.third-emailin').val(),
 			        mobile=$('.third-mobilein').val(),
 			        password=$('.third-passwordin').val();
@@ -256,9 +257,9 @@ function ctrlNum(){
 				                success: function(result) {
 				                 //返回数据根据结果进行相应的处理 
 				                    var ans=result.search(email) 
-				                    if (ans>0) {
+				                    if (ans>=0) {
 				                      flag=true;
-				                    } else {
+				                    }else {
 				                      swal({
                         				title:"WARNING",
                         				text:"This account already exists",
