@@ -37,17 +37,24 @@
     margin-top: 2px;
     font-size: 15px;
 }
-.forgot {
-    width: 100%;
+.forgot, .signupbtn {
+    width: 50%;
     height: 35px;
     display: flex;
     color: rgb(153, 153, 153);
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-size: 14px;
 }
-.forgot>p {
-    margin-bottom: 0;
+.signupbtn {
+    margin-top: 15px;
+}
+.fandsup {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
 }
 .facebook {
     width: 100%;
