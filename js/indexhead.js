@@ -7,13 +7,25 @@ $.getJSON("json/commonhead.json",function(data){
         headData = data.head;
         var headHtml = $.templates("#headTmpl").render(headData);
         $(".commonhead").append(headHtml);
-
+	Tocheck();
         showMenu();
         hideMenu();
        /* addMenuLink();*/
 
 });
-
+function Tocheck()
+{
+    $.ajax(
+            {
+                type: "GET", //提交方式  
+                url: "http://localhost:8080/phpbin/test.php", //路径  
+                success: function(result) {
+                 //返回数据根据结果进行相应的处理 
+                    $(".sign-in a").html(result);
+                }
+            }
+        );
+}
 function showMenu(){
     $('#showMenu').click(function() {
         $(".menu").show();

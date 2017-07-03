@@ -128,7 +128,7 @@ a {
 /** ipad **/
 @media screen and (min-width:751px) and (max-width:1024px) {
     body {
-        min-height: 155vh;   
+        min-height: 78vh;   
     }
 	.head {
 		height: 35px;

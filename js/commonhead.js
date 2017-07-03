@@ -22,11 +22,7 @@ function Tocheck()
                 success: function(result) {
                  //返回数据根据结果进行相应的处理 
                     $(".sign-in a").html(result);
-                },
-                error:function(data) {
-                    alert("yyyy");
                 }
-
             }
         );
 }

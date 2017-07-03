@@ -200,7 +200,7 @@ input {
         transform: scale(0.95,0.95);
     }
     .name {
-        font-size: 12px;
+        font-size: 16px;
     }
     .message {
         font-size: 10px;
