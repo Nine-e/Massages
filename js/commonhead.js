@@ -11,6 +11,16 @@
         showMenu();
         hideMenu();
        /* addMenuLink();*/
+       $('.sign-in a').dblclick(function(event) {
+           /* Act on the event */
+           $.ajax({
+               url: 'http://localhost:8080/phpbin/logout.php',
+               success:function(result)
+               {
+                    $('.sign-in a').html("SignIn");
+               }
+           })
+       });
 
 });
 function Tocheck()

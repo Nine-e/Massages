@@ -6,7 +6,9 @@
  */
 
 var num=1;
+var mine=0;
 var choose=1;
+var islogin=false;
 var date,time,session,length,type,name,email,street1,street2,state,zip,parparking,user,credit,security,expiration,Billing,gift;
 function load()
 { 
@@ -35,7 +37,27 @@ function load()
 		fifthData = data.fifth;
 		var fifthHtml = $.templates("#fifthTmpl").render(fifthData)
 		$(".cnt-cnt").append(fifthHtml);
-        
+        $('.fifth-apply').click(function(event) {
+        	/* Act on the event */
+        	var w=$(".fifth-giftin").val();
+        	if(w.length>5)
+        	{
+        		$.ajax({
+        			url: 'http://localhost:8080/phpbin/gift.php',
+        			type: 'GET',
+        			data:
+        			{
+        				"gift":w
+        			},
+        			success:function(result)
+        			{
+        					mine=result;
+        			}
+        		})
+        		
+        	}
+
+        });
         chooseTherapist();
         chooseDate();
         chooseTime();
@@ -66,16 +88,13 @@ function load()
 function Continue(){
 	$(".continue-button").click(function(){
 		num++;
-		/*console.log(num);*/
 		ctrlNum();
 });
 	$(".book-button").click(function(){
 		num++;
-		/*console.log(num);*/
 		ctrlNum();
 });
 }
-
 function Back(){
 	$(".back-button").click(function(){
 		if(num==1)
@@ -122,9 +141,27 @@ function ctrlNum(){
 			$(".agreeing-text").show();
 			$(".book-button").hide();
 			date=$('#cla').val();
-			time=$('#di')val();
+			time=$('#di').val();
 		}
 	if(num == 3){
+		     $.ajax({
+		    	url: '/path/to/file',
+		    	type: 'default GET (Other values: POST)',
+		    	dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
+		    	data: {param1: 'value1'},
+		    	success: function(result){
+		    		var s=result.find("Sign In");
+		    		s.substring(3,s.length);
+		    		if(s<0)
+		    		{
+		    			$('.third-emailin').eq(0).val(s);
+		    			$('.third-passwordin').eq(0).val("11111");
+		    			$('.third-emailin').eq(1).val(s);
+		    			$('.third-passwordin').eq(1).val("11111");
+		    			flag=true;
+		    		}
+		    	}
+		    });
 		    session=$('.session span').html();
 		    length=$('#span1').html();
 		    type=$('.type span').html();
@@ -152,26 +189,117 @@ function ctrlNum(){
 			}
 		}
 	if(num == 4){
-			$(".cnt-num-fourth").siblings().css("font-size","20px");
-			$(".cnt-num-fourth").css("font-size","30px");
-			$(".cnt-num-fourth").siblings().css("color","#ccc");
-			$(".cnt-num-fourth").css("color","#696969");
-			$(".first").hide();
-			$(".second").hide();
-			$(".third").hide();
-			$(".fourth").show();
-			$(".fifth").hide();
-			$(".continue-button").hide();
-			$(".agreeing-text").hide();
-			
-			$(".book-button").show();
-		}
+		   
+		   	if(choose===2)
+		   	{
+		   		var email=$('.third-emailin').eq(1).val(),
+                    password=$('.third-passwordin').eq(1).val();
+			    if(email&&password)
+			    {
+			        $.ajax(
+			            {
+			                type: "GET", //提交方式  
+			                url: "http://localhost:8080/phpbin/log.php", //路径  
+			                data: {
+			                    "email":email,
+			                    "password":password
+			                },
+			                datatype:"string",
+			                 //数据，这里使用的是Json格式进行传输  
+			                success: function(result) { //返回数据根据结果进行相应的处理
+			                    var s=result,l;
+			                        l=s.length;
+			                    var ans=s.search(email)
+			                    if (ans>=0) {
+			                       //alert("yeah");
+			                       flag=true;
+			                    } else {
+									flag=false;
+			                    }
+			                }
+
+			            }
+			        );
+			    }
+		   	}
+		   	else
+		   	{
+		   		
+			    var firstname=$('.third-firstnin').val(),
+			        lastname=$('.third-lastname').val(),
+			        email=$('.third-emailin').val(),
+			        mobile=$('.third-mobilein').val(),
+			        password=$('.third-passwordin').val();
+			        firstname.trim();
+			        lastname.trim();
+			        email.trim();
+			        mobile.trim();
+			        password.trim();
+			        var re = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/; 
+			        var tt=false;
+			        if(re.test(email))
+			        {
+			            tt=true;
+			        }
+				    if(firstname&&lastname&&email&&mobile&&password&&tt)
+				    {
+				        $.ajax(
+				            {
+				                type: "GET", //提交方式  
+				                url: "http://localhost:8080/phpbin/signup.php?id="+5, //路径  
+				                data: {
+				                    "firstname": firstname,
+				                    "lastname":lastname,
+				                    "email":email,
+				                    "mobile":mobile,
+				                    "password":password
+				                },
+				                 //数据，这里使用的是Json格式进行传输  
+				                success: function(result) {
+				                 //返回数据根据结果进行相应的处理 
+				                    var ans=result.search(email) 
+				                    if (ans>0) {
+				                      flag=true;
+				                    } else {
+				                       flag=false;
+				                    }
+				                }
+
+				            });
+				    }
+            }
+		    if(flag)
+		    {
+				$(".cnt-num-fourth").siblings().css("font-size","20px");
+				$(".cnt-num-fourth").css("font-size","30px");
+				$(".cnt-num-fourth").siblings().css("color","#ccc");
+				$(".cnt-num-fourth").css("color","#696969");
+				$(".first").hide();
+				$(".second").hide();
+				$(".third").hide();
+				$(".fourth").show();
+				$(".fifth").hide();
+				$(".continue-button").hide();
+				$(".agreeing-text").hide();
+				$(".book-button").show();
+			}
+	}
 	if(num == 5){
 		    street1=$('.fourth-address1in').val();
 		    street2=$('.fourth-address2in').val();
 		    state=$('.fourth-provincein').val();
 		    zip=$('.fourth-codein').val();
 		    parking=$('.fourth-instructionsin').val();
+		   newdate = date.slice(5, 7) + "/" + date.slice(8, 10) + "/" + date.slice(0, 4);
+newtime = time.slice(0, 5) + " " + time.slice(7, 9);
+newsession = session.slice(0, 6);
+newlength = length.slice(0, length.indexOf(" "));
+money = length.slice(length.lastIndexOf(" ")+1, length.length);
+
+		    $(".fifth-summaryin-item").eq(0).html(newdate+" "+newtime);
+		    $(".fifth-summaryin-item").eq(1).html(newsession);
+		    $(".fifth-summaryin-item").eq(2).html(type+"/"+newlength+"/"+name+" "+"Therapist");
+		    $(".fifth-summaryin-item").eq(3).html(street1);
 			$(".cnt-num-fourth").siblings().css("font-size","20px");
 			$(".cnt-num-fourth").css("font-size","30px");
 			$(".cnt-num-fourth").siblings().css("color","#ccc");
@@ -184,7 +312,7 @@ function ctrlNum(){
 			$(".continue-button").hide();
 			$(".agreeing-text").hide();
 			$(".book-button").show();
-	        
+	        email=$('.third-emailin').val();
 	        
 		}
 		if(num == 6) {
@@ -193,9 +321,9 @@ function ctrlNum(){
 			expiration=$('.fifth-datein').val();
 			Billing=$('.fifth-numin').val();
 			gift=$('.fifth-giftin').val();
-			/*$.ajax({
+			security=$('.fifth-codein').val();
+			$.ajax({
 	        	url: 'http://localhost:8080/phpbin/booking.php',
-	        	dataType: 'json',
 	        	data: {
 	        	   "date" : date,
 			       "time" : time,
@@ -207,20 +335,25 @@ function ctrlNum(){
 			       "street1": street1,
 			       "street2": street2,
 			       "state":state, 
-			       "zip": zip
-			       "parking":parking 
-			       "user" :email
-			       "credit": credit
-			       "security": security
-			       "expiration": expiration
-			       "Billing":Billing
-			       "gift": gift
+			       "zip": zip,
+			       "parking":parking, 
+			       "user" :email,
+			       "credit": credit,
+			       "security": security,
+			       "expiration": expiration,
+			       "Billing":Billing,
+			       "gift": gift,
 	           },
-	           success :function(result)
+	           success: function(result)
+	           {
+	           		///console.log(result);
+	           		alert(result);
+	           },
+	           error:function(data)
 	           {
 
-	           }
-	        });*/
+	           } 
+	        });
 			location.href = "../html/sucorder.html";
 		}
     

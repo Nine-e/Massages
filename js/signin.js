@@ -7,18 +7,6 @@ function load()
         $(".signin").append(betHtml);
     });
 }
-function alertMessage(){
-						   layui.use(['layer', 'form'], function(){
-						      var layer = layui.layer,form = layui.form();
-						      layer.open({
-						        type: 1,
-						        area: ['300px', '150px'],
-						        shadeClose: true, //点击遮罩关闭
-						        content: '\<\div style="padding:20px;">账号或者密码错误\<\/div>'
-						      });
-						      //layer.alert('为了不侵犯叔叔阿姨的肖像权，最后还是决定用一些食物的照片来代替头像')
-						    });
-};
 function ToSignUp()
 {
     var email=$('.emailin').val(),
@@ -43,7 +31,13 @@ function ToSignUp()
                        //alert("yeah");
                        window.location.href="../index.html"
                     } else {
-						alertMessage();
+						swal({
+                    title:"ERROR",
+                    text:"Not exsit",
+                    type:'error',
+                    confirmButtonColor:"#64D2A3"
+                    });
+
                     }
                 }
 
