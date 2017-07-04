@@ -358,6 +358,11 @@
 		z-index: 999;
 		border: 6px solid rgb(100,210,163);
 	}
+	 .continue-button,.book-button {
+		 width:30vw;
+		 margin-left:35vw;
+		 margin-top: 36px;
+	 }
  } 
  /*pc*/
  @media screen and (min-width: 1025px) {
@@ -403,6 +408,11 @@
 		z-index: 999;
 		border: 6px solid rgb(100,210,163);
 	}
+	 .continue-button,.book-button {
+		 width:20vw;
+		 margin-left:538px;
+		 margin-top: 36px;
+	 }
  }
  .third-choose {
  	text-align: center;
