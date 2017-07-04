@@ -200,6 +200,8 @@ input {
             margin-top: -1px;
             margin-bottom: 4px;
             height: 9%;
+            line-height: 10px;
+            font-family: 12px;
         }
     }
 }
