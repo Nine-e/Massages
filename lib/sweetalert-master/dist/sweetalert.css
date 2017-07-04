@@ -51,7 +51,7 @@ body.stop-scrolling {
      @media screen and (orientation: landscape)
      {
        .sweet-alert {
-           transform: scale(0.7);
+           transform: scale(0.6);
        }
      }
 
@@ -59,7 +59,7 @@ body.stop-scrolling {
      @media screen and (orientation: portrait) 
      {
         .sweet-alert {
-             transform: scale(0.7);
+             transform: scale(0.6);
         }
      }
 }
@@ -67,14 +67,14 @@ body.stop-scrolling {
 /*ipad*/
 @media screen and (max-width: 1024px) and (min-width: 751px) {
     .sweet-alert {
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
 }
 
  /*pc*/
 @media screen and (min-width: 1025px) {
     .sweet-alert {
-        transform: scale(0.9);
+        transform: scale(0.8);
     }
 }
 
@@ -411,7 +411,7 @@ body.stop-scrolling {
 /*
  * Animations
  */
-@-webkit-keyframes showSweetAlert {
+/*@-webkit-keyframes showSweetAlert {
   0% {
     transform: scale(0.7);
     -webkit-transform: scale(0.7); }
@@ -453,7 +453,7 @@ body.stop-scrolling {
     -webkit-transform: scale(1); }
   100% {
     transform: scale(0.5);
-    -webkit-transform: scale(0.5); } }
+    -webkit-transform: scale(0.5); } }*/
 
 @-webkit-keyframes slideFromTop {
   0% {
