@@ -164,6 +164,7 @@
     /*z-index: -1;*/
     text-align: center;
     cursor: pointer;
+    margin: auto;
 }
 /*mobile*/
 @media screen and (max-width: 750px) {
