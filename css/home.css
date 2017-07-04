@@ -92,6 +92,9 @@
 
 /*ipad*/
 @media screen and (max-width: 1024px) and (min-width: 751px) {
+    .head {
+        border-bottom: 1px solid #fff;
+    }
     .desktop_landscape {
         display: none;
     }
@@ -105,6 +108,9 @@
 
 /*pc*/
 @media screen and (min-width: 1025px) {
+    .head {
+        border-bottom: 1px solid #fff;
+    }
     .desktop_landscape {
         display: block;
     }

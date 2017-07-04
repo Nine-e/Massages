@@ -133,6 +133,7 @@ a {
 	.head {
 		height: 35px;
 		line-height: 35px;
+        border-bottom: 1px solid rgba(102,209,163,.3);
 	}
     .head-title {
     	width: 20%;
@@ -179,6 +180,7 @@ a {
 	.head {
 		height: 60px;
 		line-height: 60px;
+        border-bottom: 1px solid rgba(102,209,163,.3);
 	}
     .head-title {
     	width: 20%;
