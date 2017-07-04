@@ -13,6 +13,10 @@ $.getJSON("json/commonhead.json",function(data){
        /* addMenuLink();*/
        $('.sign-in a').dblclick(function(event) {
            /* Act on the event */
+           var sss=1;
+           var str=$('.sign-in a').html();
+           sss=str.search('@')
+           if(sss>=0){
            swal({
                       title: 'Are you sure?',
                       text: "I don't want to see this website anymore!",
@@ -31,9 +35,10 @@ $.getJSON("json/commonhead.json",function(data){
                      $('.sign-in a').html("SignIn");
                      $(".sign-in a").attr('href','html/signin.html');
                }
-           })
-          });
-});});
+           });
+          });}});
+   
+});
 function Tocheck()
 {
     $.ajax(
@@ -42,8 +47,13 @@ function Tocheck()
                 url: "http://localhost:8080/phpbin/test.php", //路径  
                 success: function(result) {
                  //返回数据根据结果进行相应的处理 
+                    var sss=result;
+                    var t=sss.search('@')
                     $(".sign-in a").html(result);
-                    $(".sign-in a").attr('href','#');
+                    if(t>0)
+                    {
+                        $(".sign-in a").attr('href','#');
+                    }
                 }
             }
         );
@@ -65,12 +75,12 @@ function hideMenu(){
 }
 
 /*function addMenuLink(){
-    $(".menu-bar a:eq(0)").attr("href","index.html");
-    $(".menu-bar a:eq(1)").attr("href","html/booking.html");
-    $(".menu-bar a:eq(2)").attr("href","html/therapists.html");
-    $(".menu-bar a:eq(3)").attr("href","html/styles.html");
-    $(".menu-bar a:eq(4)").attr("href","html/price.html");
-    $(".menu-bar a:eq(5)").attr("href","html/faq.html");
-    $(".menu-bar a:eq(6)").attr("href","html/contact.html");
-    $(".menu-bar a:eq(7)").attr("href","html/signin.html");
+    $(".menu-bar a:eq(0)").attr("href","../index.html");
+    $(".menu-bar a:eq(1)").attr("href","booking.html");
+    $(".menu-bar a:eq(2)").attr("href","therapists.html");
+    $(".menu-bar a:eq(3)").attr("href","styles.html");
+    $(".menu-bar a:eq(4)").attr("href","price.html");
+    $(".menu-bar a:eq(5)").attr("href","faq.html");
+    $(".menu-bar a:eq(6)").attr("href","contact.html");
+    $(".menu-bar a:eq(7)").attr("href","signin.html");
 }*/

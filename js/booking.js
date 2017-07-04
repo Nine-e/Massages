@@ -148,9 +148,12 @@ function ctrlNum(){
 		    		result.substring(3,s.length);
 		    		if(s<0)
 		    		{
+		    			
 		    			$('.third-emailin').eq(0).val(result);
+		    			email=$('.third-emailin').eq(0).val();
 		    			$('.third-passwordin').eq(0).val("11111");
 		    			$('.third-emailin').eq(1).val(result);
+		    			email=$('.third-emailin').eq(1).val();
 		    			$('.third-passwordin').eq(1).val("11111");
 		    			flag=true;
 		    		}
@@ -174,10 +177,12 @@ function ctrlNum(){
 			/*console.log("choose");
 			console.log(choose);*/
 			if(choose==1) {
+                email=$('.third-emailin').eq(0).val();
 				$("#betOneOne").show();
 				$("#betTwo").hide();
 			}
 			if(choose==2) {
+				email=$('.third-emailin').eq(1).val();
 				$("#betOneOne").hide();
 				$("#betTwo").show();
 			}
@@ -186,7 +191,7 @@ function ctrlNum(){
 		   
 		   	if(choose===2)
 		   	{
-		   		var email=$('.third-emailin').eq(1).val(),
+		   		    email=$('.third-emailin').eq(1).val(),
                     password=$('.third-passwordin').eq(1).val();
 			    if(email&&password&&!flag)
 			    {
@@ -233,11 +238,11 @@ function ctrlNum(){
 		   	else if(choose==1&&!flag)
 		   	{
 		   		
-			    var firstname=$('.third-firstnin').val(),
+			        firstname=$('.third-firstnin').val(),
 			        lastname=$('.third-lastnin').val(),
-			        email=$('.third-emailin').val(),
+			        email=$('.third-emailin').eq(0).val(),
 			        mobile=$('.third-mobilein').val(),
-			        password=$('.third-passwordin').val();
+			        password=$('.third-passwordin').eq(0).val();
 			        firstname.trim();
 			        lastname.trim();
 			        email.trim();
@@ -282,12 +287,12 @@ function ctrlNum(){
 				    }else
 				    {
 				    	swal({
-                		title:"ERROR",
-                		text:"Format error & Empty data",
-                		type:'error',
-                		confirmButtonColor:"#64D2A3"
-       });
-				    }
+	                		title:"ERROR",
+	                		text:"Format error & Empty data",
+	                		type:'error',
+	                		confirmButtonColor:"#64D2A3"
+	       					});
+				        }
             }
 		    if(flag)
 		    {
@@ -334,7 +339,7 @@ function ctrlNum(){
 			$(".continue-button").hide();
 			$(".agreeing-text").hide();
 			$(".book-button").show();
-	        email=$('.third-emailin').val();
+	        
 	        
 		}
 		if(num == 6) {
@@ -369,7 +374,7 @@ function ctrlNum(){
 	           success: function(result)
 	           {
 	           		///console.log(result);
-	           		alert(result);
+	           		//alert(result);
 	           },
 	           error:function(data)
 	           {

@@ -58,8 +58,8 @@ function ToSignUp()
                 success: function(result) {
                  //返回数据根据结果进行相应的处理 
                     var ans=result.search(email) 
-                    if (ans>0) {
-                       window.location.href="/signin.html"
+                    if (ans>=0) {
+                       window.location.href="signin.html"
                     } else {
                         swal({
                         title:"WARNING",

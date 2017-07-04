@@ -17,9 +17,7 @@
  * @date    2017-06-26 21:21:18
  * @version $Id$
  */
- body {
- 	min-height: 100vh;
- }
+ 
 .cnt {
 	margin-top: 60px;
 	text-align: center;
@@ -88,6 +86,12 @@
  
  /*pc*/
  @media screen and (min-width: 1025px) {
+ 	 .foot-container {
+ 	 	transform: translate(0,116%);
+ 	 }
+ 	 body {
+ 	 	min-height: 75vh;
+ 	 }
  	 .mybet {
             width: 30%;
         }
